@@ -74,7 +74,7 @@ $ cabal install gch-mod
 
  * `~/.emacs.d/conf.d/0000_haskell.el`파일을 만들고, 다음을 추가해주자.
 
-````elisp
+```elisp
 ;; [== Haskell Setting ==]
 ;; :Ref http://d.hatena.ne.jp/kitokitoki/20111217/p1
 
@@ -110,7 +110,7 @@ $ cabal install gch-mod
 		       ac-source-dictionary
 		       ac-source-ghc-mod))))
 (add-hook 'find-file-hook 'my-haskell-ac-init)
-````
+```
 
 ----------------------------------
 ## 조작키
