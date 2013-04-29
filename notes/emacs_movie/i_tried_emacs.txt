@@ -1,0 +1,10 @@
+
+I Tried Emacs :
+Katy Perry - I Kissed A Girl을 패러디한 곡으로 emacs를 처음 접할때 느낀점을 쓴 곡이다
+
+http://www.amara.org/videos/VGyXLLPpk2TB
+
+C-x C-s : save를 의미하며, 저장하기 및 구하다라는 뜻을 포함하고 있다.
+한번 자르고(cut) 두번 붙여넣기(paste)라고 하였는데, C-w(자르기) C-y(붙여넣기) C-y(붙여넣기) 대신 M-w(복사하기) C-y(붙여넣기)로 줄일 수 있다.
+여기서 말하는 의사는 M-x doctor로 불러올 수 있으며 정신 분석학자(정신과의사)의 기능을 포함하고 있다.
+일단 한번 써보시라.

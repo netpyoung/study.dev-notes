@@ -1,0 +1,12 @@
+Emacs Rocks! 에피소드 05: 매력적인 매크로
+http://www.amara.org/videos/SJIc2jg6tJcL
+
+C-M-n forward-list
+
+대응되는 괄호로 이동한다.
+F3 kmacro-start-macro
+
+후에 다시 돌리기 위해, 키보드 입력을 저장한다.
+
+
+http://emacsrocks.com/e05.html

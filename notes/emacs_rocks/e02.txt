@@ -1,0 +1,18 @@
+Emacs Rocks! 에피소드 02: vimgolf 이글
+
+http://www.amara.org/videos/UTIhTQ7anPyR
+
+F3 kmacro-start-macro
+
+후에 다시 돌리기 위해, 키보드 입력을 저장한다.
+C-9 digit-argument
+
+다음에 오는 명령을 9번 실행한다.
+
+
+http://emacsrocks.com/e02.html
+
+
+지금 보니 Vim으로 누가 16타를 쳤네... 흠좀무.
+
+http://vimgolf.com/challenges/4dcd7b572c8e510001000005
