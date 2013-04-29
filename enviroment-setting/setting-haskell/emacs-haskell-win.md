@@ -49,7 +49,7 @@ $ cabal install gch-mod
 
 ###  Emacs
  * 다운로드주소. [http://ftp.gnu.org/pub/gnu/emacs/windows]
- * "~/.emacs.d/init.el"파일을 만들고, 다음을 추가해주자.
+ * "~/.emacs.d/init.el" 에 다음을 추가해주자.
 
 ````elisp
 ;; [== packages ==]
@@ -70,11 +70,8 @@ $ cabal install gch-mod
 ;; [== init-loader ==]
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/conf.d/")
-````
 
- * `~/.emacs.d/conf.d/0000_haskell.el`파일을 만들고, 다음을 추가해주자.
-
-```elisp
+"~/.emacs.d/conf.d/0000_haskell.el"에 다음을 추가해주자.
 ;; [== Haskell Setting ==]
 ;; :Ref http://d.hatena.ne.jp/kitokitoki/20111217/p1
 
@@ -110,7 +107,7 @@ $ cabal install gch-mod
 		       ac-source-dictionary
 		       ac-source-ghc-mod))))
 (add-hook 'find-file-hook 'my-haskell-ac-init)
-```
+````
 
 ----------------------------------
 ## 조작키
