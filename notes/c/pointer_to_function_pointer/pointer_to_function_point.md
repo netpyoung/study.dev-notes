@@ -340,9 +340,9 @@ Hellow [5]
 이상으로 포인터에 대해서 알아 보았습니다.
 http://netpyoung.tistory.com/72에서 더 나아가 볼 수 있습니다.
 
- [pointer_basic]: ../imgs/pointer_to_function_pointer/pointer_basic.jpg
- [pointer_arr]: ../imgs/pointer_to_function_pointer/pointer_arr.jpg
- [pointer_arr_with_type]: ../imgs/pointer_to_function_pointer/pointer_arr_with_type.jpg
- [pointer_adv_01]: ../imgs/pointer_to_function_pointer/pointer_adv_01.jpg
- [pointer_adv_02]: ../imgs/pointer_to_function_pointer/pointer_adv_02.jpg
- [pointer_adv_03]: ../imgs/pointer_to_function_pointer/pointer_adv_03.jpg
+ [pointer_basic]: ./imgs/pointer_basic.jpg
+ [pointer_arr]: ./imgs/pointer_arr.jpg
+ [pointer_arr_with_type]: ./imgs/pointer_arr_with_type.jpg
+ [pointer_adv_01]: ./imgs/pointer_adv_01.jpg
+ [pointer_adv_02]: ./imgs/pointer_adv_02.jpg
+ [pointer_adv_03]: ./imgs/pointer_adv_03.jpg
