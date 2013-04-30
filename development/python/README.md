@@ -38,6 +38,36 @@ Python을 배워야 하는 이유
 http://kldp.org/node/77727
 
 --------------------------------------------------------------------------------
+Tkinter는 Tk에 대한 객체 지향 interface이다.
+
+ 
+환경설정
+
+ 
+
+    소스코드 다운로드
+        http://manning.com/grayson/
+
+    Pmw - Python megawidgets
+        http://pmw.sourceforge.net/
+
+    파이썬 PMW 위젯 설치하기
+        http://bunhere.tistory.com/155
+
+    파이썬 Tk의 option_readfile('optionDB')
+        http://bunhere.tistory.com/158
+
+    wxPython
+        http://www.zetcode.com/wxpython/
+
+ 
+
+한글 출력
+strRoot = StringVar()
+strRoot = unicode("안녕", "euc-kr")
+Label(root, text=strRoot).pack(pady=10)
+
+--------------------------------------------------------------------------------
 
 
 
