@@ -14,6 +14,7 @@ nodejs v0.10.5 - 64bit
  - [github swank-js]
  - [connect to nodejs and chrome from emacs]
  - [emacsrocks e11]
+ - [emacsrocks e11-한국어번역]
 
 # nodejs && npm설치
 http://nodejs.org/download/ 에서 설치파일을 다운 받는다.
@@ -86,3 +87,4 @@ FIREFOX-20.0>
  [github swank-js]: https://github.com/swank-js/swank-js
  [connect to nodejs and chrome from emacs]: http://e-arrows.sakura.ne.jp/2011/06/connect-to-nodejs-and-chrome-from-emacs.html
  [emacsrocks e11]: http://emacsrocks.com/e11.html
+ [emacsrocks e11-한국어번역]: http://www.amara.org/ko/videos/uk3T9Gk3NXQ5/info/emacs-rocks-episode-11-swank-js/
