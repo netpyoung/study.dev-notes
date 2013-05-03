@@ -35,20 +35,24 @@
  - [auto-complete-moe] : http://cx4a.org/software/auto-complete/
 
 ----------------------------------
+
 ## 본격 설치
+
 ----------------------------------
 
-### Haskell Platform for Windows
- * 다운로드주소. [http://www.haskell.org/platform/windows.html]
+### Haskell 설치.
+ * Haskell Platform for Windows 다운로드주소. [http://www.haskell.org/platform/windows.html]
 
 ````cmd
 $ cabal update
 $ cabal install cabal-install
-$ cabal install gch-mod
+$ cabal install ghc-mod
 ````
 
-###  Emacs
+## Emacs 설치.
  * 다운로드주소. [http://ftp.gnu.org/pub/gnu/emacs/windows]
+
+## Emacs 설정.
  * "~/.emacs.d/init.el" 에 다음을 추가해주자.
 
 ````elisp
@@ -70,8 +74,11 @@ $ cabal install gch-mod
 ;; [== init-loader ==]
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/conf.d/")
+```
 
-"~/.emacs.d/conf.d/0000_haskell.el"에 다음을 추가해주자.
+* `~/.emacs.d/conf.d/0000_haskell.el`에 다음을 추가해주자.
+
+```elisp
 ;; [== Haskell Setting ==]
 ;; :Ref http://d.hatena.ne.jp/kitokitoki/20111217/p1
 
@@ -109,10 +116,15 @@ $ cabal install gch-mod
 (add-hook 'find-file-hook 'my-haskell-ac-init)
 ````
 
+## 확인.
+* emacs를 껏다키고, `test.hs`파일 열어서 자동완성이 되면 성공.
+
 ----------------------------------
 ## 조작키
 ----------------------------------
-:TODO
+* `C-c C-b` : 인터프리터 시작
+* `C-c C-l` : .hs파일 로드.
+* `C-M-i` : 자동완성
 
 ----------------------------------
 ## 팁
