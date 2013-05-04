@@ -1,16 +1,6 @@
-
-```
-windows를 위한 emacs 키바인딩 프로그램
-
-http://www.cam.hi-ho.ne.jp/oishi/indexen.html
-
- 
-
 unicad 인코딩문제 해결 : http://blog.kaisyu.com/2011/01/emacs-encoding-unicad.html
 
- 
-gdb
-
+# gdb
 gdb for visual studio keys : http://dreamstorm.tistory.com/16
 
 gnu emacs cheat sheet : http://tulrich.com/geekstuff/emacs.html
@@ -19,62 +9,13 @@ gdb etag cscope : http://wiki.kldp.org/wiki.php/EmacsGdbEtagsCscope
 
 watch expression : http://www.gnu.org/software/emacs/manual/html_node/emacs/Watch-Expressions.html
 
- 
 
-tdm-gcc : http://tdm-gcc.tdragon.net/
-
-mingw32 : http://www.mingw.org/
-
- 
-
- 
-
-정규식 관련
-
+# 정규 표현식
 http://emacs.kldp.net/wiki/doku.php?id=emacs_doc:regular_expressions#%EB%A7%88%EC%B9%A8%ED%91%9C
 
 http://www.emacswiki.org/emacs/RegularExpression
 
- 
-
-Gmail보내보자
-http://www.gnu.org/software/gnutls/news.html
-
-http://josefsson.org/gnutls4win/
-
- 
-
-http://kaisyu.springnote.com/pages/575011
-
-http://msmtp.sourceforge.net/
-
- 
-
-키보드 관련(ctrl-capslock)
-
-http://rhdxmr.tistory.com/45
-
-http://www.lug.or.kr/files/docs/LINUX/KLDP/HOWTOs/html/Keyboard-and-Console-HOWTO-html/Keyboard-and-Console-HOWTO-15.html
-
-http://youlsa.com/79
-
-http://kldp.org/node/45965
-
- 
-
-폰트 : http://habib.posterous.com/how-to-change-emacs-default-fo
-
-reload dot emacs : http://hermian.tistory.com/195
-
- 
-
- 
-잊어먹어선 안될 명령어
-
- 
-
-http://stackoverflow.com/questions/64360/how-to-copy-text-from-emacs-to-another-application-on-linux
-
+```
  
 
 정렬문제
@@ -199,3 +140,10 @@ M-x apply-macro-to-region-lines
 
 M-x iswitchb-mode  // C-x b 할때 버퍼간 이동이 손쉬워진다
 ```
+
+
+*compilation* 버퍼에 나오는 문자열을 regexp를 이용하여 색깔 바꾸기.
+http://vimeo.com/20780018
+
+신성국님의 Emacs 스크린캐스트 및 ppt
+http://www.cinsk.org/emacs/
