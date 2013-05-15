@@ -1,3 +1,16 @@
+
+* 데이터 포맷
+ - http://www.json.org/
+ - http://msgpack.org/
+ - http://en.wikipedia.org/wiki/Bencode
+
+* Design Patterns - 데모 모음집
+ - http://vincehuston.org/dp/
+* 실시간 렌더링 공부 - 영어
+ - http://www.realtimerendering.com/blog/
+* 개발자 코믹
+ - http://what-if.xkcd.com/
+
 --------------------------------------------------------------------------------
 # NDC2012
 [자동화된 소스 분석, 처리, 검증을 통한 소스의 불필요한 #if - #endif 제거하기 NDC2012]

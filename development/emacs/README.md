@@ -147,3 +147,247 @@ http://vimeo.com/20780018
 
 신성국님의 Emacs 스크린캐스트 및 ppt
 http://www.cinsk.org/emacs/
+
+
+```
+Dired mode
+C-x d
+
++ : 디렉토리 생성 - add
+= : 파일 비교 - diff
+
+c-x f
+g : 디렉토리 업데이트
+C : 복사 - Copy
+D : 삭제 - Delete
+R : 이름바꾸기 - Rename
+Z : 압축하기 - Zip
+M : 모드 바꾸기 - change Mode
+T : 타임스탬프 바꾸기 - change Timestamp
+
+t : 마크 토글 - mark Toggle
+m : 마크하기 - Mark
+u : 마크 해제 - Unmark
+U : 전체 마크 해제 - Unmark All
+%-m : regexp로 마크하기
+
+C-x C-q : dired editable 모드로 바꾸기
+C-c C-c : 적용시키기 - commit
+C-c Esc : 취소하기
+```
+
+
+```
+orgmode
+1 Introduction
+* Preface: Welcome
+* 누구를 위해?
+Organize
+    1. (어떤 일을) 준비하다
+    2. (특정한 순서*구조로) 정리하다, 체계화하다
+    3. (일의) 체계를 세우다 
+
+2 Document Structure
+* Headlines
+*
+**
+***
+
+#+STARTUP: indent
+#+STARTUP: hidestars odd
+
+
+* Visibility cycling
+TAB
+FOLDED -> CHILDREN -> SUBTREE -> FOLDED
+
+Shift-TAB
+OVERVIEW -> CONTENTS -> SHOWALL -> OVERVIEW
+
+keywords(overview, content, showall)
+#+STARTUP: content
+
+
+* Motion
+C-c n, p, f, b
+
+Structure edit
+M- UP, DOWN,  LEFT, RIGHT
+
+Subtree
+M-S- UP, DOWN,  LEFT, RIGHT
+
+C-c *     (org-toggle-heading)
+
+
+* Plain lists
+move
+S- UP, DOWN
+change
+S- LEFT, RIGHT
+-, +, 1., 1)
+
+
+editing source
+C-c '
+    Edit the source code e
+     #+STARTUP: hideblocks
+     #+STARTUP: nohideblocks
+
+
+2.10 Footnotes
+2.11 The Orgstruct minor mode 
+C-c C-z
+
+#+STARTUP: overview
+#+STARTUP: content
+#+STARTUP: showall
+#+STARTUP: showeverything
+
+
+Exporting and Publishing
+
+
+
+
+-Expand
+* hellow &TAB
+** world
+*** !!
+
+* hellow... &TAB
+
+* hellow &TAB
+** world...
+
+* hellow
+** world
+*** !!
+
+
+-Move Cursor
+between subject
+C-c
+Next, Previous, Forward, Backward
+
+-higher level
+C-c 
+Up
+
+-Jump
+C-c C-j
+
+
+
+
+Footnotes
+C-c C-x f
+C-c C-c && C-c C-o
+
+PlainLists
+- | &Meta + ENTER
+- |
+
++ | &Meta + ENTER
++ |
+
+-Check
+- [ ] &괄호 안에서 C-c C-c
+- [X] &괄호 안에서 C-c C-c
+- [ ]
+
+Links
+C-c C-l => http://orgmode.org/ => org
+[[http://orgmode.org/][org]]
+
+-Open
+org &C-c C-o
+
+
+C-u C-c C-l
+로컬 파일
+
+Table
+
+M-x org-create-table나 C-c |
+|   |   |   |   |   |
+|---+---+---+---+---|
+|   |   |   |   |   |
+
+
+Tag
+* Some Subject &C-c C-c
+* Some Subject &C-c C-c  :FIRST-TAG:
+* Some Subject           :FIRST-TAG:SECOND-TAG:
+
+C-c C-q 는 현재 Subject에 대해 Tag를 담
+
+
+-Search
+C-c \
+
+TODO
+M-shift-RET
+
+* Some Subject &C-c C-t
+* TODO Some Subject &C-c C-t
+* DONE Some Subject &C-c C-t
+* Some Subject
+
+-Setting
+#+SEQ_TODO: TODO TEST | PASS DONE &C-c C-c
+
+빨간색 TODO -> TEST ->초록색 PASS -> DONE 
+
+
+Date+Time
+C-c .
+
+Schedule
+C-c C-s
+
+DeadLine
+C-c C-d
+
+NOTE
+C-C C-z
+C-c C-c는 확인 C-c C-k는 취소
+    - Note taken on [2011-07-17 일 23:03] \\
+      asdf
+
+URL
+Get Organized with Emacs Org-mode
+http://www.linuxjournal.com/article/9116
+
+The Org Manual
+http://orgmode.org/manual/
+
+============================
+#+STARTUP:
+hidestarts : 별표를 하나만
+showstarts : 모든 별표를 보여준다
+indent : 별표는 하나 인덴트 적용
+
+odd
+oddeven
+
+
+
+
+     #+STARTUP: overview
+     #+STARTUP: content
+     #+STARTUP: showall
+     #+STARTUP: showeverything
+
+
+10 까지
+===================
+for Vim
+http://vimeo.com/user5149406/videos
+
+color-theme
+http://orgmode.org/worg/color-themes-screenshot.html
+
+
+http://orgmode.org/manual/Literal-examples.html#Literal-examples
+```
