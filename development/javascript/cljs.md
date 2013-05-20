@@ -21,6 +21,9 @@ youtube - Javascript in Light Table 0.4
 --------------------------------------------------------------------------------
 
 # js
+
+## [js regexp][JavaScript Regular Expression Enlightenment]
+
 ## 테스팅툴
 * [jslitmus]
 * [qunit]
@@ -60,3 +63,4 @@ youtube - Javascript in Light Table 0.4
 
 [jslitmus]: http://code.google.com/p/jslitmus/
 [qunit]: http://qunitjs.com/
+[JavaScript Regular Expression Enlightenment]: http://tech.pro/tutorial/1214/javascript-regular-expression-enlightenment?utm_source=javascriptweekly&utm_medium=email
