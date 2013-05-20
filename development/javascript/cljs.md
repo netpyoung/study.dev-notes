@@ -7,7 +7,7 @@ ClojureScript
 * [blog:the-clojurescript-compilation-pipeline]
 * [github:clojurescript.test]
 * [github:morden-cljs]
-* [ClojureScript °­ÁÂ]
+* [ClojureScript ê°•ì¢Œ]
 * [youtube ClojureScript Episode](http://www.youtube.com/user/zubairq/videos)
 
 --------------------------------------------------------------------------------
@@ -21,18 +21,18 @@ youtube - Javascript in Light Table 0.4
 --------------------------------------------------------------------------------
 
 # js
-## Å×½ºÆÃÅø
+## í…ŒìŠ¤íŒ…íˆ´
 * [jslitmus]
 * [qunit]
 
 ## [defs.js]
-- let°ú const¸¦ Áö¿øÇÏµµ·Ï ÇÏ´Â ÇÁ·Î±×·¥ÀÎµ¥... ÀÌ°Í¸¸ ºÁµµ ¾ó¸¶³ª js°¡ ¤²¤µÀÎÁö.. Ä¿ÇÇ½ºÅ©¸³Æ®¸¦ Á¶»çÇØº¼±î³ª?
+- letê³¼ constë¥¼ ì§€ì›í•˜ë„ë¡ í•˜ëŠ” í”„ë¡œê·¸ë¨ì¸ë°... ì´ê²ƒë§Œ ë´ë„ ì–¼ë§ˆë‚˜ jsê°€ ã…‚ã……ì¸ì§€.. ì»¤í”¼ìŠ¤í¬ë¦½íŠ¸ë¥¼ ì¡°ì‚¬í•´ë³¼ê¹Œë‚˜?
 
 ## [underscore.js]
-- ÇÑ±Û ÁÖ¼® : [underscore.js-with-kor-comment]
+- í•œê¸€ ì£¼ì„ : [underscore.js-with-kor-comment]
 
 ## [wu.js]
-- [underscore.js±î¸é¼­ wu.js¸¦ ¿ËÈ£ÇÏ´Â ÇÁ¸®Á¨Å×ÀÌ¼Ç][slideshare:underscore-wu]. ±×·²½ÎÇÑµ¥?
+- [underscore.jsê¹Œë©´ì„œ wu.jsë¥¼ ì˜¹í˜¸í•˜ëŠ” í”„ë¦¬ì  í…Œì´ì…˜][slideshare:underscore-wu]. ê·¸ëŸ´ì‹¸í•œë°?
 
 --------------------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ youtube - Javascript in Light Table 0.4
 [github:lein-cljsbuild]: https://github.com/emezeske/lein-cljsbuild
 [github:morden-cljs]: https://github.com/magomimmo/modern-cljs
 [javascript-clojurescript]: http://himera.herokuapp.com/synonym.html
-[ClojureScript °­ÁÂ]: http://www.english4u.kr/cljs-memo/
+[ClojureScript ê°•ì¢Œ]: http://www.english4u.kr/cljs-memo/
 [ClojureScript One]: http://clojurescriptone.com/
 [github:clojurescriptone]: https://github.com/brentonashworth/one
 [google:closure]: https://developers.google.com/closure/
