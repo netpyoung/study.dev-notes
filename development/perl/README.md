@@ -2,6 +2,22 @@
 backup
 =========================================================================
 
+
+```note
+Perl is not Dead, it is a Dead End by Stevan Little
+ : This is a talk I just gave at Perl Oasis 2013 about the future of Perl 5.
+- 외국역시 커뮤니티를 ECHO chamber라 부르는걸 보니 우리나라랑 사정이 조금이나마 비슷한듯?
+- CG - fucking - I ㅋㅋ
+- CPAN까지 까다니 대단한데?
+- 다른 언어(Scala)를 이용해서 모던하게 바꾸어본다...
+- 이렇게 걱정하고 관심받는 언어.. 제대로 배워볼만 하겠는데?
+https://speakerdeck.com/stevan_little/perl-is-not-dead-it-is-a-dead-end
+
+- https://github.com/MoeOrganization/moe
+- An -OFun prototype of an Ultra Modern Perl 5 
+```
+
+
 https://github.com/c9s/perlomni.vim
 
 
