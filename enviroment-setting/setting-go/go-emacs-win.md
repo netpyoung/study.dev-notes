@@ -1,44 +1,91 @@
-:TODO
+ Emacs를 이용한 Go 환경설정 - Windows편.
+====================================
 
-go language for windows
 
-개발환경 설정
-go 다운로드
-http://golang.org/doc/install#download
-http://code.google.com/p/go/downloads/list
- 	go1.0.3.windows-amd64.msi 
+----------------------------------
+# Go 환경설정
+----------------------------------
 
-[== emacs 환경설정 ==]
-https://github.com/nsf/gocode
+## 목표
+ - 30분안에, go "코딩환경 구축".
+
+## 환경
+ - Windows8-64bit
+
+### go
+- Go는 구글이 개발한 가비지 컬렉션 기능이 있는 컴파일, 병행성(concurrent) 프로그래밍 언어이다. -  [wiki:Go_(프로그래밍언어)](http://ko.wikipedia.org/wiki/Go_%28%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4%29)
+
+    ![go-character](http://golang.org/doc/gopher/frontpage.png)
+
+- 공식사이트 : [lang:go](http://golang.org/)
+- 참고서 : [An Introduction to Programming in Go](http://www.golang-book.com/)
+- 예제들 : [Go by Example](https://gobyexample.com/)
+
+## Go 설치
+- [go:download_list](http://code.google.com/p/go/downloads/list)로 가서,
+- Windows (x86 64-bit) MSI installer Featured 다운로드
+
+## 환경변수
+- 환경변수 추가는 [rapidee](http://www.rapidee.com/en/)를 이용하면 편하다.
+- 다음을 추가해주자.
+ - `PATH` : git.exe가 있는 위치. `C:\Program Files (x86)\Git\cmd\`
+ - `GOPATH` : go가 설치된 위치. `C:\Go\`
+
+## gocode 설치
+- [gocode](https://github.com/nsf/gocode)를 설치할려면 [git](http://msysgit.github.io/)이 필
+
 > go get -u github.com/nsf/gocode
 
+## emacs 설치
+- [kaist-ftp:emacs](http://ftp.kaist.ac.kr/gnu/gnu/emacs/windows/)에서 다운로드.
 
-go 첫인상
-pros
-그래도 c++보단 아직 간결하네..
-오 그래도 emacs auto-complete지원은 되네...
+## emacs 환경설정
+* `~/.emacs.d/init.el` 에 다음을 추가해주자.
+ - emacs를 한번 껏다키면, `~/.emacs.d/`폴더가 생김(단 `~`는 `HOME`폴더임)
 
-cons
-indent와 format에 제약을 주다니?
-3항 연산자도 안돼?
+````lisp
+;; [== packages ==]
+(package-initialize)
+(setq package-archives
+      '(
+	("ELPA" . "http://tromey.com/elpa/")
+	("gnu" . "http://elpa.gnu.org/packages/")
+	("marmalade" . "http://marmalade-repo.org/packages/")
+	("melpa" . "http://melpa.milkbox.net/packages/")
+	))
+````
 
-go test는 좋아보이는데 왜 특정 파일만 테스트 하지 못해?(찾아보니 미지원)
-generic은 어디로?(미지원이네..)
-아나 range는 왜 지원하다만 느낌이지.
-CLOS와 비슷한 메소드선언??, 근데 존나 쿨한데? method dispatch 따윈 없다?
+* `M-x load-file`를 한뒤,  `~/.emacs.d/init.el`
+* `M-x list-packages`를 한 뒤, `init-loader`, `auto-complete`, `quickrun`, `auto-complete`, `go-autocomplete`를 설치해주자.
+* `~/.emacs.d/init.el`에 다음을 추가해주자.
+
+````lisp
+;; [== init-loader ==]
+(require 'init-loader)
+(init-loader-load "~/.emacs.d/conf.d/")
+```
+
+* `~/.emacs.d/conf.d/0000_go.el`에 다음을 추가해주자.
+
+```lisp
+(require 'auto-complete)
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+
+(add-hook 'go-mode-hook 'auto-complete-mode)
+```
 
 
-??
-멍미 이 이상한 상속은? http://golangtutorials.blogspot.kr/2011/06/anonymous-fields-in-structs-like-object.html
-UTF-8 without BOM으로 해야 한글 저장된다?
-완전 C언어 빠들이 만든 언어인듯?
-C++, Java보다 저수준 언어라고 생각하고 접근하면 정신건강에 이로울듯.
-하긴, 괴물이 되어버린 C++보다, 미성숙한게 나으려나.
-On Go(http://cowlark.com/2009-11-15-go/). 역시 까야제맛.
-그래도 지원군이 빵빵하고, 속도빠르겠다, c계열이라 커뮤니티가 커지겠지...
+## 확인.
+* auto-complete 확인 : emacs를 껏다키고, `test.go`파일 열어서 자동완성이 되면 성공.
+* quickrun 확인 : 다음을 입력하고, `F7`을 눌러, `Hello World`가 출력되면 성공.
 
+```go
+package main
 
+import "fmt"
 
-아 했갈려
-Public은 대문자
-private는 소문자
+func main() {
+	fmt.Println("Hello World")
+}
+```
