@@ -1,7 +1,0 @@
-visual studio 2008
-
-단축키
-Atl + F9 : BreakPoint 목록
-F12 : 함수 정의로 이동
-Ctrl + F12 : 함수 선언으로 이동
-Ctrl + '-' : 이전으로 이동.
