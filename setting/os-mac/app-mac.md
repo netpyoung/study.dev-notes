@@ -14,6 +14,11 @@
 - Xcode
 - Dropbox
 - Growl (상용)
+- QuickSilver
+- XtraFinder
+- spectacle or ShiftIt or slate or iSnap
+- MPlayerX and VLC
+- MacVim
 
 * Zsh
 
@@ -38,7 +43,7 @@
     brew install the_silver_searcher
     brew install tmux
     brew install ctags-excuberant
-    brew install phantomjs
+    brew install tree
 ```
 
 * Firefox
