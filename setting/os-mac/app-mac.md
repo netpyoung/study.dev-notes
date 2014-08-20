@@ -11,13 +11,48 @@
 - UI버전컨트롤 : [SourceTree]
 - 터미널 : [iterm]
 - [hardlink]
+- Xcode
+- Dropbox
+- Growl (상용)
+
+* Zsh
+
+``` bash
+    curl -L github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+    
+    vi ~/.zshrc
+
+        ZSH_THEME="gallois"
+        alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+        plugins=(git lein)
+```
 
 # 패키지 매니져 : [brew]
-- git
-- mercurial
-- macvim
-- jenkins
-- putty
+
+```bash
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    
+    brew doctor
+    brew install mercurial
+    brew install vim
+    brew install the_silver_searcher
+    brew install tmux
+    brew install ctags-excuberant
+    brew install phantomjs
+```
+
+* Firefox
+ - Speed dial
+ - All-in-One Sidebar
+ - Omnibar
+ - Add to Search Bar
+ - Fire Gesture
+
+* Chrome
+ - LivePage
+ - BuildReactor
+ - ClojureScript REPL
+
 
  [Firefox]: http://www.mozilla.org/en-US/firefox/fx/#desktop
  [HandBrake]: http://handbrake.fr/
