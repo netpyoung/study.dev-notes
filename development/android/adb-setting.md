@@ -13,18 +13,18 @@ NDK : jni를 쉽게 쓰기 위한 wapper class
 
 * android sdk 다운로드.
  - http://developer.android.com/sdk/index.html
- 
-* ADT bundle 셋팅. 
+
+* ADT bundle 셋팅.
  - http://developer.android.com/sdk/installing/bundle.html
 
 * device 판매사의 usb드라이버 다운로드.
  - usb 빼고 설치.
  - ex) lg : http://www.lgmobile.co.kr/lgmobile/front/download/retrieveDownloadMain.dev#phone
- 
+
 * eclipse 셋팅.
  - D:\adt-bundle-windows-x86_64\eclipse
  - Android SDK Manager => 빌드하고자하는 API레벨선택 install all.
- 
+
 * 디바이스 셋팅.
  - 휴대폰 - 개발자옵션 - usb debug.
 
@@ -48,4 +48,32 @@ $ logcat  # 로그볼때
 ```
 $ tcpdump 옵션 주고
 > adb pull 해서 데이터 뽑아내서 와이어샤크로 보면 편리함.
+```
+
+
+## sample.rb for Unity3D
+
+```ruby
+IDENTIFIER = "com.hello.world"
+ACTIVITY = "#{IDENTIFIER}/com.hello.world.MainActivity"
+
+apks = Dir["*.apk"]
+latest_apk = apks.sort().reverse().first
+install_cmd = "adb install -r #{latest_apk}"
+
+launch_cmd = "adb shell am start -S -a android.intent.action.MAIN -n #{ACTIVITY}"
+stop_cmd = "adb shell am force-stop #{IDENTIFIER}"
+
+puts "APK: #{latest_apk}"
+
+puts "#{install_cmd}"
+puts `#{install_cmd}`
+
+# puts "#{stop_cmd}"
+# puts `#{stop_cmd}`
+
+puts "#{launch_cmd}"
+puts `#{launch_cmd}`
+
+gets
 ```
