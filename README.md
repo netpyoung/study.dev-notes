@@ -2,6 +2,7 @@
 ===================
 
 # TODO
+settings를 dev랑 합치는게 좋을듯...
 
 
 # Wishlist
