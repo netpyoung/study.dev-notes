@@ -4,6 +4,8 @@
 # TODO
 settings를 dev랑 합치는게 좋을듯...
 
+* 이거 그나마 쓸만하네.. http://sourceforge.net/projects/freefilesync/
+
 
 # Wishlist
 * Learning OpenGL ES for iOS: A Hands-on Guide to Modern 3D Graphics Programming
