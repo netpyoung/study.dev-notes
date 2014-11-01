@@ -10,3 +10,6 @@ $ sudo chmod 755 /opt/FTP_SHARED
 $ sudo vi /etc/ftpd.conf
     chroot GUEST /opt/FTP_SHARED
 ```
+
+개발자 등록하지 않고 iOS 기기에 앱 설치하기
+http://apollo89.com/wordpress/?p=5941

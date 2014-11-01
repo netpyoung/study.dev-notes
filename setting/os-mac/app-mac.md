@@ -46,6 +46,8 @@
     brew install tree
 ```
 
+https://developer.apple.com/downloads/index.action?name=hardware%20io
+
 * Firefox
  - Speed dial
  - All-in-One Sidebar
