@@ -44,9 +44,17 @@
     brew install tmux
     brew install ctags-excuberant
     brew install tree
+    brew install npm
 ```
 
-https://developer.apple.com/downloads/index.action?name=hardware%20io
+# etc
+
+```bash
+    sudo npm install -g vtop
+```
+
+
+* https://developer.apple.com/downloads/index.action?name=hardware%20io
 
 * Firefox
  - Speed dial
