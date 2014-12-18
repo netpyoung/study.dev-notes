@@ -1,6 +1,9 @@
 # Windows 특화 설정 프로그램들.
 
-## 무료 필수(상용은 되도록이면 빼도록 하자.
+## 무료 필수(상용은 되도록이면 빼도록 하자.)
+
+* 탐색기.
+ - Clover 3: http://ejie.me/
 
 * 환경변수
  - rapidee: http://www.rapidee.com/en/download
