@@ -55,3 +55,18 @@ http://starqualia.blog.me/220316277594
 uGUI - Sort Layer : 스프라이트의 우선순위
 
 http://blog.naver.com/dunkydonk/220180468504
+
+
+
+Unity New GUI Tutorial - kinil Muzykov
+http://www.raywenderlich.com/78675/unity-new-gui-part-1
+http://www.raywenderlich.com/79031/unity-new-gui-tutorial-part-2
+http://www.raywenderlich.com/79046/unity-new-gui-tutorial-part-3
+
+
+[Unity][uGUI] uGUIにパ?ティクルや他のオブジェクトを重ねて描?する
+http://westhillapps.blog.jp/archives/43632310.html
+
+
+ugui bmfont
+http://westhillapps.blog.jp/archives/43790545.html
