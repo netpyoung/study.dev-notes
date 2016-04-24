@@ -4,6 +4,7 @@
 * [애플 Swift 문서](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/)
 * [한글 번역 문서](http://lean-tra.github.io/Swift-Korean/)
 * [IBM Swift Sandbox](https://swiftlang.ng.bluemix.net/)
+* [Swift by example](http://brettbukowski.github.io/SwiftExamples/)
 
 
 # 책
@@ -35,3 +36,26 @@ https://www.youtube.com/playlist?list=PLY1P2_piiWEY3W_aGo7r2OZmsk6Ww757Y
 
 
 https://www.youtube.com/playlist?list=PLR7VglfoyRZivxWKXZ9hia_sdNlEIYjLo
+
+
+============
+interop
+Object-C
+rust
+
+.storyboard
+Info.plist
+Core_Data_demo.xcdatamodeld
+
+Framework Search Paths
+
+
+
+
+
+https://travis-ci.org/
+https://www.appveyor.com/
+
+
+
+https://cocoapods.org/
