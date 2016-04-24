@@ -1,4 +1,7 @@
-﻿https://github.com/reidarsollid/RustyCage
+﻿The Rust Programming Language
+https://github.com/killercup/trpl-ebook
+
+https://github.com/reidarsollid/RustyCage
 
 https://github.com/kud1ing/awesome-rust#ides
 
@@ -9,6 +12,14 @@ https://github.com/phildawes/racer
 https://github.com/RustDT/RustDT
 
 
+# etc
+https://www.packtpub.com/application-development/rust-essentials
+https://www.kickstarter.com/projects/1712125778/rust-programming-concepts-book/description
+
+
+
+oakes/rust_for_clojurists.md
+https://gist.github.com/oakes/4af1023b6c5162c6f8f0
 
 
 # Cargo
@@ -56,3 +67,12 @@ INI와 비슷하지만,
 TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics. TOML is designed to map unambiguously to a hash table. TOML should be easy to parse into data structures in a wide variety of languages.
 
 https://github.com/toml-lang/toml
+
+
+
+# JAVA interop
+jna
+https://github.com/jnr/jnr-ffi
+http://openjdk.java.net/projects/panama/
+
+https://github.com/Monnoroch/RustJni
