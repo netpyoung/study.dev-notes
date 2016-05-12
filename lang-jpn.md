@@ -2,21 +2,40 @@
 https://youtu.be/---Duu2ND-0
 
 
-
-# TODO
-엔진 뷰티폴라이프
-한자와 나오키
-리갈하이
-리치맨 푸어우먼
-리미트
-진 jin
-
-장미가 없는 꽃집
-오렌지 데이즈
 http://79jwh.tistory.com/643
 http://m.blog.naver.com/dlwldus8414/20087198802
 니체선생
 http://www.dailymotion.com/kr/relevance/universal/search/%EC%97%AC%EB%AA%85+1%EA%B0%9C%EC%9B%94%EC%9D%98+/1
+
+http://blog.naver.com/haluday/186777079
+
+
+
+
+#  
+キスマイBUSAIKU
+
+
+# TODO
+
+엔진 
+한자와 나오키
+리갈하이
+
+
+리치맨 푸어우먼
+
+리미트
+
+
+진 jin
+
+
+뷰티폴라이프
+
+장미가 없는 꽃집
+
+오렌지 데이즈
 
 101번째 프로포즈
 
