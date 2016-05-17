@@ -19,6 +19,7 @@
 - spectacle or ShiftIt or slate or iSnap
 - MPlayerX and VLC
 - MacVim
+- Disk Inventory X : http://www.derlien.com/
 
 * Zsh
 
