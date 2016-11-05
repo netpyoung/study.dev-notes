@@ -1,4 +1,7 @@
-﻿The Rust Programming Language
+﻿# rust
+
+# The Rust Programming Language
+
 https://github.com/killercup/trpl-ebook
 
 https://github.com/reidarsollid/RustyCage
@@ -11,7 +14,6 @@ https://github.com/phildawes/racer
 
 https://github.com/RustDT/RustDT
 
-<<<<<<< HEAD
 
 # etc
 https://www.packtpub.com/application-development/rust-essentials
@@ -78,7 +80,7 @@ http://openjdk.java.net/projects/panama/
 
 https://github.com/Monnoroch/RustJni
 =======
-Visual Studio Code 로 Rust 개발하기 
+Visual Studio Code 로 Rust 개발하기
 http://m.blog.naver.com/futurewave01/220539718530
 
 https://www.youtube.com/watch?v=O5vzLKg7y-k
@@ -92,7 +94,7 @@ https://www.penflip.com/sarojaba/rust-doc-korean
 
 https://github.com/kud1ing/awesome-rust
 
-Rust Guidelines 
+Rust Guidelines
 http://aturon.github.io/
 
 rust-learning

@@ -1,4 +1,4 @@
-커밋에 관한 생각
+# 커밋에 관한 생각
 
 * [커밋 로그](https://gamecodingschool.org/%EC%BB%A4%EB%B0%8B-%EB%A1%9C%EA%B7%B8/)
     - 커밋 로그의 부재는 디버깅도 어렵게 만듭니다.
