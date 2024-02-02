@@ -1,9 +1,0 @@
-Emacs Rocks! 에피소드 06: 예~! Snippets!
-
-http://www.amara.org/videos/zEPH6HfPUVUr
-
- yas/expand
-
-yasnippet에 등록한 문장이 있으면, 그에 따라 템플릿을 확장시킨다.
-
-http://emacsrocks.com/e06.html
