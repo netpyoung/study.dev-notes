@@ -17,6 +17,7 @@
 - [Windows](./os-windows/os-windows.md)
 - [macOs](./os-macos/os-macos.md)
 - [Linux](./os-linux/os-linux.md)
+  - [archlinux](./os-linux/archlinux.md)
 
 # News
 

@@ -59,7 +59,7 @@ go get -u code.google.com/p/rog-go/exp/cmd/godef
 * `~/.emacs.d/init.el` 에 다음을 추가해주자.
  - emacs를 한번 껏다키면, `~/.emacs.d/`폴더가 생김(단 `~`는 `HOME`폴더임)
 
-```cl
+``` lisp
 ;; [== packages ==]
 (package-initialize)
 (setq package-archives
@@ -75,7 +75,7 @@ go get -u code.google.com/p/rog-go/exp/cmd/godef
 * `M-x list-packages`를 한 뒤, `init-loader`, `auto-complete`, `quickrun`, `go-autocomplete`, `go-eldoc`, `flycheck`를 설치해주자.
 * `~/.emacs.d/init.el`에 다음을 마져 추가시켜주자.
 
-```cl
+``` lisp
 ;; [== init-loader ==]
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/conf.d/")
@@ -83,7 +83,7 @@ go get -u code.google.com/p/rog-go/exp/cmd/godef
 
 * `~/.emacs.d/conf.d/0000_go.el`에 다음을 추가해주자.
 
-```cl
+``` lisp
 (require 'auto-complete)
 (require 'go-autocomplete)
 (require 'auto-complete-config)

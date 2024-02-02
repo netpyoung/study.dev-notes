@@ -1,10 +1,8 @@
+# 함수포인터 - signal을 향해
 
+## test01.c
 
-함수포인터 - signal을 향해
-================
-
-### test01.c
-```c
+``` c
 #include <stdio.h>
 
 void hellow(int a) {
@@ -61,8 +59,10 @@ a+b = 3
 hi
 ```
 
-### test02.c
-```c
+
+## test02.c
+
+``` c
 #include <stdio.h>
 
 int hellow(int a, int b) {
@@ -87,10 +87,11 @@ hellow world
 
 매번 느끼지만 스터디할때마다.. 신기하다는...
 
-# 함수 포인터 선언
+## 함수 포인터 선언
+
 > 리턴 (* 함수)(인자값)
 
-```c
+``` c
 ### test03.c
 #include <stdio.h>
 
@@ -115,8 +116,10 @@ multi called
 777, call_multi
 ```
 
-### signal1.c
-```c
+
+## signal1.c
+
+``` c
 #include <stdio.h>
 #include <signal.h>
 
@@ -175,8 +178,10 @@ bar called
 bar called
 ```
 
-### signal2.c
-```c
+
+## signal2.c
+
+``` c
 #include <stdio.h>
 
 void aaa(void);
@@ -203,8 +208,10 @@ aaa called
 bbb called
 ```
 
-### signal3.c
-```c
+
+## signal3.c
+
+``` c
 #include <stdio.h>
 
 void aaa(int a) {
@@ -230,8 +237,9 @@ aaa() called
 1
 ```
 
-### signal4.c
-```c
+## signal4.c
+
+``` c
 #include <stdio.h>
 
 void aaa(void) {
@@ -257,9 +265,10 @@ bbb called
 aaa called
 ```
 
-### signal5.c
 
-```c
+## signal5.c
+
+``` c
 #include <stdio.h>
 
 int (* aaa(void)) [2] {
@@ -296,8 +305,10 @@ aaa called
 1
 ```
 
-### signal6.c
-```c
+
+## signal6.c
+
+``` c
 #include <stdio.h>
 
 typedef int (*FP1)[2];
@@ -334,8 +345,10 @@ aaa called
 ```
 
 
-### void  (*signal(int  signum,   void (*p)(int) ) )(int);
+## void  (*signal(int  signum,   void (*p)(int) ) )(int);
+
 스터디장 왈 :
+
 > signal은 signum이라는 int형 인자와 void (*)(int)형의 함수 포인터 p 인자를 가지는 함수이며,
 > 리턴값은 void (*)(int)형의 함수 포인터입니다
 >> (void(*)(int)) signal(int signum, (void (*) (int))p)

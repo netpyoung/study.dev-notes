@@ -1,6 +1,4 @@
-간단한 데몬.
-=======
-
+# 간단한 데몬.
 
 1. 일단 ssh창 하나를 띄워
 2. 일단 DaemonRoom을 만들고 그 안에 있는
@@ -46,16 +44,17 @@ BB Sat Feb 20 16:25:56 2010
 ```
 
 소스는 다음과 같다.
-* main은 단순히 fork만 해주고
-* init_daemon으로 데몬으로 만들고
-* check_dir을 이용하여 특정 폴더(WATCH_DIR)를 감시하여
-* 특정파일(CONF_FILE)에 로그를 남긴다.
+- main은 단순히 fork만 해주고
+- init_daemon으로 데몬으로 만들고
+- check_dir을 이용하여 특정 폴더(WATCH_DIR)를 감시하여
+- 특정파일(CONF_FILE)에 로그를 남긴다.
 
 데몬 생성방법은
 http://netpyoung.tistory.com/75 를 참조한다.
 
 daemon01.c
-```c
+
+``` c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

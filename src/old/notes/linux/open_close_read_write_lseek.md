@@ -40,19 +40,20 @@ arch/<아키텍처>/kernel/irq.c 에서 정보를 구할수 있음(장치 종속
 
 
 ### write
-```c
+
+``` c
 #include <unistd.h>
 size_t write(int fildes, const void *buf, size_t nbytes);
 ```
 
 ### read
-```c
+``` c
 #include <unistd.h>
 size_t read(int fildes, void *buf, size_t nbytes);
 ```
 
 ### lseek
-```c
+``` c
 #include <unistd.h>
 #include <sys/types.h>
 off_t lseek(int fildes, off_t offset, int whence);
@@ -67,7 +68,7 @@ off_t lseek(int fildes, off_t offset, int whence);
 http://www.joinc.co.kr/modules/moniwiki/wiki.php/man/2/lseek
 
 ### unlink
-```c
+``` c
 #include <unistd.h>
 int unlink(const char *path);
 //int link(const char *path1, const char *path2);  ln할때 사용
@@ -80,7 +81,7 @@ int unlink(const char *path);
 rm에서도 이 호출 사용
 
 ### close
-```c
+``` c
 #include <unistd.h>
 int close(int fildes);
 ```
@@ -133,7 +134,7 @@ procs_blocked 0
 인터럽트의 총 개수를 포함하여 다른 항목을 포함. 이 파일을 이용하여 cpu사용률을 구할수 있음 http://kernelstudy.tistory.com/23 에서 자세히 볼수 있습니다.
 
 #### CentOs5.3_2.6.18에서의 defines
-```c
+``` c
 ===================================================
 /usr/include/bits/types.h
 108 #if __WORDSIZE == 32
@@ -177,7 +178,7 @@ procs_blocked 0
 
 
 sys_call_open.c
-```c
+``` c
 #include <sys/types.h> //lseek
 #include <fcntl.h>
 #include <unistd.h>  //read, write, lseek
@@ -228,7 +229,7 @@ int main()
 ```
 
 test revert input.txt
-```c
+``` c
 [pyoung@localhost :D]$ cat input.txt
 =Hellow Practice=
 open

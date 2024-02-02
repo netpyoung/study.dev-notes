@@ -1,10 +1,8 @@
-
-포인터 - 함수 포인터를 향하여
-=======
+# 포인터 - 함수 포인터를 향하여
 
 ## 기본적인 포인터 개념
 
-```c
+``` c
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -50,7 +48,7 @@ p { 0x22FF6C } == &a : 0x22FF6C
 
 ## 포인터와 배열
 
-```c
+``` c
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -94,7 +92,7 @@ p_int+1 :  0x22FF68 | *(p_int+1) : 2
 
 자 이제 p_int+1과 p_double+1의 차이점을 유심히 보자
 
-```c
+``` c
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -134,7 +132,7 @@ p_double+1 :  0x22FF50 | *(p_double+1) : 2.000000E+00
 ### 포인터 더 알아보기(1)
 이제는 int array[2]와 int *p_array[2]의 차이점을 알아볼 차레이다.
 
-```c
+``` c
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -176,7 +174,7 @@ p_array와 *p_array는 같은 값이지만 p_array같은 경우 int [2]를 가�
 
 ### 포인터 더 알아보기(2)
 
-```c
+``` c
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -223,7 +221,7 @@ p_array[1] { 22ff60 }
 *(p_array[1]) { 2 }
 ```
 
-```c
+``` c
 #include <stdio.h>
 
 int main() {
@@ -259,7 +257,7 @@ array[1]  = 20
 
 괄호를 넣는 위치도 중요하다.
 
-```c
+``` c
 int main() {
     int array[10] = {0,1,2,3,4,5,6,7,8,9};
     int * p_array = array;
@@ -296,7 +294,7 @@ p_array[5] = 5
 ### 포인터 더 알아보기(3)
 자 이제 마지막으로 함수 포인터이다.
 
-```c
+``` c
 #include <stdio.h>
 
 void printHellow(int number) {

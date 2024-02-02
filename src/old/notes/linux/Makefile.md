@@ -13,7 +13,8 @@ target : defendency
 ### 그렇다면 타겟이 존재하지 않으면어떻게 될까?
 
 like.c
-```c
+
+``` c
 #include
 
 void lovecall();
@@ -42,7 +43,7 @@ int main()
 ```
 
 love.c
-```c
+``` c
 #include
 #include
 
