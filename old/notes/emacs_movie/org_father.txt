@@ -1,6 +1,6 @@
 [Org-mode]
- : ¸Þ¸ð, Todo ¸®½ºÆ®, ÇÁ·ÎÁ§Æ® °èÈ¹µîÀ» È¿À²ÀûÀ¸·Î ÀÛ¼ºÇÒ ¼ö ÀÖ´Â emacs ¹®¼­ ½Ã½ºÅÛ ¸ðµå.
- : [MobileOrg] ¹× [VimOrganizer]°¡ ÀÖ´Ù.
+ : ë©”ëª¨, Todo ë¦¬ìŠ¤íŠ¸, í”„ë¡œì íŠ¸ ê³„íšë“±ì„ íš¨ìœ¨ì ìœ¼ë¡œ ìž‘ì„±í•  ìˆ˜ ìžˆëŠ” emacs ë¬¸ì„œ ì‹œìŠ¤í…œ ëª¨ë“œ.
+ : [MobileOrg] ë° [VimOrganizer]ê°€ ìžˆë‹¤.
 
 
 <iframe src="http://player.vimeo.com/video/28194358" width="500" height="283" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/28194358">The Orgfather</a> from <a href="http://vimeo.com/bzg">Bastien Guerry</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
