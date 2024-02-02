@@ -1,16 +1,14 @@
-# Notes
+# study.dev-notes
 
-- 한눈에 보기
-- 길면 읽지 않는다.
+자꾸 까먹고, 자꾸 바뀐다. 기록하여 살펴보도록 하자.
 
-# TODO
-* research IoC(Inversion of Control)
-* how to apply Rx Programming(Reactive)
-* android ndk
-  - https://developer.android.com/studio/projects/add-native-code.html
-* rust cdylib
-  - https://blog.rust-lang.org/2016/07/07/Rust-1.10.html
+## mdBook
 
-* http://stackshare.io/
+- [저장소](https://github.com/rust-lang/mdBook)
+- [메뉴얼](https://rust-lang.github.io/mdBook/)
+- 기타
+  - [badboy/mdbook-toc](https://github.com/badboy/mdbook-toc)
 
-* 팀을 구하는 툴 개발: http://ndcreplay.nexon.com/NDC2014/sessions/NDC2014_0076.html
+``` zsh
+$ mdbook serve
+```
