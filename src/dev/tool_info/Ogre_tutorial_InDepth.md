@@ -3,7 +3,7 @@
 http://www.ogre3d.org/forums/viewtopic.php?f=2&t=68965
 Actually, that's a change in 1.8 (I think), and it doesn't work with versions <= 1.7.x, just change 'msSingleton' to 'ms_Singleton', and it should compile just fine.
 
-Debug¸é Debug mode¿¡ ¸Â°Ô ¼öÁ¤.
+Debugë©´ Debug modeì— ë§ê²Œ ìˆ˜ì •.
 m_pRoot = new Ogre::Root("plugins_d.cfg");
 cf.load("resources_d.cfg");
 
@@ -14,8 +14,8 @@ cf.load("resources_d.cfg");
 -Manual Resource Loading : skipped
 Geometry, Material, Skeleton, Font, Overlay
 
-Shared geometry´Â static geometry¸¦ ÀÌ¿ëÇÒ¶§ ´õ¿í È¿°úÀûÀÌ´Ù.
-Non-shared geometry´Â ¸¹Àº »À(bones)µéÀ» ÀÌ¿ëÇÒ¶§ ÇÊ¼ö´Ù.
+Shared geometryëŠ” static geometryë¥¼ ì´ìš©í• ë•Œ ë”ìš± íš¨ê³¼ì ì´ë‹¤.
+Non-shared geometryëŠ” ë§ì€ ë¼ˆ(bones)ë“¤ì„ ì´ìš©í• ë•Œ í•„ìˆ˜ë‹¤.
 
 
 Shared geometry:
@@ -45,61 +45,61 @@ OgreXmlConverter
 *.mesh.xml (unloadable)
 *.mesh (loadable)
 
-Entity : meshÀÇ ÀÎ½ºÅÏ½º.
-MeshSerializer: ÇïÆÛ Å¬·¡½º. ¸Å½¬¸¦ ºÒ·¯¿À±â À§ÇØ Ogre°¡ ³»ºÎÀûÀ¸·Î »ç¿ë.
+Entity : meshì˜ ì¸ìŠ¤í„´ìŠ¤.
+MeshSerializer: í—¬í¼ í´ë˜ìŠ¤. ë§¤ì‰¬ë¥¼ ë¶ˆëŸ¬ì˜¤ê¸° ìœ„í•´ Ogreê°€ ë‚´ë¶€ì ìœ¼ë¡œ ì‚¬ìš©.
 ResourceManager 
 --------------------------------------------------------------------------
 -Resources and ResourceManagers :
-Unknown - ResourceGroup¿¡ ÆÄÀÏÀÌ¸§ÀÌ ÀúÀåµÇ¾úÁö¸¸, Orge´Â ÀÌ¸¦ Ã³¸®ÇÒ ¹æ¹ıÀ» ¸ğ¸£´Â »óÅÂ
-Declared - Á÷Á¢ È¤Àº °£Á¢¿¡ ÀÇÇØ ¸®¼Ò½ºÀÇ ÇÃ·¡±×°¡ creationÀ¸·Î µÈ°Í. Orge°¡ ¸®¼Ò½ºÀÇ Å¸ÀÔÀÌ ¹«¾ùÀÎÁö, ¸ÖÇÒÁö, ¾ğÁ¦ ¸¸µéÁö ¾Æ´Â »óÅÂ
-Created - Ogre°¡ ¸®¼Ò½ºÀÇ ºó ÀÎ½ºÅÏ½º¸¦ ¸¸µé¾î, °ü·Ã ResourceManager¿¡ Ãß°¡ÇÑ »óÅÂ
-Loaded - »ı¼ºµÈ ÀÎ½ºÅÏ½º°¡ ¿ÏÀüÈ÷ ·ÎµåµÇ¸é, ¸®¼Ò½ºÀÇ ÀüÃ¼ µ¥ÀÌÅÍ°¡ ¸Ş¸ğ¸® »ó¿¡ ÀÚ¸®Àâ°ÔµÊ. ÀÌÁ¦¼­¾ß ½ÇÁ¦ ¸®¼Ò½º ÆÄÀÏ¿¡ Á¢±ÙÇÏ°Ô µÇ´Â »óÅÂ.
+Unknown - ResourceGroupì— íŒŒì¼ì´ë¦„ì´ ì €ì¥ë˜ì—ˆì§€ë§Œ, OrgeëŠ” ì´ë¥¼ ì²˜ë¦¬í•  ë°©ë²•ì„ ëª¨ë¥´ëŠ” ìƒíƒœ
+Declared - ì§ì ‘ í˜¹ì€ ê°„ì ‘ì— ì˜í•´ ë¦¬ì†ŒìŠ¤ì˜ í”Œë˜ê·¸ê°€ creationìœ¼ë¡œ ëœê²ƒ. Orgeê°€ ë¦¬ì†ŒìŠ¤ì˜ íƒ€ì…ì´ ë¬´ì—‡ì¸ì§€, ë©€í• ì§€, ì–¸ì œ ë§Œë“¤ì§€ ì•„ëŠ” ìƒíƒœ
+Created - Ogreê°€ ë¦¬ì†ŒìŠ¤ì˜ ë¹ˆ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë§Œë“¤ì–´, ê´€ë ¨ ResourceManagerì— ì¶”ê°€í•œ ìƒíƒœ
+Loaded - ìƒì„±ëœ ì¸ìŠ¤í„´ìŠ¤ê°€ ì™„ì „íˆ ë¡œë“œë˜ë©´, ë¦¬ì†ŒìŠ¤ì˜ ì „ì²´ ë°ì´í„°ê°€ ë©”ëª¨ë¦¬ ìƒì— ìë¦¬ì¡ê²Œë¨. ì´ì œì„œì•¼ ì‹¤ì œ ë¦¬ì†ŒìŠ¤ íŒŒì¼ì— ì ‘ê·¼í•˜ê²Œ ë˜ëŠ” ìƒíƒœ.
  
 
  
  
-1. Root::Root¿¡¼­ ResourceManager »ı¼º.
-2. resource °æ·Î ÁöÁ¤. ResourceGroupManager::addResourceLocation
-- ¾øÀ¸¸é ResourceGroupÁöÁ¤ (RG)
-- Æ¯Á¤ Å¸ÀÔÀÇ Archive ÀÎ½ºÅÏ½º »ı¼º (A)
-- »õ·Î¿î ResourceLocation»ı¼º (RL).  (RG (RL (A)))
-- A¿¡ ÀÖ´Â ÆÄÀÏ¸ñ·Ï ÀüºÎ¸¦ ¾ò¾î¿Í RG¿¡ Ãß°¡.
-[=============UnKnown »óÅÂ=============]
-3. ¸®¼Ò½º¸¦ ¼öµ¿À¸·Î ¼±¾ğ(ResourceGroupManager::declareResource)
-[¼öµ¿À¸·Î ¼±¾ğÇÑ°Í===Declared  »óÅÂ==]  [³ª¸ÓÁöµé==UnKnown »óÅÂ==]
-4. ResourceGroupµéÀÌ ÃÊ±âÈ­µÊ (ResourceGroupManager::initialiseResourceGroup, ResourceGroupManager::initialiseAllResourceGroups)
-	1. RG¿¡ ÀÖ´Â Script¸¦ Parse
-	2. DeclareµÈ ¸®¼Ò½º »ı¼º.
-	3. ¸®¼Ò½º¸¦ "ordered loading list"¿¡ ÀúÀå. => ResourceManager
+1. Root::Rootì—ì„œ ResourceManager ìƒì„±.
+2. resource ê²½ë¡œ ì§€ì •. ResourceGroupManager::addResourceLocation
+- ì—†ìœ¼ë©´ ResourceGroupì§€ì • (RG)
+- íŠ¹ì • íƒ€ì…ì˜ Archive ì¸ìŠ¤í„´ìŠ¤ ìƒì„± (A)
+- ìƒˆë¡œìš´ ResourceLocationìƒì„± (RL).  (RG (RL (A)))
+- Aì— ìˆëŠ” íŒŒì¼ëª©ë¡ ì „ë¶€ë¥¼ ì–»ì–´ì™€ RGì— ì¶”ê°€.
+[=============UnKnown ìƒíƒœ=============]
+3. ë¦¬ì†ŒìŠ¤ë¥¼ ìˆ˜ë™ìœ¼ë¡œ ì„ ì–¸(ResourceGroupManager::declareResource)
+[ìˆ˜ë™ìœ¼ë¡œ ì„ ì–¸í•œê²ƒ===Declared  ìƒíƒœ==]  [ë‚˜ë¨¸ì§€ë“¤==UnKnown ìƒíƒœ==]
+4. ResourceGroupë“¤ì´ ì´ˆê¸°í™”ë¨ (ResourceGroupManager::initialiseResourceGroup, ResourceGroupManager::initialiseAllResourceGroups)
+	1. RGì— ìˆëŠ” Scriptë¥¼ Parse
+	2. Declareëœ ë¦¬ì†ŒìŠ¤ ìƒì„±.
+	3. ë¦¬ì†ŒìŠ¤ë¥¼ "ordered loading list"ì— ì €ì¥. => ResourceManager
 	 
- [=============Created »óÅÂ=============]
-5. ¸®½ºÆ®¸¦ ÀÌ¿ë.
-	1. resource¸¦ ´Ù·ë
-	2. ResourceGroupManager::loadResourceGroup È£ÃâµÊ.
-	3. µîµî
-[=============Loaded  »óÅÂ=============]
+ [=============Created ìƒíƒœ=============]
+5. ë¦¬ìŠ¤íŠ¸ë¥¼ ì´ìš©.
+	1. resourceë¥¼ ë‹¤ë£¸
+	2. ResourceGroupManager::loadResourceGroup í˜¸ì¶œë¨.
+	3. ë“±ë“±
+[=============Loaded  ìƒíƒœ=============]
  
 
-Root °´Ã¼ »ı¼º
-¸®¼Ò½º ÀúÀåÀ§Ä¡¸¦ ResourceGroupManager::addResourceLocation¸¦ È£ÃâÇÏ¿© Ãß°¡
-ResourceGroupManager::_registerResourceManager, ResourceGroupManager::_registerScriptLoaderÀ» ÀÌ¿ëÇÏ¿© Ä¿½ºÅè ResourceManager, ScriptLoader µî·Ï.
-ResourceGroupManager::declareResource·Î ÇÊ¿ä·ÎÇÏ´Â ¸®¼Ò½º ¼±¾ğ
-´ÜÀÏ ±×·ìÃÊ±âÈ­ : ResourceGroupManager::initialiseResourceGroup
-´ÙÁß ±×·ìÃÊ±âÈ­ : ResourceGroupManager::initialiseAllResourceGroups
+Root ê°ì²´ ìƒì„±
+ë¦¬ì†ŒìŠ¤ ì €ì¥ìœ„ì¹˜ë¥¼ ResourceGroupManager::addResourceLocationë¥¼ í˜¸ì¶œí•˜ì—¬ ì¶”ê°€
+ResourceGroupManager::_registerResourceManager, ResourceGroupManager::_registerScriptLoaderì„ ì´ìš©í•˜ì—¬ ì»¤ìŠ¤í†° ResourceManager, ScriptLoader ë“±ë¡.
+ResourceGroupManager::declareResourceë¡œ í•„ìš”ë¡œí•˜ëŠ” ë¦¬ì†ŒìŠ¤ ì„ ì–¸
+ë‹¨ì¼ ê·¸ë£¹ì´ˆê¸°í™” : ResourceGroupManager::initialiseResourceGroup
+ë‹¤ì¤‘ ê·¸ë£¹ì´ˆê¸°í™” : ResourceGroupManager::initialiseAllResourceGroups
 
 # Resource Unloading and Destruction
-¾ğ·Îµå : ResourceManager::unload 
-»èÁ¦ : ResourceManager::getByName·Î ¸®¼Ò½º¸¦ °¡¸®Å°´Â Æ÷ÀÎÅÍ¸¦ ¾ò¾î, ResourceManager::remove·Î »èÁ¦
+ì–¸ë¡œë“œ : ResourceManager::unload 
+ì‚­ì œ : ResourceManager::getByNameë¡œ ë¦¬ì†ŒìŠ¤ë¥¼ ê°€ë¦¬í‚¤ëŠ” í¬ì¸í„°ë¥¼ ì–»ì–´, ResourceManager::removeë¡œ ì‚­ì œ
 
 # Reloading Resources
 Resource::reload, ResourceManager::reloadAll
 --------------------------------------------------------------------------
 
-¸Ş´º¾ó ¿ÀºêÁ§Æ®
-mesh ¸¸µé±â
-1. SimpleRenderable °´Ã¼¸¦ subclassÇÏ¿©, vertex buffer, index buffer¸¦ Á÷Á¢ Á¦°øÇÏ´Â °Í.
-2. ¹öÆÛ °´Ã¼¿¡ »ıÀ¸·Î µ¥ÀÌÅÍ¸¦ ³Ö´Â ´ë½Å, ManualObject¸¦ ÀÌ¿ëÇÏ¿© ÇÔ¼ö¸¦ È£ÃâÇÏ¿© Á¦°ø.
+ë©”ë‰´ì–¼ ì˜¤ë¸Œì íŠ¸
+mesh ë§Œë“¤ê¸°
+1. SimpleRenderable ê°ì²´ë¥¼ subclassí•˜ì—¬, vertex buffer, index bufferë¥¼ ì§ì ‘ ì œê³µí•˜ëŠ” ê²ƒ.
+2. ë²„í¼ ê°ì²´ì— ìƒìœ¼ë¡œ ë°ì´í„°ë¥¼ ë„£ëŠ” ëŒ€ì‹ , ManualObjectë¥¼ ì´ìš©í•˜ì—¬ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ì—¬ ì œê³µ.
 
 ManualObject
-Á¤Á¡(vertices), ·»´õ¸µÅ¸ÀÔ(points, lines, surfaces), Á¦Áú(material)À» Á¤ÀÇÇØ¾ßÇÔ.
-"begin() ...content... end()"À¸·Î µÈ sectionµé·Î ±¸¼ºµÊ.
+ì •ì (vertices), ë Œë”ë§íƒ€ì…(points, lines, surfaces), ì œì§ˆ(material)ì„ ì •ì˜í•´ì•¼í•¨.
+"begin() ...content... end()"ìœ¼ë¡œ ëœ sectionë“¤ë¡œ êµ¬ì„±ë¨.

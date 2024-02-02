@@ -1,44 +1,44 @@
 hg init
-hg commit -u "»ç¿ëÀÚ¸í" -m "Ä¿¹Ô³»¿ë"
-hg diff -r "¸®ºñÀü1":"¸®ºñÀü2" ÆÄÀÏ // ex) hg diff -r 0:1 test.txt
+hg commit -u "ì‚¬ìš©ìëª…" -m "ì»¤ë°‹ë‚´ìš©"
+hg diff -r "ë¦¬ë¹„ì „1":"ë¦¬ë¹„ì „2" íŒŒì¼ // ex) hg diff -r 0:1 test.txt
 
 hg idenfity -n
-hg help ¸í·É¾î
+hg help ëª…ë ¹ì–´
 hg tags
 hg tip [-p]
   The tip revision (usually just called the tip) is the most recent changeset in the repository. The tip is the most recently changed head. 
 hg log test2 -f
  -f --follow : follow changeset history, or file history across copies and renames
-°£´ÜÇÑ ¸í·É¾î : log, ci(commitÀÇ ÁØ¸»)
+ê°„ë‹¨í•œ ëª…ë ¹ì–´ : log, ci(commitì˜ ì¤€ë§)
 
-hg bisectÀº Å×½ºÆ®ÇÏ±â À§ÇÑ ¿ëµµ
+hg bisectì€ í…ŒìŠ¤íŠ¸í•˜ê¸° ìœ„í•œ ìš©ë„
 
-hg incomming/inc # cloneÇÑ ¸®Æ÷ÁöÆ®¸®¸¦ Ã£°í, Ã£À¸¸é º¯°æ³»¿ªÀ» ¾Ë·ÁÁØ´Ù.
-hg pull      # cloneÇÑ ¸®Æ÷ÁöÆ®¸®¿¡¼­ º¯°æ³»¿ªÀ» °¡Á®¿Â´Ù. ÇöÀç ¸®ºñÀüÀº À¯Áö
-hg update/up # pull½Ã ÇöÀç ¸®ºñÀüÀÌ ¾÷µ¥ÀÌÆ® µÇÁö ¾ÊÀ¸¹Ç·Î, ¸í½ÃÀûÀ¸·Î update¸¦ ÇØÁà¾ß ÇÑ´Ù.
+hg incomming/inc # cloneí•œ ë¦¬í¬ì§€íŠ¸ë¦¬ë¥¼ ì°¾ê³ , ì°¾ìœ¼ë©´ ë³€ê²½ë‚´ì—­ì„ ì•Œë ¤ì¤€ë‹¤.
+hg pull      # cloneí•œ ë¦¬í¬ì§€íŠ¸ë¦¬ì—ì„œ ë³€ê²½ë‚´ì—­ì„ ê°€ì ¸ì˜¨ë‹¤. í˜„ì¬ ë¦¬ë¹„ì „ì€ ìœ ì§€
+hg update/up # pullì‹œ í˜„ì¬ ë¦¬ë¹„ì „ì´ ì—…ë°ì´íŠ¸ ë˜ì§€ ì•Šìœ¼ë¯€ë¡œ, ëª…ì‹œì ìœ¼ë¡œ updateë¥¼ í•´ì¤˜ì•¼ í•œë‹¤.
 
 
-hg outgoing/out # cloneÇÑ ¸®Æ÷ÁöÆ®¸®¸¦ Ã£°í, Ã£À¸¸é º¯°æÇÒ ³»¿ëÀ» Ãâ·ÂÇÑ´Ù.
-hg push         # º¯°æ³»¿ªÀ», cloneÇÑ ¸®Æ÷ÁöÆ®¸®¿¡ Ãß°¡ÇÑ´Ù.
+hg outgoing/out # cloneí•œ ë¦¬í¬ì§€íŠ¸ë¦¬ë¥¼ ì°¾ê³ , ì°¾ìœ¼ë©´ ë³€ê²½í•  ë‚´ìš©ì„ ì¶œë ¥í•œë‹¤.
+hg push         # ë³€ê²½ë‚´ì—­ì„, cloneí•œ ë¦¬í¬ì§€íŠ¸ë¦¬ì— ì¶”ê°€í•œë‹¤.
 
 
 hg fetch # hg pull => hg merge => hg commit
 
-hg archive -t zip ../hg1.zip # ¸®Æ÷ÁöÅä¸® ÀüºÎ¸¦ ¾ĞÃàÇÑ´Ù.
+hg archive -t zip ../hg1.zip # ë¦¬í¬ì§€í† ë¦¬ ì „ë¶€ë¥¼ ì••ì¶•í•œë‹¤.
 
-hg export -o ../hg1-rev19.diff 19 # º¯°æ³»¿ªÀ» exportÇÑ´Ù.
-hg import ../hg1-rev19.diff       # º¯°æ³»¿ªÀ» importÇÑ´Ù. ÀÚµ¿À¸·Î commitÇÏ¹Ç·Î ( -no-commit ¿É¼ÇÀÌ ÀÖ´Ù)
+hg export -o ../hg1-rev19.diff 19 # ë³€ê²½ë‚´ì—­ì„ exportí•œë‹¤.
+hg import ../hg1-rev19.diff       # ë³€ê²½ë‚´ì—­ì„ importí•œë‹¤. ìë™ìœ¼ë¡œ commití•˜ë¯€ë¡œ ( -no-commit ì˜µì…˜ì´ ìˆë‹¤)
 
-hg bundle -r 24 --base 23 ../hg1-bundle # export¿Í ºñ½ÁÇÏ³ª --base¸¦ ÁöÁ¤ÇÒ ¼ö ÀÖ´Ù.
+hg bundle -r 24 --base 23 ../hg1-bundle # exportì™€ ë¹„ìŠ·í•˜ë‚˜ --baseë¥¼ ì§€ì •í•  ìˆ˜ ìˆë‹¤.
 hg unbundle ../hg1-bundle
 
 
-hg up -C default // defaultºê·£Ä¡·Î Clean UpdateÇÏ°Ú´Ù´Â ¸»ÀÌ´Ù.
-hg up -r "max(tagged())" // ÅÂ±×Áß °¡Àå »óÀ§ ÅÂ±×·Î update ÇÏ°Ú´Ù´Â ¸».
+hg up -C default // defaultë¸Œëœì¹˜ë¡œ Clean Updateí•˜ê² ë‹¤ëŠ” ë§ì´ë‹¤.
+hg up -r "max(tagged())" // íƒœê·¸ì¤‘ ê°€ì¥ ìƒìœ„ íƒœê·¸ë¡œ update í•˜ê² ë‹¤ëŠ” ë§.
 
 # hgrc -------------------------------------------------------------------------
-hg glog -r -2: # ÃÖ±Ù revision 2°³¸¦ º¸¿©ÁØ´Ù.// extensonÀÇ graphlog =
-hg slog        # log¸¦ °£·«È­ ÇÏ¿© º¸¿©ÁØ´Ù.
+hg glog -r -2: # ìµœê·¼ revision 2ê°œë¥¼ ë³´ì—¬ì¤€ë‹¤.// extensonì˜ graphlog =
+hg slog        # logë¥¼ ê°„ëµí™” í•˜ì—¬ ë³´ì—¬ì¤€ë‹¤.
 
 [ui]
 username = Eunpyoung Kim <longstone@ncrewcorp.com>

@@ -1,5 +1,5 @@
 
-* usbºÎÆÃ °¡´ÉÄÉÇÏ´Â ÇÁ·Î±×·¥
+* usbë¶€íŒ… ê°€ëŠ¥ì¼€í•˜ëŠ” í”„ë¡œê·¸ë¨
  - [rufus]
  - [universal-usb-installer]
 
@@ -10,9 +10,9 @@
  #Server = http://repo.archlinux.fr/x86_64
  $ sudo pacman -Sy yaourt
 
-* ÇÑ±Û¼³Á¤
+* í•œê¸€ì„¤ì •
 
- - Âü°í : http://fehead.tistory.com/159
+ - ì°¸ê³  : http://fehead.tistory.com/159
 
 ```
 $ vi ~/.xinitrc
@@ -24,12 +24,12 @@ export GTK_IM_MODULE="xim"
 export XMODIFIERS="@im=nabi"
 
 $ vi /etc/locale.gen
-ko_KR_.UTF-8 UTF-8 ÁÖ¼®ÇØÀç
+ko_KR_.UTF-8 UTF-8 ì£¼ì„í•´ì¬
 $ locale-gen
 ```
 
-* capslockÀ» ctrl·Î
- - xev ¸í·É¾î¸¦ ÀÌ¿ë Å°ÄÚµå¸¦ È®ÀÎÇÏÀÚ.
+* capslockì„ ctrlë¡œ
+ - xev ëª…ë ¹ì–´ë¥¼ ì´ìš© í‚¤ì½”ë“œë¥¼ í™•ì¸í•˜ì.
  - http://efod.se/writings/linuxbook/html/caps-lock-to-ctrl.html
 
 ```
@@ -41,17 +41,17 @@ add Lock = Caps_Lock
 
 ```
 
-* ·Î±äÈ­¸éº¯°æ
- - archbang ·Î±ä ¸Å´ÏÁ®´Â Slim : https://wiki.archlinux.org/index.php/SLiM
+* ë¡œê¸´í™”ë©´ë³€ê²½
+ - archbang ë¡œê¸´ ë§¤ë‹ˆì ¸ëŠ” Slim : https://wiki.archlinux.org/index.php/SLiM
  - # pacman -S slim-themes archlinux-themes-slim
-* ±âÅ¸ ÆĞÅ°Áö
-  - ÅÍ¹Ì³Î : terminator, tilda
+* ê¸°íƒ€ íŒ¨í‚¤ì§€
+  - í„°ë¯¸ë„ : terminator, tilda
   
-* ÆÁ
+* íŒ
  - http://www.linuxandlife.com/2011/11/tips-to-use-archbang.html
 
 
 [archwiki:Arch_Linux]: https://wiki.archlinux.org/index.php/Arch_Linux
-[wiki:¾ÆÄ¡_¸®´ª½º]: http://ko.wikipedia.org/wiki/¾ÆÄ¡_¸®´ª½º
+[wiki:ì•„ì¹˜_ë¦¬ëˆ…ìŠ¤]: http://ko.wikipedia.org/wiki/ì•„ì¹˜_ë¦¬ëˆ…ìŠ¤
 [rufus]: http://rufus.akeo.ie/
 [universal-usb-installer]: http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/

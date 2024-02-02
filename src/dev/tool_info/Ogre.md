@@ -1,5 +1,5 @@
 Ogre_1.7.0_API_Chm
 http://sourceforge.net/projects/so3dtools/files/
 
-OgreMeshViewer - ¿¡´Ï¸ŞÀÌ¼Ç ´Ù·ê¶§
+OgreMeshViewer - ì—ë‹ˆë©”ì´ì…˜ ë‹¤ë£°ë•Œ
 http://code.google.com/p/ogremeshviewer/

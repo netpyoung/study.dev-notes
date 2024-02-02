@@ -1,7 +1,7 @@
-`»ó¸í´ëÇĞ±³` ÀÚ·á Âü°í
+`ìƒëª…ëŒ€í•™êµ` ìë£Œ ì°¸ê³ 
 
-## $¿¬»êÀÚ.
-$? : ÃÖ±Ù ¼öÇàµÈ ¸í·ÉÀÇ ¹İÈ¯°ª.
+## $ì—°ì‚°ì.
+$? : ìµœê·¼ ìˆ˜í–‰ëœ ëª…ë ¹ì˜ ë°˜í™˜ê°’.
 
 $$ : shell's PID
 
@@ -9,22 +9,22 @@ $0 : shell script name
 
 $1 ... $n : number of command
 
-## µû¿ÈÇ¥.
-single µû¿ÈÇ¥ ' : whitespaces(' ', '\t', '\n')°¡ Æ÷ÇÔµÈ ½ºÆ®¸µÀ» ÇÏ³ªÀÇ ½ºÆ®¸µÀ¸·Î ¸¸µé±â ¿ìÇÏ¿© »ç¿ëµÊ
+## ë”°ì˜´í‘œ.
+single ë”°ì˜´í‘œ ' : whitespaces(' ', '\t', '\n')ê°€ í¬í•¨ëœ ìŠ¤íŠ¸ë§ì„ í•˜ë‚˜ì˜ ìŠ¤íŠ¸ë§ìœ¼ë¡œ ë§Œë“¤ê¸° ìš°í•˜ì—¬ ì‚¬ìš©ë¨
 
-double µû¿ÈÇ¥ " : whitespaces°¡ Æ÷ÇÔµÈ ÇÏ³ªÀÇ ½ºÆ®¸µÀ¸·Î ¸¸µé±â À§ÇÏ¿© »ç¿ëµÇ³ª, ³»ºÎ¿¡ 
-`'$'dollor`, `'\'backslash`, ``'backquote`µéÀÇ ÀÇ¹Ì¿¡ µû¶ó substiutionÀÌ ÀÏ¾î³².
+double ë”°ì˜´í‘œ " : whitespacesê°€ í¬í•¨ëœ í•˜ë‚˜ì˜ ìŠ¤íŠ¸ë§ìœ¼ë¡œ ë§Œë“¤ê¸° ìœ„í•˜ì—¬ ì‚¬ìš©ë˜ë‚˜, ë‚´ë¶€ì— 
+`'$'dollor`, `'\'backslash`, ``'backquote`ë“¤ì˜ ì˜ë¯¸ì— ë”°ë¼ substiutionì´ ì¼ì–´ë‚¨.
 
-## ÀÔ·Â°ú Ãâ·Â
-¸®µğ·º¼Ç : ÀÔ·Â [n]<n»ı·«½Ã Ç¥ÁØÀÔ·Â
+## ì…ë ¥ê³¼ ì¶œë ¥
+ë¦¬ë””ë ‰ì…˜ : ì…ë ¥ [n]<nìƒëµì‹œ í‘œì¤€ì…ë ¥
 
-Ãâ·Â : `[n]>`, `[n]>>` n»ı·«½Ã Ç¥ÁØÃâ·Â
+ì¶œë ¥ : `[n]>`, `[n]>>` nìƒëµì‹œ í‘œì¤€ì¶œë ¥
 ```
-ex)Ç¥ÁØ¿¡·¯ Ãâ·Â
+ex)í‘œì¤€ì—ëŸ¬ ì¶œë ¥
 2>
 ```
 
-## subshell ¿¹Á¦
+## subshell ì˜ˆì œ
 ```
 [pyoung@localhost c]$ i=10;
 [pyoung@localhost c]$ j=20;
@@ -38,7 +38,7 @@ ex)Ç¥ÁØ¿¡·¯ Ãâ·Â
 [pyoung@localhost c]$
 ```
 
-## ±×·ì¸í·É ( '{' ´ÙÀ½¿¡ space°¡ ÀÖ¾î¾ß µÊ)
+## ê·¸ë£¹ëª…ë ¹ ( '{' ë‹¤ìŒì— spaceê°€ ìˆì–´ì•¼ ë¨)
 ```
 [pyoung@localhost c]$ i=10;
 [pyoung@localhost c]$ j=20;
@@ -52,7 +52,7 @@ ex)Ç¥ÁØ¿¡·¯ Ãâ·Â
 [pyoung@localhost c]$
 ```
 
-## ¸í·É ´ëÄ¡( '''µû¿ÈÇ¥¿Í '`'¸¦ ÁÖÀÇ)
+## ëª…ë ¹ ëŒ€ì¹˜( '''ë”°ì˜´í‘œì™€ '`'ë¥¼ ì£¼ì˜)
 ```
 [pyoung@localhost c]$ pwd
 /home/pyoung/myHome/c
@@ -69,7 +69,7 @@ ex1  ex1.c  file  nice  nice.c  test
 [pyoung@localhost c]$
 ```
 
-## ¿¬»ê´ëÄ¡
+## ì—°ì‚°ëŒ€ì¹˜
 ```
 [pyoung@localhost c]$ i=10; j=20; echo $i $j
 10 20
@@ -80,7 +80,7 @@ ex1  ex1.c  file  nice  nice.c  test
 [pyoung@localhost c]$
 ```
 
-## '{', '}' Áß°ıÈ£(Brace)ÀÇ ÀÌ¿ë
+## '{', '}' ì¤‘ê´„í˜¸(Brace)ì˜ ì´ìš©
 ```
 [pyoung@localhost c]$ echo a{b, c, d}e
 a{b, c, d}e
@@ -93,9 +93,9 @@ abe ace ade
 [pyoung@localhost c]$
 ```
 
-## ÇÔ¼ö(function)
+## í•¨ìˆ˜(function)
 ```
-[function] name () { ¸®½ºÆ®; }
+[function] name () { ë¦¬ìŠ¤íŠ¸; }
 [pyoung@localhost c]$ function add() { echo $(($1+$2)); }
 [pyoung@localhost c]$ function hello() { echo Hello world! $*; }
 [pyoung@localhost c]$ add 100 200
@@ -106,9 +106,9 @@ Hello world! 1 2 3
 ```
 
 ## String test
-[[ ½Ä ]] or [ ½Ä ]
-°á°ú°ª 0(=true) or 1(=false)
-°ıÈ£ ¾ÕµÚ space°¡ ÀĞ¾î¾ßÇÔ
+[[ ì‹ ]] or [ ì‹ ]
+ê²°ê³¼ê°’ 0(=true) or 1(=false)
+ê´„í˜¸ ì•ë’¤ spaceê°€ ì½ì–´ì•¼í•¨
 
 ```
 [pyoung@localhost c]$ i=10; j=20; [[ "$i" -eq "$j" ]]; echo $?
@@ -118,7 +118,7 @@ Hello world! 1 2 3
 [pyoung@localhost c]$
 ```
 
-¿¬»êÀÚ¿Í ÇÇ¿¬»êÀÚ »çÀÌµµ ¶ç¾îÁà¾ß ÇÑ´Ù.
+ì—°ì‚°ìì™€ í”¼ì—°ì‚°ì ì‚¬ì´ë„ ë„ì–´ì¤˜ì•¼ í•œë‹¤.
 ```
 [pyoung@localhost c]$ str1=boy; str2=girl; [[ "$str1"=="$str2" ]]; echo $?
 0
@@ -127,7 +127,7 @@ Hello world! 1 2 3
 [pyoung@localhost c]$
 ```
 
-## Á¤¼ö¿¬»êÀÚ
+## ì •ìˆ˜ì—°ì‚°ì
 * -eq(==)
 * -ne(!=)
 * -gt(>)
@@ -135,13 +135,13 @@ Hello world! 1 2 3
 * -lt(<)
 * -le(<=)
 
-# ¹®ÀÚ¿­ ¿¬»êÀÚ
+# ë¬¸ìì—´ ì—°ì‚°ì
 * ==, !=
 * <, >
 * -z(null)
 * -n(nc null)
 
-# ³í¸® ¿¬»êÀÚ
+# ë…¼ë¦¬ ì—°ì‚°ì
 * -a(and)
 * -o(or)
 * !(not)
@@ -157,10 +157,10 @@ Hello world! 1 2 3
 [pyoung@localhost ~]$
 ```
 
-## ÆÄÀÏ(File) Å×½ºÆ®
-[[ ½Ä ]] or [ ½Ä ]
+## íŒŒì¼(File) í…ŒìŠ¤íŠ¸
+[[ ì‹ ]] or [ ì‹ ]
 
-### ÆÄÀÏ¿¬»êÀÚ
+### íŒŒì¼ì—°ì‚°ì
 * -e(exist)
 * -f(file?)
 * -d(directory?)
@@ -177,25 +177,25 @@ Hello world! 1 2 3
 * -ot(older than?)
 
 
-## if»ç¿ëÇü½Ä 
+## ifì‚¬ìš©í˜•ì‹ 
 ```sh
 if test;
 then list;
-[ elif ¸®½ºÆ®; then ¸®½ºÆ®; ]
+[ elif ë¦¬ìŠ¤íŠ¸; then ë¦¬ìŠ¤íŠ¸; ]
 ...
-[ else ¸®½ºÆ®; ]
+[ else ë¦¬ìŠ¤íŠ¸; ]
 fi
 ```
 
-## for»ç¿ëÇü½Ä
+## forì‚¬ìš©í˜•ì‹
 ```sh
-for name [ in word ]; do ¸®½ºÆ®; done
+for name [ in word ]; do ë¦¬ìŠ¤íŠ¸; done
 ```
 
-## while»ç¿ëÇü½Ä
+## whileì‚¬ìš©í˜•ì‹
 ```sh
-while Å×½ºÆ®;
-do ¸®½ºÆ®;
+while í…ŒìŠ¤íŠ¸;
+do ë¦¬ìŠ¤íŠ¸;
 done
 ```
 
@@ -211,23 +211,23 @@ i is less than j
 [pyoung@localhost ~]$
 ```
 
-## ±âÅ¸¸í·É¾î
-* read º¯¼ö
-* echo ½Ä
-* return ½Ä
-* exit Á¤¼ö
+## ê¸°íƒ€ëª…ë ¹ì–´
+* read ë³€ìˆ˜
+* echo ì‹
+* return ì‹
+* exit ì •ìˆ˜
 
 
 
-## ¼ĞÇÁ·Î±×·¥(Shell Programs)
-Ã¹ÁÙ
+## ì…¸í”„ë¡œê·¸ë¨(Shell Programs)
+ì²«ì¤„
 ```sh
 #!/bin/bash
 ```
 
 ```sh
-$sh ÆÄÀÏÀÌ¸§ ÀÎ¼ö ...
-$chmod 755 ÆÄÀÏÀÌ¸§; ./ÆÄÀÏÀÌ¸§ ÀÎ¼ö ...
+$sh íŒŒì¼ì´ë¦„ ì¸ìˆ˜ ...
+$chmod 755 íŒŒì¼ì´ë¦„; ./íŒŒì¼ì´ë¦„ ì¸ìˆ˜ ...
 ```
 
 args Test

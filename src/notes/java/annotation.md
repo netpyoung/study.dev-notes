@@ -1,57 +1,57 @@
-Annotation AºÎÅÍ n±îÁö
+Annotation Aë¶€í„° nê¹Œì§€
 ==================================
 
-- JavaÀÇ ¾î³ëÅ×ÀÌ¼Ç(Annotation)ÀÌ¶õ ¹«¾ùÀÎ°¡?
-> ¾î³ëÅ×ÀÌ¼ÇÀº ¾î³ëÅ×ÀÌ¼ÇµÈ ¿ä¼ÒµéÀÇ Çàµ¿À¸·ÎºÎÅÍ ÇÁ·Î±×·¥ÀÇ ÇàÀ§¸¦ ÃßÃâÇÏ¿©, ÇÊ¿äÇÏ´Ù¸é ÄÄÆÄÀÏ·¯³ª VMÀÌ »óÈ£ ÀÇÁ¸ÀûÀÎ ÄÚµå¸¦ »ý¼ºÇÏ´Â, ÇÁ·Î±×·¥ ¿ä¼Ò¿Í ¸ÞÅ¸ ÅÂ±×¿¡ °ü°èµÈ ¸ÅÄ¿´ÏÁò.
+- Javaì˜ ì–´ë…¸í…Œì´ì…˜(Annotation)ì´ëž€ ë¬´ì—‡ì¸ê°€?
+> ì–´ë…¸í…Œì´ì…˜ì€ ì–´ë…¸í…Œì´ì…˜ëœ ìš”ì†Œë“¤ì˜ í–‰ë™ìœ¼ë¡œë¶€í„° í”„ë¡œê·¸ëž¨ì˜ í–‰ìœ„ë¥¼ ì¶”ì¶œí•˜ì—¬, í•„ìš”í•˜ë‹¤ë©´ ì»´íŒŒì¼ëŸ¬ë‚˜ VMì´ ìƒí˜¸ ì˜ì¡´ì ì¸ ì½”ë“œë¥¼ ìƒì„±í•˜ëŠ”, í”„ë¡œê·¸ëž¨ ìš”ì†Œì™€ ë©”íƒ€ íƒœê·¸ì— ê´€ê³„ëœ ë§¤ì»¤ë‹ˆì¦˜.
 
-- .javaºÎÅÍ .class±îÁö
+- .javaë¶€í„° .classê¹Œì§€
 >.java => Parser => Type checker => [Annotation Checker] => Class File writer => .class
 
-## ¾î³ëÅ×ÀÌ¼Ç ±ÔÄ¢
- * @interface + ¾î³ëÅ×ÀÌ¼Ç ÀÌ¸§
- * ¾î³ëÅ×ÀÌ¼Ç ¼Ò½ºÄÚµå ³»ºÎÀÇ ¸Þ¼Òµå ¼±¾ðÀº ¸Å°³º¯¼ö¸¦ Áö´Ò ¼ö ¾ø´Ù.
- * ¾î³ëÅ×ÀÌ¼Ç ¼Ò½ºÄÚµå ³»ºÎÀÇ ¸Þ¼Òµå ¼±¾ðÀº clauses¸¦ throw ÇÒ ¼ö ¾ø´Ù.
- * ¸Þ¼ÒµåÀÇ ¹ÝÈ¯ Å¸ÀÔÀº primitives, String, Class, enum°ú primitives¹è¿­, String¹è¿­, Class¹è¿­, enum¹è¿­ Áß ÇÏ³ªÀÌ´Ù.
+## ì–´ë…¸í…Œì´ì…˜ ê·œì¹™
+ * @interface + ì–´ë…¸í…Œì´ì…˜ ì´ë¦„
+ * ì–´ë…¸í…Œì´ì…˜ ì†ŒìŠ¤ì½”ë“œ ë‚´ë¶€ì˜ ë©”ì†Œë“œ ì„ ì–¸ì€ ë§¤ê°œë³€ìˆ˜ë¥¼ ì§€ë‹ ìˆ˜ ì—†ë‹¤.
+ * ì–´ë…¸í…Œì´ì…˜ ì†ŒìŠ¤ì½”ë“œ ë‚´ë¶€ì˜ ë©”ì†Œë“œ ì„ ì–¸ì€ clausesë¥¼ throw í•  ìˆ˜ ì—†ë‹¤.
+ * ë©”ì†Œë“œì˜ ë°˜í™˜ íƒ€ìž…ì€ primitives, String, Class, enumê³¼ primitivesë°°ì—´, Stringë°°ì—´, Classë°°ì—´, enumë°°ì—´ ì¤‘ í•˜ë‚˜ì´ë‹¤.
 
-## ºÐ·ù
+## ë¶„ë¥˜
  * marker ; @AnnotationTypeName
  * single-element ; @AnnotationTypeName(single-element)
  * normal, full-value, multi-value ; @AnnotationName(element=value, element=value, ...)
 
-### ³»Àå ¾î³ëÅ×ÀÌ¼Ç(java.lang.annotation)
+### ë‚´ìž¥ ì–´ë…¸í…Œì´ì…˜(java.lang.annotation)
 
 #### @Retention
-    RetentionÀº ¾î³ëÅ×ÀÌ¼ÇÀÌ ¾ó¸¶³ª ¿À·§µ¿¾È À¯ÁöµÇ´ÂÁö¿¡ ´ëÇØ, JVMÀÌ ¾î¶»°Ô »ç¿ëÀÚ ¾î³ëÅ×ÀÌ¼ÇÀ» ´Ù·ç¾î¾ß ÇÏ´ÂÁö¸¦ ¼­¼úÇÕ´Ï´Ù.
- * SOURCE : ¾î³ëÅ×ÀÌ¼ÇÀÌ ÄÄÆÄÀÏ Å¸ÀÓ½Ã ¹ö·ÁÁø´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù. retentionÁ¤Ã¥ÀÌ source·Î Á¤ÀÇµÇ¾î ÀÖÀ¸¸é, Å¬·¡½º ÆÄÀÏÀº ¾î³ëÅ×ÀÌ¼ÇÀ» Áö´ÏÁö ¸øÇÕ´Ï´Ù.
- * CLASS : ¾î³ëÅ×ÀÌ¼ÇÀÌ »ý¼ºµÈ Å¬·¡½º ÆÄÀÏ¿¡¼­ ³ªÅ¸³¯ °ÍÀÌ¶ó´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù. ±×·¯³ª ·±Å¸ÀÓ½Ã¿¡´Â ÀÌ ¾î³ëÅ×ÀÌ¼ÇÀ» ÀÌ¿ëÇÏÁö ¸øÇÕ´Ï´Ù.
- * RUNTIME : ÀÌ´Â ·±Å¸ÀÓ½Ã JVM¿¡¼­ ¾î³ëÅ×ÀÌ¼ÇÀÇ ÀÌ¿ëÀÌ °¡´ÉÇÏ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù. ÀÌ·¯ÇÑ ¾î³ëÅ×ÀÌ¼ÇÀ» ÀÐ´Â »ç¿ëÀÚ ·ÎÁ÷À» °¡ÁüÀ¸·Î½á ·±Å¸ÀÓ½Ã ¹«¾ð°¡¸¦ ÇÒ ¼ö ÀÖ½À´Ï´Ù.
+    Retentionì€ ì–´ë…¸í…Œì´ì…˜ì´ ì–¼ë§ˆë‚˜ ì˜¤ëž«ë™ì•ˆ ìœ ì§€ë˜ëŠ”ì§€ì— ëŒ€í•´, JVMì´ ì–´ë–»ê²Œ ì‚¬ìš©ìž ì–´ë…¸í…Œì´ì…˜ì„ ë‹¤ë£¨ì–´ì•¼ í•˜ëŠ”ì§€ë¥¼ ì„œìˆ í•©ë‹ˆë‹¤.
+ * SOURCE : ì–´ë…¸í…Œì´ì…˜ì´ ì»´íŒŒì¼ íƒ€ìž„ì‹œ ë²„ë ¤ì§„ë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤. retentionì •ì±…ì´ sourceë¡œ ì •ì˜ë˜ì–´ ìžˆìœ¼ë©´, í´ëž˜ìŠ¤ íŒŒì¼ì€ ì–´ë…¸í…Œì´ì…˜ì„ ì§€ë‹ˆì§€ ëª»í•©ë‹ˆë‹¤.
+ * CLASS : ì–´ë…¸í…Œì´ì…˜ì´ ìƒì„±ëœ í´ëž˜ìŠ¤ íŒŒì¼ì—ì„œ ë‚˜íƒ€ë‚  ê²ƒì´ë¼ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤. ê·¸ëŸ¬ë‚˜ ëŸ°íƒ€ìž„ì‹œì—ëŠ” ì´ ì–´ë…¸í…Œì´ì…˜ì„ ì´ìš©í•˜ì§€ ëª»í•©ë‹ˆë‹¤.
+ * RUNTIME : ì´ëŠ” ëŸ°íƒ€ìž„ì‹œ JVMì—ì„œ ì–´ë…¸í…Œì´ì…˜ì˜ ì´ìš©ì´ ê°€ëŠ¥í•˜ë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤. ì´ëŸ¬í•œ ì–´ë…¸í…Œì´ì…˜ì„ ì½ëŠ” ì‚¬ìš©ìž ë¡œì§ì„ ê°€ì§ìœ¼ë¡œì¨ ëŸ°íƒ€ìž„ì‹œ ë¬´ì–¸ê°€ë¥¼ í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
 #### @Target
-    TargetÀº ¾îµð¿¡ ¾î³ëÅ×ÀÌ¼ÇÀ» ³ÖÀ» ¼ö ÀÖ´ÂÁö¸¦ ¼­¼úÇÕ´Ï´Ù. field, method, class°¡ Á¤ÀÇµÈ °÷¿¡ ¾î³ëÅ×ÀÌ¼ÇÀ» ³ÖÀ» ¼ö ÀÖ½À´Ï´Ù.
+    Targetì€ ì–´ë””ì— ì–´ë…¸í…Œì´ì…˜ì„ ë„£ì„ ìˆ˜ ìžˆëŠ”ì§€ë¥¼ ì„œìˆ í•©ë‹ˆë‹¤. field, method, classê°€ ì •ì˜ëœ ê³³ì— ì–´ë…¸í…Œì´ì…˜ì„ ë„£ì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
- * TYPE : class, interface, enumeration¿¡ ¾î³ëÅ×ÀÌ¼ÇÀ» Àû¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
- * METHOD : method ¼±¾ð¿¡¸¸ ¾î³ëÅ×ÀÌ¼ÇÀ» Àû¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
- * PARAMETER : parameter ¼±¾ð¿¡¸¸ ¾î³ëÅ×ÀÌ¼ÇÀ» Àû¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
- * PACKAGE : package ¼±¾ð¿¡¸¸ ¾î³ëÅ×ÀÌ¼ÇÀ» Àû¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
- * FIELD : field ¼±¾ð¿¡¸¸ ¾î³ëÅ×ÀÌ¼ÇÀ» Àû¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
- * LOCAL_VARIABLE : Áö¿ª º¯¼ö ¼±¾ð¿¡¸¸ ¾î³ëÅ×ÀÌ¼ÇÀ» Àû¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
- * CONSTRUCTOR : »ý¼ºÀÚ¿¡¸¸ ¾î³ëÅ×ÀÌ¼ÇÀ» Àû¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
- * ANNOTATION_TYPE : ¾î³ëÅ×ÀÌ¼Ç Å¸ÀÔ¿¡¸¸ ¾î³ëÅ×ÀÌ¼ÇÀ» Àû¿ëÇÒ ¼ö ÀÖ´Ù´Â °ÍÀ» ÀÇ¹ÌÇÕ´Ï´Ù.
+ * TYPE : class, interface, enumerationì— ì–´ë…¸í…Œì´ì…˜ì„ ì ìš©í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
+ * METHOD : method ì„ ì–¸ì—ë§Œ ì–´ë…¸í…Œì´ì…˜ì„ ì ìš©í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
+ * PARAMETER : parameter ì„ ì–¸ì—ë§Œ ì–´ë…¸í…Œì´ì…˜ì„ ì ìš©í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
+ * PACKAGE : package ì„ ì–¸ì—ë§Œ ì–´ë…¸í…Œì´ì…˜ì„ ì ìš©í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
+ * FIELD : field ì„ ì–¸ì—ë§Œ ì–´ë…¸í…Œì´ì…˜ì„ ì ìš©í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
+ * LOCAL_VARIABLE : ì§€ì—­ ë³€ìˆ˜ ì„ ì–¸ì—ë§Œ ì–´ë…¸í…Œì´ì…˜ì„ ì ìš©í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
+ * CONSTRUCTOR : ìƒì„±ìžì—ë§Œ ì–´ë…¸í…Œì´ì…˜ì„ ì ìš©í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
+ * ANNOTATION_TYPE : ì–´ë…¸í…Œì´ì…˜ íƒ€ìž…ì—ë§Œ ì–´ë…¸í…Œì´ì…˜ì„ ì ìš©í•  ìˆ˜ ìžˆë‹¤ëŠ” ê²ƒì„ ì˜ë¯¸í•©ë‹ˆë‹¤.
 
 #### @Inherited
-    ±âº»ÀûÀ¸·Î ¾î³ëÅ×ÀÌ¼ÇÀº »ó¼ÓµÇÁö ¾Ê½À´Ï´Ù. µû¶ó¼­ »ó¼ÓÀ» ¿øÇÑ´Ù¸é, ¾î³ëÅ×ÀÌ¼ÇÀ» Inherited ÇØ¾ß ÇÕ´Ï´Ù. Inherited ¾î³ëÅ×ÀÌ¼ÇÀÌ »ç¿ëÀÚ ¾î³ëÅ×ÀÌ¼Ç¿¡ ³õ¿©¾ß ÇÏ¸ç, ÀÌ´Â Å¬·¡½º¿¡¸¸ È¿°ú°¡ ÀÖ½À´Ï´Ù.
+    ê¸°ë³¸ì ìœ¼ë¡œ ì–´ë…¸í…Œì´ì…˜ì€ ìƒì†ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ë”°ë¼ì„œ ìƒì†ì„ ì›í•œë‹¤ë©´, ì–´ë…¸í…Œì´ì…˜ì„ Inherited í•´ì•¼ í•©ë‹ˆë‹¤. Inherited ì–´ë…¸í…Œì´ì…˜ì´ ì‚¬ìš©ìž ì–´ë…¸í…Œì´ì…˜ì— ë†“ì—¬ì•¼ í•˜ë©°, ì´ëŠ” í´ëž˜ìŠ¤ì—ë§Œ íš¨ê³¼ê°€ ìžˆìŠµë‹ˆë‹¤.
 
 #### @Documented
-    ¾î³ëÅ×ÀÌ¼ÇÀÌ ±âº»À¸·Î javadoc ¹× À¯»çÇÑ Åø¿¡ ÀÇÇØ ¹®¼­È­ µÇ´Â °ÍÀ» ³ªÅ¸³À´Ï´Ù. ÀÌ·¯ÇÑ ÇüÅÂ´Â Å¸ÀÔÀÇ ¼±¾ð¿¡ ÁÖ¼®À» ´Þ±â À§ÇØ »ç¿ëÇÕ´Ï´Ù. ¾î³ëÅ×ÀÌ¼ÇÀº Å¬¶óÀÌ¾ðÆ®¿¡ ÀÇÇØ ¾î³ëÅ×ÀÌ¼ÇµÈ ¿ä¼ÒÀÇ »ç¿ë¿¡ ¿µÇâÀ» ¹ÌÄ¡°Ô µË´Ï´Ù. Å¸ÀÔÀÇ ¼±¾ð¿¡ Documented ¾î³ëÅ×ÀÌ¼ÇÀ» ºÙÀÎ °æ¿ì, ±× ¾î³ëÅ×ÀÌ¼ÇÀº ¾î³ëÅ×ÀÌ¼ÇµÈ ¿ä¼ÒÀÇ °ø°³ APIÁß ÇÑ ºÎºÐÀÌ µË´Ï´Ù.
+    ì–´ë…¸í…Œì´ì…˜ì´ ê¸°ë³¸ìœ¼ë¡œ javadoc ë° ìœ ì‚¬í•œ íˆ´ì— ì˜í•´ ë¬¸ì„œí™” ë˜ëŠ” ê²ƒì„ ë‚˜íƒ€ëƒ…ë‹ˆë‹¤. ì´ëŸ¬í•œ í˜•íƒœëŠ” íƒ€ìž…ì˜ ì„ ì–¸ì— ì£¼ì„ì„ ë‹¬ê¸° ìœ„í•´ ì‚¬ìš©í•©ë‹ˆë‹¤. ì–´ë…¸í…Œì´ì…˜ì€ í´ë¼ì´ì–¸íŠ¸ì— ì˜í•´ ì–´ë…¸í…Œì´ì…˜ëœ ìš”ì†Œì˜ ì‚¬ìš©ì— ì˜í–¥ì„ ë¯¸ì¹˜ê²Œ ë©ë‹ˆë‹¤. íƒ€ìž…ì˜ ì„ ì–¸ì— Documented ì–´ë…¸í…Œì´ì…˜ì„ ë¶™ì¸ ê²½ìš°, ê·¸ ì–´ë…¸í…Œì´ì…˜ì€ ì–´ë…¸í…Œì´ì…˜ëœ ìš”ì†Œì˜ ê³µê°œ APIì¤‘ í•œ ë¶€ë¶„ì´ ë©ë‹ˆë‹¤.
 
 #### == java.lang
 - @Override
 - @Deprecated
 - @SuppressWarnings
 
-## ¿¹Á¦ :
+## ì˜ˆì œ :
 
-ex) »ç¿ëÀÚ ¾î³ëÅ×ÀÌ¼Ç¿¡ @Inherited ¾î³ëÅ×ÀÌ¼ÇÀ» ÇÑ ¿¹Á¦
+ex) ì‚¬ìš©ìž ì–´ë…¸í…Œì´ì…˜ì— @Inherited ì–´ë…¸í…Œì´ì…˜ì„ í•œ ì˜ˆì œ
 [== InheritanceAnnExample.java ==]
 ```java
 package com.kunaal.annotation.inheritance;
@@ -102,7 +102,7 @@ com.kunaal.annotation.inheritance.InheritedDesc
 ```
 
 
-## Âü°í :
+## ì°¸ê³  :
  - [custom annotations in java] : http://javadata.blogspot.com/2011/02/custom-annotations-in-java.html
  - [java-annotations] : http://bcinews.files.wordpress.com/2010/02/java-annotations.ppt
  - [JSR-250 Common Annotations] : http://jcp.org/aboutJava/communityprocess/mrel/jsr250/index.html

@@ -1,7 +1,7 @@
 // ---------------------------------------------
 
-MinimapDC.loadMovie·Î ÇÒ½Ã ÃÊ±â¿¡ _visible¼Ó¼ºÀ» Á¦¾îÇÒ ¼ö ¾øÀ½.
-MovieClipLoader·Î onLoadComplete Äİ¹é ÇÔ¼ö¸¦ µî·ÏÇÏ¿© Á¦¾îÇØ¾ß ÇÔ.
+MinimapDC.loadMovieë¡œ í• ì‹œ ì´ˆê¸°ì— _visibleì†ì„±ì„ ì œì–´í•  ìˆ˜ ì—†ìŒ.
+MovieClipLoaderë¡œ onLoadComplete ì½œë°± í•¨ìˆ˜ë¥¼ ë“±ë¡í•˜ì—¬ ì œì–´í•´ì•¼ í•¨.
 
 var loadListener:Object = new Object();
 loadListener.onLoadComplete = function(target_mc:MovieClip):Void {
@@ -18,7 +18,7 @@ mcLoader.loadClip("Minimap.swf", MinimapDC);
 
 
 // ---------------------------------------------
-Gfx¸¦ ÃÊ±âÈ­ÇÒ¶§ GFxImageCreator¸¦ ¼³Á¤ÇÏÁö ¾ÊÀ¸¸é, ÀÌ¹ÌÁö Ãâ·ÂÀÌ Á¦´ë·Î µÇÁö ¾Ê´Â Çö»óÀÌ ÀÖÀ½.(D3D)
+Gfxë¥¼ ì´ˆê¸°í™”í• ë•Œ GFxImageCreatorë¥¼ ì„¤ì •í•˜ì§€ ì•Šìœ¼ë©´, ì´ë¯¸ì§€ ì¶œë ¥ì´ ì œëŒ€ë¡œ ë˜ì§€ ì•ŠëŠ” í˜„ìƒì´ ìˆìŒ.(D3D)
     // For D3D, it is good to override image creator to keep image data,
     // so that it can be restored in case of a lost device.
     GPtr<GFxImageCreator> pimageCreator = *new GFxImageCreator(1);
@@ -26,9 +26,9 @@ Gfx¸¦ ÃÊ±âÈ­ÇÒ¶§ GFxImageCreator¸¦ ¼³Á¤ÇÏÁö ¾ÊÀ¸¸é, ÀÌ¹ÌÁö Ãâ·ÂÀÌ Á¦´ë·Î µÇÁö ¾Ê
 	
 	
 // ---------------------------------------------
-Ogre¿¡¼­ GFxKeyEvent·Î ÀÌº¥Æ®¸¦ º¸³¾½Ã swf¿¡¼­ Àß ÀÎ½ÄÇÏÁö ¸øÇÏ´Â Çö»ó. - integration_tutorial¹®¼­ ÂüÁ¶.
+Ogreì—ì„œ GFxKeyEventë¡œ ì´ë²¤íŠ¸ë¥¼ ë³´ë‚¼ì‹œ swfì—ì„œ ì˜ ì¸ì‹í•˜ì§€ ëª»í•˜ëŠ” í˜„ìƒ. - integration_tutorialë¬¸ì„œ ì°¸ì¡°.
 
-GFxKeyEventÀÇ ³ª¸ÓÁöÀÎÀÚµé(asciiCode³ª wcharCode)¸¦ Àß Á¶Á¤ÇÏ°Å³ª, GFxCharEvent(UInt32 wcharCode)¸¦ ¾²¸é µÈ´Ù.
+GFxKeyEventì˜ ë‚˜ë¨¸ì§€ì¸ìë“¤(asciiCodeë‚˜ wcharCode)ë¥¼ ì˜ ì¡°ì •í•˜ê±°ë‚˜, GFxCharEvent(UInt32 wcharCode)ë¥¼ ì“°ë©´ ëœë‹¤.
 GFxKeyEvent(EventType eventType = None,
 	GFxKey::Code code = GFxKey::VoidSymbol,
 	UByte asciiCode = 0,
@@ -52,7 +52,7 @@ bool OgreScaleform::keyPressed( const OIS::KeyEvent &arg )
 http://msdn.microsoft.com/en-us/library/windows/desktop/ee416848%28v=vs.85%29.aspx
 DISCL - IDirectInputDevice8::SetCooperativeLevel method.
 // ----------------------------------------------------
-Ogre¿¡¼­ D3D9 µğ¹ÙÀÌ½º Á¤º¸ °¡Á®¿À±â.
+Ogreì—ì„œ D3D9 ë””ë°”ì´ìŠ¤ ì •ë³´ ê°€ì ¸ì˜¤ê¸°.
 // Device
 #if 1
 	Ogre::RenderSystem* rs = mRoot->getRenderSystem();
@@ -61,9 +61,9 @@ Ogre¿¡¼­ D3D9 µğ¹ÙÀÌ½º Á¤º¸ °¡Á®¿À±â.
 	pDevice = d3dRs->getActiveD3D9Device();
 #endif
 // ----------------------------------------------------
-OIS Å°º¸µå, ¸¶¿ì½º ÀÌº¥Æ® Äİ¹é ¼³Á¤
+OIS í‚¤ë³´ë“œ, ë§ˆìš°ìŠ¤ ì´ë²¤íŠ¸ ì½œë°± ì„¤ì •
 createInputObject( Type iType, bool bufferMod, blablabla...)
-bufferMode¸¦ ÂüÀ¸·Î ¼³Á¤ÇØ¾ß buffered input Áï Äİ¹éÀ» µ¿ÀÛ½ÃÅ³ ¼ö ÀÖ´Ù.
+bufferModeë¥¼ ì°¸ìœ¼ë¡œ ì„¤ì •í•´ì•¼ buffered input ì¦‰ ì½œë°±ì„ ë™ì‘ì‹œí‚¬ ìˆ˜ ìˆë‹¤.
     mKeyboard = static_cast<OIS::Keyboard*>(mInputManager->createInputObject( OIS::OISKeyboard, true ));
     mMouse = static_cast<OIS::Mouse*>(mInputManager->createInputObject( OIS::OISMouse, true ));
  
@@ -71,7 +71,7 @@ bufferMode¸¦ ÂüÀ¸·Î ¼³Á¤ÇØ¾ß buffered input Áï Äİ¹éÀ» µ¿ÀÛ½ÃÅ³ ¼ö ÀÖ´Ù.
 	mMouse->setEventCallback(this);
 
 // ----------------------------------------------------
-HUD ¹Ì´Ï¸Ê¿¡¼­ MapMCÈ¸Àü½Ã, Actionscript»ó¿¡¼­ ÇÏ´Â°Ô ¾Æ´Ï¶ó, ¼Ò½º ÄÚµå »ó¿¡¼­ ÇØ¾ßÇÔ.
+HUD ë¯¸ë‹ˆë§µì—ì„œ MapMCíšŒì „ì‹œ, Actionscriptìƒì—ì„œ í•˜ëŠ”ê²Œ ì•„ë‹ˆë¼, ì†ŒìŠ¤ ì½”ë“œ ìƒì—ì„œ í•´ì•¼í•¨.
 void OgreScaleform::AdjustHUDMap()
 {
 	

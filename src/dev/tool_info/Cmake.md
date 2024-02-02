@@ -1,20 +1,20 @@
-# ¸í·É¾î
+# ëª…ë ¹ì–´
 ## CMake -----------------------------------------------------------------------
 cmake --help
 cmake --help-full
 cmake --help-command-list
-cmake --help-command Ä¿¸Çµå
+cmake --help-command ì»¤ë§¨ë“œ
 
-ÇÁ·ÎÁ§Æ®±¸¼º : cmake -G"Visual Studio 9 2008" -H"./" -B"./Build/"
-ºôµå : cmake --build ./Build ;; devenv test.sln /Build Debug¿Í °°Àº È¿°ú
+í”„ë¡œì íŠ¸êµ¬ì„± : cmake -G"Visual Studio 9 2008" -H"./" -B"./Build/"
+ë¹Œë“œ : cmake --build ./Build ;; devenv test.sln /Build Debugì™€ ê°™ì€ íš¨ê³¼
 
 ## CTest -----------------------------------------------------------------------
 ctest
- ctest -I 3,5 // 3/13 4/13 5/13¸¦ Å×½ºÆ®
- ctest -I ,,3 // 1/13 4/13 7/13 10/13 13/13¸¦ Å×½ºÆ®
+ ctest -I 3,5 // 3/13 4/13 5/13ë¥¼ í…ŒìŠ¤íŠ¸
+ ctest -I ,,3 // 1/13 4/13 7/13 10/13 13/13ë¥¼ í…ŒìŠ¤íŠ¸
  
 ## CPack -----------------------------------------------------------------------
-nsis·Î ÆĞÅ°Â¡µÊ
+nsisë¡œ íŒ¨í‚¤ì§•ë¨
 
 
 # links ------------------------------------------------------------------------
@@ -30,21 +30,21 @@ CMAKE_BUILD_TYPE     : Type of build (Debug, Release, ...)
 BUILD_SHARED_LIBS    : Switch between shared and static libraries
 CMAKE_CFG_INTDIR 
 
-# ¸ÅÅ©·Î  ----------------------------------------------------------------------
-# ÇÔ¼ö Á¸Á¦ ¿©ºÎ ÆÇº°
+# ë§¤í¬ë¡œ  ----------------------------------------------------------------------
+# í•¨ìˆ˜ ì¡´ì œ ì—¬ë¶€ íŒë³„
 include (${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
 check_function_exists (log HAVE_LOG)
 check_function_exists (exp HAVE_EXP)
 
-# ÇÁ·ÎÁ§Æ®¿¡ ÇöÀç ÇÃ·¿Æû¿¡ ¸Â´Â ·±Å¸ÀÓ ¶óÀÌºê·¯¸®¸¦ Æ÷ÇÔ½ÃÅ´.
+# í”„ë¡œì íŠ¸ì— í˜„ì¬ í”Œë ›í¼ì— ë§ëŠ” ëŸ°íƒ€ì„ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ í¬í•¨ì‹œí‚´.
 include (InstallRequiredSystemLibraries)
 
-# ÀÎ½ºÅç·¯
+# ì¸ìŠ¤í†¨ëŸ¬
 include (CPack)
-¹ÙÀÌ³Ê¸® : cpack -C CPackConfig.cmake
-¼Ò½º     : cpack -C CPackSourceConfig.cmake
+ë°”ì´ë„ˆë¦¬ : cpack -C CPackConfig.cmake
+ì†ŒìŠ¤     : cpack -C CPackSourceConfig.cmake
 
-# Å×½ºÆ®
+# í…ŒìŠ¤íŠ¸
 include (CTest)
 macro (do_test arg result)
   add_test (TutorialComp${arg} Tutorial ${arg})
@@ -54,23 +54,23 @@ macro (do_test arg result)
 endmacro (do_test)
 do_test (4 "4 is 2")
 
-# º¯¼öÇÒ´ç ---------------------------------------------------------------------
+# ë³€ìˆ˜í• ë‹¹ ---------------------------------------------------------------------
 set(Foo a b c)
 command(${Foo}) == command(a b c)
 command("${Foo}") == command( "a b c" )
 MATH( EXPR x "3 + 3" ) # stores the result of 3 + 3 in x
 
-# Á¶°Ç¹® -----------------------------------------------------------------------
+# ì¡°ê±´ë¬¸ -----------------------------------------------------------------------
 if // endif
 foreach // endforeach
 macro // endmacro
 
 
-option (¿É¼Çº¯¼ö ÁÖ¼® ON/OFF)
-configure_file (º¯È¯ÀüÆÄÀÏ º¯È¯ÈÄÆÄÀÏ)
-# º¯È¯ Àü ÆÄÀÏ ³»¿ë : #define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
-# º¯È¯ ÈÄ ÆÄÀÏ ³»¿ë : #define Tutorial_VERSION_MAJOR 1
-# #cmakedefine VAR´Â CMake¿¡ VARÀÇ setting°ª¿¡ µû¶ó #define VAR³ª /* #undef VAR */·Î ¹Ù²ñ.
+option (ì˜µì…˜ë³€ìˆ˜ ì£¼ì„ ON/OFF)
+configure_file (ë³€í™˜ì „íŒŒì¼ ë³€í™˜í›„íŒŒì¼)
+# ë³€í™˜ ì „ íŒŒì¼ ë‚´ìš© : #define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+# ë³€í™˜ í›„ íŒŒì¼ ë‚´ìš© : #define Tutorial_VERSION_MAJOR 1
+# #cmakedefine VARëŠ” CMakeì— VARì˜ settingê°’ì— ë”°ë¼ #define VARë‚˜ /* #undef VAR */ë¡œ ë°”ë€œ.
  
  
 //-------------------------------------------------------
@@ -118,24 +118,24 @@ find_package(...)
 //-------------------------------------------------------
 Ex)
 
-cmake_minimum_required (VERSION ÃÖ¼Ò¹öÀü)
-project (¼Ö·ç¼Ç¸í)
+cmake_minimum_required (VERSION ìµœì†Œë²„ì „)
+project (ì†”ë£¨ì…˜ëª…)
 
-add_executable (½ÇÇàÆÄÀÏ ¼Ò½º)
+add_executable (ì‹¤í–‰íŒŒì¼ ì†ŒìŠ¤)
 
-// ${PROJECT_SOURCE_DIR} : ÇÁ·ÎÁ§Æ® ¼Ò½º µğ·ºÅä¸®
-// ${CMAKE_CURRENT_BINARY_DIR} : ÇöÀç CMakeLists.txtÆÄÀÏÀÌ ÀÖ´Â µğ·ºÅä¸®
-include_directories (ÀÎÅ¬·çµå_µğ·ºÅä¸®¸í)
+// ${PROJECT_SOURCE_DIR} : í”„ë¡œì íŠ¸ ì†ŒìŠ¤ ë””ë ‰í† ë¦¬
+// ${CMAKE_CURRENT_BINARY_DIR} : í˜„ì¬ CMakeLists.txtíŒŒì¼ì´ ìˆëŠ” ë””ë ‰í† ë¦¬
+include_directories (ì¸í´ë£¨ë“œ_ë””ë ‰í† ë¦¬ëª…)
 
-add_subdirectory (CMakeLists.txtÆÄÀÏÀÌ_µé¾îÀÖ´Â_µğ·ºÅä¸®)
-target_link_libraries (½ÇÇàÆÄÀÏ Ãß°¡½ÃÅ³¶óÀÌºê·¯¸®)
+add_subdirectory (CMakeLists.txtíŒŒì¼ì´_ë“¤ì–´ìˆëŠ”_ë””ë ‰í† ë¦¬)
+target_link_libraries (ì‹¤í–‰íŒŒì¼ ì¶”ê°€ì‹œí‚¬ë¼ì´ë¸ŒëŸ¬ë¦¬)
 
-add_library(Å¸°Ù ¼Ò½º) # ¼Ò½º¿¡ ´ëÇÑ Çì´õÆÄÀÏµµ Æú´õ¿¡ ÀÖ¾î¾ß ÇÔ
+add_library(íƒ€ê²Ÿ ì†ŒìŠ¤) # ì†ŒìŠ¤ì— ëŒ€í•œ í—¤ë”íŒŒì¼ë„ í´ë”ì— ìˆì–´ì•¼ í•¨
 
-option (¿É¼Çº¯¼ö ÄÚ¸ÇÆ® ON/OFF)
-configure_file (º¯È¯_Àü_¼³Á¤ÆÄÀÏ º¯È¯_ÈÄ_ÆÄÀÏ)
+option (ì˜µì…˜ë³€ìˆ˜ ì½”ë§¨íŠ¸ ON/OFF)
+configure_file (ë³€í™˜_ì „_ì„¤ì •íŒŒì¼ ë³€í™˜_í›„_íŒŒì¼)
   
-include (CMakeÆĞÅ°Áö¸í)
+include (CMakeíŒ¨í‚¤ì§€ëª…)
 
 
 # CTest
@@ -145,5 +145,5 @@ set_tests_properties (testHello
     PROPERTIES PASS_REGULAR_EXPRESSION "4"
 )
 
-# Nsis ÆĞÅ°Â¡
+# Nsis íŒ¨í‚¤ì§•
 include (CPack)

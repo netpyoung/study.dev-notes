@@ -1,10 +1,10 @@
-Emacs Rocks! ¿¡ÇÇ¼Òµå 07: ¸ÇºØ(Mind. Exploded).
+Emacs Rocks! ì—í”¼ì†Œë“œ 07: ë§¨ë¶•(Mind. Exploded).
 
 http://www.amara.org/videos/siVoDJHfOkql
 
 key-chord-define-global
 
-2°³ÀÇ Å°ÀÇ Á¶ÇÕÀ¸·Î, ÇÑ ¸í·É¾î¸¦ ½ÇÇà½ÃÅ²´Ù.(Define a two-char key chord to invoke a command.)
+2ê°œì˜ í‚¤ì˜ ì¡°í•©ìœ¼ë¡œ, í•œ ëª…ë ¹ì–´ë¥¼ ì‹¤í–‰ì‹œí‚¨ë‹¤.(Define a two-char key chord to invoke a command.)
 
 
-¸µÅ© : http://emacsrocks.com/e07.html
+ë§í¬ : http://emacsrocks.com/e07.html

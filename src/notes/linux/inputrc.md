@@ -1,4 +1,4 @@
- /etc/inputrc È¤´Â $HOME/.inputrc
+ /etc/inputrc í˜¹ëŠ” $HOME/.inputrc
 
 http://kldp.org/node/35944
 
@@ -9,8 +9,8 @@ http://www.softpanorama.org/Scripting/Shellorama/inputrc.shtml
 $ bind -l
 $ bind -p
 
-BASH°¡ ±âº»ÀûÀ¸·Î emacs editing¸ğµå¸¦ Áö¿øÇÏ´Âµ¥
-ÀÌ°É vi¸ğµå·Î ¼ÂÆÃÇÏ·Á¸é
+BASHê°€ ê¸°ë³¸ì ìœ¼ë¡œ emacs editingëª¨ë“œë¥¼ ì§€ì›í•˜ëŠ”ë°
+ì´ê±¸ viëª¨ë“œë¡œ ì…‹íŒ…í•˜ë ¤ë©´
 
 ```.bashrc
 set editing-mode vi

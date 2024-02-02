@@ -1,36 +1,36 @@
-ÇÑ±Û : http://begin.pe.kr/category/Ogre3D »ğÁú¶õ
-¿µ¹® : http://www.ogre3d.org/tikiwiki/Tutorials
+í•œê¸€ : http://begin.pe.kr/category/Ogre3D ì‚½ì§ˆë€
+ì˜ë¬¸ : http://www.ogre3d.org/tikiwiki/Tutorials
 ----------------------------------------------------------------------------
 tutorial - 1
 scene is an abstract representation of what is shown in a virtual world
 
-SceneManager : È­¸é»ó¿¡ º¸ÀÌ´Â ¸ğµç °ÍÀ» °üÀåÇÏ´Â °ü¸®ÀÚ
-SceneNode : °´Ã¼ÀÇ À§Ä¡, È¸Àü Á¤º¸¸¦ Áö´Ô, SceneNodeÀÇ À§Ä¡´Â Ç×»ó ºÎ¸ğSceneNode¸¦ ±â¹İÀ¸·ÎÇÔ.
-Entity : scene¿¡¼­ ·»´õ¸µ ÇÒ ¼ö ÀÖ´Â °´Ã¼
+SceneManager : í™”ë©´ìƒì— ë³´ì´ëŠ” ëª¨ë“  ê²ƒì„ ê´€ì¥í•˜ëŠ” ê´€ë¦¬ì
+SceneNode : ê°ì²´ì˜ ìœ„ì¹˜, íšŒì „ ì •ë³´ë¥¼ ì§€ë‹˜, SceneNodeì˜ ìœ„ì¹˜ëŠ” í•­ìƒ ë¶€ëª¨SceneNodeë¥¼ ê¸°ë°˜ìœ¼ë¡œí•¨.
+Entity : sceneì—ì„œ ë Œë”ë§ í•  ìˆ˜ ìˆëŠ” ê°ì²´
 
-SceneNode [  Entity  ] ÀÌ·¸°Ô µÇ¾ß ·»´õ¸µ °¡´ÉÇÔ.
+SceneNode [  Entity  ] ì´ë ‡ê²Œ ë˜ì•¼ ë Œë”ë§ ê°€ëŠ¥í•¨.
 
-# x,y,zÃà È¸Àü : pitch, yaw, roll
+# x,y,zì¶• íšŒì „ : pitch, yaw, roll
 
-# ¼³Á¤ÆÄÀÏ
-plugins.cfg : "Plugin=[PluginName]" ÇÃ·¯±×ÀÎÀ» Ã£À» Àå¼Ò¸¦ º¯°æÇÒ ¼ö  ÀÖ´Ù.(»ó´ë°æ·Î °¡´É)
- - ÁÖ¼®Àº #
- - .DLLÀ» ºÙÀÌÁö ¸»°Í, "RenderSystem_"ÀÌ³ª "Plugin_"·Î ½ÃÀÛÇÏÁö ¸»°Í
-resources.cfg: ¸®¼Ò½º¸¦ Æ÷ÇÔÇÑ Æú´õ ¼³Á¤.(»ó´ë°æ·Î°¡´É)
- - ¼­ºêÆú´õ¸¦ Æ÷ÇÔÇÏÁö ¾ÊÀ¸´Ï ¸í½ÃÀûÀ¸·Î Áö½ÃÇØ¾ßÇÔ.
+# ì„¤ì •íŒŒì¼
+plugins.cfg : "Plugin=[PluginName]" í”ŒëŸ¬ê·¸ì¸ì„ ì°¾ì„ ì¥ì†Œë¥¼ ë³€ê²½í•  ìˆ˜  ìˆë‹¤.(ìƒëŒ€ê²½ë¡œ ê°€ëŠ¥)
+ - ì£¼ì„ì€ #
+ - .DLLì„ ë¶™ì´ì§€ ë§ê²ƒ, "RenderSystem_"ì´ë‚˜ "Plugin_"ë¡œ ì‹œì‘í•˜ì§€ ë§ê²ƒ
+resources.cfg: ë¦¬ì†ŒìŠ¤ë¥¼ í¬í•¨í•œ í´ë” ì„¤ì •.(ìƒëŒ€ê²½ë¡œê°€ëŠ¥)
+ - ì„œë¸Œí´ë”ë¥¼ í¬í•¨í•˜ì§€ ì•Šìœ¼ë‹ˆ ëª…ì‹œì ìœ¼ë¡œ ì§€ì‹œí•´ì•¼í•¨.
 media.cfg: skip
-ogre.cfg: ÄÄÇ»ÅÍ ¹× ±×·¡ÇÈ ¼³Á¤
-quake3settings.cfg: BSPSceneManager¿Í °°ÀÌ »ç¿ëÇÏ´Â ÆÄÀÏ.
+ogre.cfg: ì»´í“¨í„° ë° ê·¸ë˜í”½ ì„¤ì •
+quake3settings.cfg: BSPSceneManagerì™€ ê°™ì´ ì‚¬ìš©í•˜ëŠ” íŒŒì¼.
 ----------------------------------------------------------------------------
 tutorial - 2
 
 # camera
-clipping distance : ¾ó¸¶¸¸Å­ °Å¸®¿¡ ÀÖ¾î¾ß º¸ÀÌ´Â°¡
-	near´Â °¡±îÀÌ far´Â ¸Ö¸®
+clipping distance : ì–¼ë§ˆë§Œí¼ ê±°ë¦¬ì— ìˆì–´ì•¼ ë³´ì´ëŠ”ê°€
+	nearëŠ” ê°€ê¹Œì´ farëŠ” ë©€ë¦¬
 
-RenderWindow¿¡°Ô ¾î¶² Ä«¸Ş¶ó°¡ ½ºÅ©¸°À» »Ñ¸±°ÇÁö, À©µµ¿ìÀÇ ¾î¶² ºÎºĞÀ» ·»´õ¸µÇÒÁö ¸»ÇØÁà¾ßÇÑ´Ù.
+RenderWindowì—ê²Œ ì–´ë–¤ ì¹´ë©”ë¼ê°€ ìŠ¤í¬ë¦°ì„ ë¿Œë¦´ê±´ì§€, ìœˆë„ìš°ì˜ ì–´ë–¤ ë¶€ë¶„ì„ ë Œë”ë§í• ì§€ ë§í•´ì¤˜ì•¼í•œë‹¤.
 
-Ä«¸Ş¶óÀÇ Aspect ratio¸¦ viewport¿¡ ¸ÂÃß´Â ÀÛ¾÷.
+ì¹´ë©”ë¼ì˜ Aspect ratioë¥¼ viewportì— ë§ì¶”ëŠ” ì‘ì—….
 mCamera->setAspectRatio(Ogre::Real(vp->getActualWidth()) / Ogre::Real(vp->getActualHeight()));
 
 # shadow : http://www.ogre3d.org/docs/manual/manual_70.html
@@ -43,36 +43,36 @@ entNinja->setCastShadows(true);
 
 # light
 1. Diffuse color
-  È®»ê±¤ (üªß¤ÎÃ)
+  í™•ì‚°ê´‘ (æ“´æ•£å…‰)
 2. Ambient color
-  È¯°æ¹İ»ç±¤. ÀüÃ¼ È­¸é¿¡ ÀÏÁ¤ »öÀ» ´õÇØ ÁÖ´Â °ÍÀ¸·Î Ã³¸®
+  í™˜ê²½ë°˜ì‚¬ê´‘. ì „ì²´ í™”ë©´ì— ì¼ì • ìƒ‰ì„ ë”í•´ ì£¼ëŠ” ê²ƒìœ¼ë¡œ ì²˜ë¦¬
 3. Specular color
-  Á¤¹İ»ç(ïáÚãŞÒ : Specular Reflection)ÀÇ »ö»óÀ» ÀÇ¹Ì. ±¤¿øÀ¸·Î ºÎÅÍ ³ª¿À´Â ºûÀ» ¹İ»çÇÏ¿© ½Ã¾ß¿¡ µé¾î¿À´Â 'ÇÏÀÌ¶óÀÌÆ®'¸¦ ÀÇ¹Ì
+  ì •ë°˜ì‚¬(æ­£åå°„ : Specular Reflection)ì˜ ìƒ‰ìƒì„ ì˜ë¯¸. ê´‘ì›ìœ¼ë¡œ ë¶€í„° ë‚˜ì˜¤ëŠ” ë¹›ì„ ë°˜ì‚¬í•˜ì—¬ ì‹œì•¼ì— ë“¤ì–´ì˜¤ëŠ” 'í•˜ì´ë¼ì´íŠ¸'ë¥¼ ì˜ë¯¸
 ----------------------------------------------------------------------------
 tutorial - 3 skipped
 
 Terrain, Paging, Property
 # terrian
 TerrainGlobalOptions 
-	MaxPixelError : ¼ö°¡ ÀûÀ» ¼ö·Ï Á¤±³ÇØÁü.
-	CompositeMapDistance : lightmapped terrain¿¡¼­ ¾ó¸¶¸¸Å­ ÁöÇüÀ» ·»´õ¸µÇÒÁö °áÁ¤. 
+	MaxPixelError : ìˆ˜ê°€ ì ì„ ìˆ˜ë¡ ì •êµí•´ì§.
+	CompositeMapDistance : lightmapped terrainì—ì„œ ì–¼ë§ˆë§Œí¼ ì§€í˜•ì„ ë Œë”ë§í• ì§€ ê²°ì •. 
 	
 # Sky
-SkyBoxes : Á¤À°¸éÃ¼
+SkyBoxes : ì •ìœ¡ë©´ì²´
 mSceneMgr->setSkyBox(isEnable, fname, 5000, false);
 The third parameter sets the distance that the SkyBox is away from the Camera, and the fourth parameter sets whether or not the SkyBox is drawn before the rest of the scene or afterwards. 
 
-SkyDomes : ¾Æ·¹°¡ ¶Ô¸° Á¤À°¸éÃ¼. ±¸¸éÃ³·³ "projected"µÈ´Ù.
+SkyDomes : ì•„ë ˆê°€ ëš¤ë¦° ì •ìœ¡ë©´ì²´. êµ¬ë©´ì²˜ëŸ¼ "projected"ëœë‹¤.
 
-SkyPlanes : ÆÇ¶§±â
-	Cube°¡ ¾Æ´Ñ Plane¿¡ ·»´õ¸µÇÔ. plane¿¡ Å©±â¿¡ µû¶ó SkyPlaneÀÌ ³¡³ª´Â ÁöÁ¡À» º¼ ¼ö µµ ÀÖÀ½.
+SkyPlanes : íŒë•Œê¸°
+	Cubeê°€ ì•„ë‹Œ Planeì— ë Œë”ë§í•¨. planeì— í¬ê¸°ì— ë”°ë¼ SkyPlaneì´ ëë‚˜ëŠ” ì§€ì ì„ ë³¼ ìˆ˜ ë„ ìˆìŒ.
 
 # Fog
-Å¸ÀÔ : linear, exponential
+íƒ€ì… : linear, exponential
 
-fog´Â ±¸¸éÃ¼ - skybox&skydome Á¤À°¸éÃ¼
-fog¿Ískybox&skydomeÀ» °°ÀÌ¾²¸é ¹®Á¦
-skyplaneÀ» ÀÌ¿ëÇÏ¿© ÇØ°á
+fogëŠ” êµ¬ë©´ì²´ - skybox&skydome ì •ìœ¡ë©´ì²´
+fogì™€skybox&skydomeì„ ê°™ì´ì“°ë©´ ë¬¸ì œ
+skyplaneì„ ì´ìš©í•˜ì—¬ í•´ê²°
 ----------------------------------------------------------------------------
 tutorial - 4
 # FrameListeners
@@ -82,12 +82,12 @@ virtual bool frameRenderingQueued(const FrameEvent& evt);
 virtual bool frameEnded(const FrameEvent& evt);
 
 frameRenderingQueued
-GPU°¡ ·»´õ¸µ¹öÆÛ¸¦ flippingÇÏ±â Àü¿¡ È£ÃâµÊ.
+GPUê°€ ë Œë”ë§ë²„í¼ë¥¼ flippingí•˜ê¸° ì „ì— í˜¸ì¶œë¨.
 So you want to keep your CPU busy while the GPU works. 
 
 
 # Unbuffered Input
-frameRenderingQueued¿¡¼­ Unbuffered InputÀ» Ã³¸®ÇÔ
+frameRenderingQueuedì—ì„œ Unbuffered Inputì„ ì²˜ë¦¬í•¨
 ----------------------------------------------------------------------------
 tutorial - 5
 
@@ -101,23 +101,23 @@ tutorial - 5
     virtual bool mouseReleased( const OIS::MouseEvent& evt, OIS::MouseButtonID id );
 	
 
-buffered Input ¿¡¼­´Â capture°¡ ÇÊ¿äÇÔ
+buffered Input ì—ì„œëŠ” captureê°€ í•„ìš”í•¨
 	mKeyboard->capture();
 	mMouse->capture();
 ----------------------------------------------------------------------------
 tutorial - 6
 
-1. Root °´Ã¼¸¦ ¸¸µé°í
-2. Ogre°¡ ¾µ ¸®¼Ò½º¸¦ Á¤ÀÇ
-3. ·»´õ ½Ã½ºÅÛ ¼³Á¤.(DirectX, OpenGL, etc)
-4. RenderWindow »ı¼º (the window which Ogre resides in).
-5. »ç¿ëÇÒ ¸®¼Ò½º ÃÊ±âÈ­
-6. ¸®¼Ò½º¸¦ ÀÌ¿ëÇÒ scene¸¸µé±â
-7. 3rd-party ¶óÀÌºê·¯¸®, ÇÃ·¯±×ÀÎ ¼³Á¤
-8. ÇÁ·¹ÀÓ ¸®½º³Ê »ı¼º
-9. ·»´õ ·çÇÁ ½ÃÀÛ
+1. Root ê°ì²´ë¥¼ ë§Œë“¤ê³ 
+2. Ogreê°€ ì“¸ ë¦¬ì†ŒìŠ¤ë¥¼ ì •ì˜
+3. ë Œë” ì‹œìŠ¤í…œ ì„¤ì •.(DirectX, OpenGL, etc)
+4. RenderWindow ìƒì„± (the window which Ogre resides in).
+5. ì‚¬ìš©í•  ë¦¬ì†ŒìŠ¤ ì´ˆê¸°í™”
+6. ë¦¬ì†ŒìŠ¤ë¥¼ ì´ìš©í•  sceneë§Œë“¤ê¸°
+7. 3rd-party ë¼ì´ë¸ŒëŸ¬ë¦¬, í”ŒëŸ¬ê·¸ì¸ ì„¤ì •
+8. í”„ë ˆì„ ë¦¬ìŠ¤ë„ˆ ìƒì„±
+9. ë Œë” ë£¨í”„ ì‹œì‘
 
----- #1. Root °´Ã¼ »ı¼º
+---- #1. Root ê°ì²´ ìƒì„±
 Ogre::String mPluginsCfg;
 	mPluginsCfg = "plugins_d.cfg";
 	
@@ -126,9 +126,9 @@ Ogre::Root* mRoot;
 	mRoot = new Ogre::Root(mPluginsCfg);
 	Root(pluginFname, configFname, logFname);// "plugins.cfg", "ogre.cfg", "Ogre.log"
 	
-	delete mRoot; // ¾îÇÃ¸®ÄÉÀÌ¼Ç Á¾·á½Ã new¸¦ ÇØÁ¦ÇØÁØ´Ù.
+	delete mRoot; // ì–´í”Œë¦¬ì¼€ì´ì…˜ ì¢…ë£Œì‹œ newë¥¼ í•´ì œí•´ì¤€ë‹¤.
 
----- #2. ¸®¼Ò½º Á¤ÀÇ
+---- #2. ë¦¬ì†ŒìŠ¤ ì •ì˜
 #include <OgreConfigFile.h>
 Ogre::String mResourcesCfg;
 	mResourcesCfg = "resources_d.cfg";
@@ -136,41 +136,41 @@ Ogre::String mResourcesCfg;
 	cf.load(mResourcesCfg);
 	Ogre::ResourceGroupManager::getSingleton()
 		.addResourceLocation(archName, typeName, secName);
-			secName : °¢ ¼½¼ÇÀÇ ÀÌ¸§(Essential, Popular, General)
-			typeName : ¸®¼Ò½ºÀÇ Å¸ÀÔ(FileSystem (folder) or Zip file)
-			archName : Àı´ë°æ·Î
+			secName : ê° ì„¹ì…˜ì˜ ì´ë¦„(Essential, Popular, General)
+			typeName : ë¦¬ì†ŒìŠ¤ì˜ íƒ€ì…(FileSystem (folder) or Zip file)
+			archName : ì ˆëŒ€ê²½ë¡œ
 
----- #3. ·»´õ ½Ã½ºÅÛ ¼³Á¤.
+---- #3. ë Œë” ì‹œìŠ¤í…œ ì„¤ì •.
 	if(!(mRoot->restoreConfig() || mRoot->showConfigDialog()))
 		return false;
 
----- #4. RenderWindow »ı¼º
+---- #4. RenderWindow ìƒì„±
 Ogre::RenderWindow* mWindow;
 	mWindow = mRoot->initialise(true, "BasicTutorial6 Render Window");
----- #5. »ç¿ëÇÒ ¸®¼Ò½º ÃÊ±âÈ­
+---- #5. ì‚¬ìš©í•  ë¦¬ì†ŒìŠ¤ ì´ˆê¸°í™”
 	//Ogre::TextureManager::getSingleton().setDefaultNumMipmaps(5);
 	Ogre::ResourceGroupManager::getSingleton()
 		.initialiseAllResourceGroups();
 
----- #6. ¸®¼Ò½º¸¦ ÀÌ¿ëÇÒ scene¸¸µé±â
-	##1. SceneManager »ı¼º
+---- #6. ë¦¬ì†ŒìŠ¤ë¥¼ ì´ìš©í•  sceneë§Œë“¤ê¸°
+	##1. SceneManager ìƒì„±
 	#include <OgreSceneManager.h>
 	Ogre::SceneManager* mSceneMgr;
 		mSceneMgr = mRoot->createSceneManager("DefaultSceneManager");
-	##2. Camera »ı¼º
+	##2. Camera ìƒì„±
 	#include <OgreCamera.h>
 	Ogre::Camera* mCamera;
 		mCamera = mSceneMgr->createCamera("PlayerCam");
 		//mCamera->setPosition(Ogre::Vector3(0,0,80));
 		//mCamera->lookAt(Ogre::Vector3(0,0,-300));
 		//mCamera->setNearClipDistance(5);
-	##2-1. Viewport Ãß°¡
+	##2-1. Viewport ì¶”ê°€
 	#include <OgreViewport.h>
 		Ogre::Viewport* vp = mWindow->addViewport(mCamera);
 		vp->setBackgroundColour(Ogre::ColourValue(0,0,0));
 		mCamera->setAspectRatio(
 		Ogre::Real(vp->getActualWidth()) / Ogre::Real(vp->getActualHeight()));
-	##3. Scene »ı¼º
+	##3. Scene ìƒì„±
 	/*
 	#include <OgreEntity.h>
 	Ogre::Entity* ogreHead = mSceneMgr->createEntity("Head", "ogrehead.mesh");
@@ -185,9 +185,9 @@ headNode->attachObject(ogreHead);
 	l->setPosition(20,80,50);
 	*/
 
----- //#7. 3rd-party ¶óÀÌºê·¯¸®, ÇÃ·¯±×ÀÎ ¼³Á¤
----- #8. ÇÁ·¹ÀÓ ¸®½º³Ê »ı¼º
-	, public Ogre::FrameListener »ó¼Ó
+---- //#7. 3rd-party ë¼ì´ë¸ŒëŸ¬ë¦¬, í”ŒëŸ¬ê·¸ì¸ ì„¤ì •
+---- #8. í”„ë ˆì„ ë¦¬ìŠ¤ë„ˆ ìƒì„±
+	, public Ogre::FrameListener ìƒì†
 virtual bool frameRenderingQueued(const Ogre::FrameEvent& evt);
 bool BasicTutorial6::frameRenderingQueued(const Ogre::FrameEvent& evt)
 {
@@ -203,11 +203,11 @@ bool BasicTutorial6::frameRenderingQueued(const Ogre::FrameEvent& evt)
  
     return true;
 }
-// µî·Ï.
+// ë“±ë¡.
 mRoot->addFrameListener(this);
 mRoot->startRendering();
 
----- #9. ·»´õ ·çÇÁ ½ÃÀÛ ( ÇÁ·¹ÀÓ ¸®½º³Ê°¡ ÀÖÀ» °æ¿ì ÇÊ¿ä°¡ ¾øÀ½)
+---- #9. ë Œë” ë£¨í”„ ì‹œì‘ ( í”„ë ˆì„ ë¦¬ìŠ¤ë„ˆê°€ ìˆì„ ê²½ìš° í•„ìš”ê°€ ì—†ìŒ)
 #include <OgreWindowEventUtilities.h>
 	while(true)
 	{
@@ -217,7 +217,7 @@ mRoot->startRendering();
 		if(!mRoot->renderOneFrame()) return false;
 	}
 
----- #Etc. OIS ¼³Á¤.
+---- #Etc. OIS ì„¤ì •.
 #include <OISEvents.h>
 #include <OISInputManager.h>
 #include <OISKeyboard.h>
@@ -237,15 +237,15 @@ mRoot->startRendering();
 	mKeyboard = static_cast<OIS::Keyboard*>(mInputManager->createInputObject( OIS::OISKeyboard, false ));
 	mMouse = static_cast<OIS::Mouse*>(mInputManager->createInputObject( OIS::OISMouse, false ));
 
-	// µî·Ï
+	// ë“±ë¡
 	windowResized(mWindow);
 	Ogre::WindowEventUtilities::addWindowEventListener(mWindow, this);
-	// »èÁ¦
+	// ì‚­ì œ
 	Ogre::WindowEventUtilities::removeWindowEventListener(mWindow, this);
     windowClosed(mWindow);
 	
 	##finalize
-	windowÀÇ event¸¦ ¹Ş±â ¿ìÇØ ´ÙÀ½ Å¬·¡½º »ó¼Ó : public Ogre::WindowEventListener
+	windowì˜ eventë¥¼ ë°›ê¸° ìš°í•´ ë‹¤ìŒ í´ë˜ìŠ¤ ìƒì† : public Ogre::WindowEventListener
 	//Adjust mouse clipping area
 	void BasicTutorial6::windowResized(Ogre::RenderWindow* rw)
 	{
@@ -293,11 +293,11 @@ tutorial - 8
 		vp = mWindow->addViewport(cam, 1, 0.5, 0, 0.5, 1);		
 	vp->setBackgroundColour(Ogre::ColourValue(0,0,0));
 	cam->setAspectRatio(Ogre::Real(vp->getActualWidth()) / Ogre::Real(vp->getActualHeight()));
-mWindow¿¡¼­ ºäÆ÷Æ® ¸ğµÎ¸¦ Á¦°ÅÇÏ°í, SceneManager¿¡¼­ Ä«¸Ş¶ó¸¦ ¾ò¾î¿Â´Ù.
-mWindow->addViewport·Î ¾ò¾î¿Â Ä«¸Ş¶ó¸¦ Viewport¿¡ Ãß°¡ÇÑ´Ù.
+mWindowì—ì„œ ë·°í¬íŠ¸ ëª¨ë‘ë¥¼ ì œê±°í•˜ê³ , SceneManagerì—ì„œ ì¹´ë©”ë¼ë¥¼ ì–»ì–´ì˜¨ë‹¤.
+mWindow->addViewportë¡œ ì–»ì–´ì˜¨ ì¹´ë©”ë¼ë¥¼ Viewportì— ì¶”ê°€í•œë‹¤.
 
-left, top, width, height ´Â 0~1»çÀÌÀÇ °ªÀ» °®´Â´Ù.
-ºäÆ÷Æ®¸¦ Ãß°¡ÇÒ½Ã, ZOrder°ªÀÌ °ãÄ¡¸é ¿¡·¯°¡ ³­´Ù.(ZOrder°¡ ³ôÀ¸¸é ³ªÁß¿¡ ±×·Á¼­, °á°úÀûÀ¸·Î ZOrder°¡ ³·Àº °á°úÈ­¸é À§¿¡ È­¸éÀÌ Ç¥½ÃµÈ´Ù)
+left, top, width, height ëŠ” 0~1ì‚¬ì´ì˜ ê°’ì„ ê°–ëŠ”ë‹¤.
+ë·°í¬íŠ¸ë¥¼ ì¶”ê°€í• ì‹œ, ZOrderê°’ì´ ê²¹ì¹˜ë©´ ì—ëŸ¬ê°€ ë‚œë‹¤.(ZOrderê°€ ë†’ìœ¼ë©´ ë‚˜ì¤‘ì— ê·¸ë ¤ì„œ, ê²°ê³¼ì ìœ¼ë¡œ ZOrderê°€ ë‚®ì€ ê²°ê³¼í™”ë©´ ìœ„ì— í™”ë©´ì´ í‘œì‹œëœë‹¤)
 virtual Viewport* Ogre::RenderTarget::addViewport(
  	Camera *cam, int ZOrder = 0,
 	float left = 0.0f, float top = 0.0f,

@@ -1,7 +1,7 @@
-ÄÉ¸¯ÅÍ°¡ ¾ÕÀ» º¸°íÀÖÀ»¶§ ±× Á¤¹Ý´ëÀÎ µÚ¸¦ Å¬¸¯ÇÏ¸é ÄÉ¸¯ÅÍ°¡ °Å²Ù·Î µµ´Â Çö»ó
-(target.z°¡ player.zº¸´Ù ÀÛÀ»¶§ ¹ß»ý)
+ì¼€ë¦­í„°ê°€ ì•žì„ ë³´ê³ ìžˆì„ë•Œ ê·¸ ì •ë°˜ëŒ€ì¸ ë’¤ë¥¼ í´ë¦­í•˜ë©´ ì¼€ë¦­í„°ê°€ ê±°ê¾¸ë¡œ ë„ëŠ” í˜„ìƒ
+(target.zê°€ player.zë³´ë‹¤ ìž‘ì„ë•Œ ë°œìƒ)
 
-src.y¿Í dir.y¸¦ 0À¸·Î ¼³Á¤ÇØÁØ´Ù.(yÃà È¸Àü ¹æÇâ ¼ººÐ Á¦°Å)
+src.yì™€ dir.yë¥¼ 0ìœ¼ë¡œ ì„¤ì •í•´ì¤€ë‹¤.(yì¶• íšŒì „ ë°©í–¥ ì„±ë¶„ ì œê±°)
 
 http://www.gpgstudy.com/forum/viewtopic.php?p=87948
 { // Targetting
@@ -15,7 +15,7 @@ http://www.gpgstudy.com/forum/viewtopic.php?p=87948
 		dir.normalise();
 
 		Ogre::Vector3 src = nPlayer->getOrientation() * Ogre::Vector3::UNIT_Z;
-		// ¿©±â¼­ UNIT_Z´Â ÄÉ¸¯ÅÍ°¡ ¹Ù¶óº¸´Â ¹æÇâ
+		// ì—¬ê¸°ì„œ UNIT_ZëŠ” ì¼€ë¦­í„°ê°€ ë°”ë¼ë³´ëŠ” ë°©í–¥
 		src.y = 0;
 		src.normalise();
 

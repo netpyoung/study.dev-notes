@@ -1,7 +1,7 @@
-ÀÌ°Å Â¼´Âµí [Spreadsheet Compare]
+ì´ê±° ì©ŒëŠ”ë“¯ [Spreadsheet Compare]
 
  
  [Diff doc]: http://www.softinterface.com/MD/Document-Comparison-Software.htm
- [blog-¿¢¼¿ ÆÄÀÏ ºñ±³ÇÏ±â Åø Diff Doc]: http://chez.egloos.com/1906055
+ [blog-ì—‘ì…€ íŒŒì¼ ë¹„êµí•˜ê¸° íˆ´ Diff Doc]: http://chez.egloos.com/1906055
  
  [Spreadsheet Compare]: http://sourceforge.net/projects/spreadshcompare/

@@ -19,8 +19,8 @@ Graphics render fastest when their _alpha is set to 100.
 Use PNGs if bitmap transparency is required and try to reduce the total surface area drawn.
 
 
-onEnterFrame : ¸Å ÇÁ·¡ÀÓ¸¶´Ù
-setInterval : »ó¼ö½Ã°£¸¶´Ù
+onEnterFrame : ë§¤ í”„ë˜ì„ë§ˆë‹¤
+setInterval : ìƒìˆ˜ì‹œê°„ë§ˆë‹¤
 
 
 The most efficient animations are translation and rotation. It is best to avoid scaling animations
@@ -33,7 +33,7 @@ Turn off the border and background of a text field if possible, since this will 
 -- gfxexport ----------------------------------
 Create a master gradient.swf file containing only gradient textures and import it into other SWF files as needed. Use the gfxexport tool to export the gradients.swf using the -d0 switch. This switch disables compression, and will apply to all textures in that SWF file. It will ensure that all textures in this file, which make use of gradients, are free of banding.
 
-Use gfxexport¡¯s option -qp or -qh to get highest quality DDS texture (Note that these options may take a long time to process the bitmap images).
+Use gfxexportâ€™s option -qp or -qh to get highest quality DDS texture (Note that these options may take a long time to process the bitmap images).
 
 Use gfxexport with options ?fc, -fcl, -fcm to compact fonts in order to save memory on glyph shapes (especially, if Asian fonts are embedded).
 
@@ -55,7 +55,7 @@ To save memory, explicitly delete any custom classes in unloaded SWF files.
 Do not use with statements inside functions. This operator turns off optimizations.
 
 
-º¯¼öÀÌ¸§ ¾Õ¿¡´Â var¸¦ ²ÀºÙ¿©¶ó(ÃÖÀûÈ­¸¦ ÇØÁÜ)
+ë³€ìˆ˜ì´ë¦„ ì•ì—ëŠ” varë¥¼ ê¼­ë¶™ì—¬ë¼(ìµœì í™”ë¥¼ í•´ì¤Œ)
 
 setInterval // clearInterval
 -------------------------------------------------------------

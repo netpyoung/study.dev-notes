@@ -1,25 +1,25 @@
-(.java¿Í .c¸¦ ÀÌ¿ëÇÑ) Hello, World
+(.javaì™€ .cë¥¼ ì´ìš©í•œ) Hello, World
 =========================
 
-cafe.naver.com/cmenia¿¡¼­ 7¿ù´Þ¿¡ ½ºÅÍµðÇÑ ³»¿ëÀ» Á¤¸®ÇÏ¿© ¿Ã¸° ±ÛÀÔ´Ï´Ù.
-http://cafe.naver.com/cmenia/3511 ¿¡¼­µµ ³»¿ëÀ» È®ÀÎÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.(cafeÀÎ °æ¿ì ´ëÈ­³»¿ëµµ Ã·ºÎµÇ¾î ÀÖ½À´Ï´Ù.)
+cafe.naver.com/cmeniaì—ì„œ 7ì›”ë‹¬ì— ìŠ¤í„°ë””í•œ ë‚´ìš©ì„ ì •ë¦¬í•˜ì—¬ ì˜¬ë¦° ê¸€ìž…ë‹ˆë‹¤.
+http://cafe.naver.com/cmenia/3511 ì—ì„œë„ ë‚´ìš©ì„ í™•ì¸í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.(cafeì¸ ê²½ìš° ëŒ€í™”ë‚´ìš©ë„ ì²¨ë¶€ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.)
 
-.c¸¦ ¶óÀÌºê·¯¸®È­ ½ÃÅ²ÈÄ java¿¡¼­ ±× ¶óÀÌºê·¯¸®¸¦ ·Îµå ¹× È£ÃâÇÏ´Â °úÁ¤.
+.cë¥¼ ë¼ì´ë¸ŒëŸ¬ë¦¬í™” ì‹œí‚¨í›„ javaì—ì„œ ê·¸ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ë¡œë“œ ë° í˜¸ì¶œí•˜ëŠ” ê³¼ì •.
 
  
-Á¦ È¯°æÀº ÀÏ´Ü
+ì œ í™˜ê²½ì€ ì¼ë‹¨
 ```
 $ uname -a
 Linux pubuntu 2.6.33-co-0.8.0 #1 PREEMPT Sun Mar 21 19:46:28 UTC 2010 i686 GNU/Linux
 ```
 
-// gcc¿Í jdk°¡ ¼³Ä¡µÇ¾î ÀÖ¾î¾ß ÇÕ´Ï´Ù. Àü gcc°¡ ÀÌ¹Ì ¼³Ä¡µÇ¾ú±â ¶§¹®¿¡ jdk¸¦ Ãß°¡·Î ¼³Ä¡ÇÏ°Ú½À´Ï´Ù.
+// gccì™€ jdkê°€ ì„¤ì¹˜ë˜ì–´ ìžˆì–´ì•¼ í•©ë‹ˆë‹¤. ì „ gccê°€ ì´ë¯¸ ì„¤ì¹˜ë˜ì—ˆê¸° ë•Œë¬¸ì— jdkë¥¼ ì¶”ê°€ë¡œ ì„¤ì¹˜í•˜ê² ìŠµë‹ˆë‹¤.
 
 ```
 $ sudo apt-get install sun-java6-jdk
 ```
 
-open-jdk¿©µµ ¹«°ü
+open-jdkì—¬ë„ ë¬´ê´€
 
  
 
@@ -41,13 +41,13 @@ class HelloTest{
 ```
  
 
-javah·Î Å¬·¡½º·ÎºÎÅÍ Çì´õÆÄÀÏÀ» ¸¸µì´Ï´Ù.
+javahë¡œ í´ëž˜ìŠ¤ë¡œë¶€í„° í—¤ë”íŒŒì¼ì„ ë§Œë“­ë‹ˆë‹¤.
 ```
 $ javac ./HelloTest.java
 $ ls
 Hello.class  HelloTest.class  HelloTest.java
 $ javah Hello
-// È¤Àº javah ./Hello.class(ÀüÀÚ´Â sun-java6-jdk, ÈÄÀÚ´Â open-jdk)
+// í˜¹ì€ javah ./Hello.class(ì „ìžëŠ” sun-java6-jdk, í›„ìžëŠ” open-jdk)
 $ ls
 Hello.class  Hello.h  HelloTest.class  HelloTest.java
 ```
@@ -78,7 +78,7 @@ JNIEXPORT void JNICALL Java_Hello_hello
 ```
  
 
-±½°Ô Ç¥½ÃµÈ °Í¿¡ ¸ÂÃß¾î ¼Ò½º¸¦ ÀÛ¼ºÇÕ´Ï´Ù.
+êµµê²Œ í‘œì‹œëœ ê²ƒì— ë§žì¶”ì–´ ì†ŒìŠ¤ë¥¼ ìž‘ì„±í•©ë‹ˆë‹¤.
 
 [== Hello.c ==]
 ```c
@@ -91,15 +91,15 @@ JNIEXPORT void JNICALL Java_Hello_hello (JNIEnv *env, jclass cls)
 }
 ```
  
-¸µÅ©¸¦ ÇÏ·Á¸é include¼³Á¤(C_INCLUDE_PATH)ÀÌ ÇÊ¿äÇÏ°í
+ë§í¬ë¥¼ í•˜ë ¤ë©´ includeì„¤ì •(C_INCLUDE_PATH)ì´ í•„ìš”í•˜ê³ 
 
-¸µÅ©µÈ ÆÄÀÏÀ» ·ÎµåÇÏ·Á¸é ·ÎµåÇÏ±â Àû´çÇÑ À§Ä¡·Î(/usr/lib) ¿Å°ÜÁÖ¾î¾ß ÇÕ´Ï´Ù.
+ë§í¬ëœ íŒŒì¼ì„ ë¡œë“œí•˜ë ¤ë©´ ë¡œë“œí•˜ê¸° ì ë‹¹í•œ ìœ„ì¹˜ë¡œ(/usr/lib) ì˜®ê²¨ì£¼ì–´ì•¼ í•©ë‹ˆë‹¤.
 
 ```
 $ export C_INCLUDE_PATH=/usr/lib/jvm/java-6-sun-1.6.0.20/include/:/usr/lib/jvm/java-6-sun-1.6.0.20/include/linux/
 ```
 
-(jni.h: No such file or directory¿Í jni_md.h: No such file or directory¹æÁö// open jdk°æ¿ì ¼³Á¤Àº ¶Ç µû·Î ÇØÁÖ¾î¾ß ÇÕ´Ï´Ù.)
+(jni.h: No such file or directoryì™€ jni_md.h: No such file or directoryë°©ì§€// open jdkê²½ìš° ì„¤ì •ì€ ë˜ ë”°ë¡œ í•´ì£¼ì–´ì•¼ í•©ë‹ˆë‹¤.)
 
 ```
 $ ls
@@ -118,7 +118,7 @@ java.library.path
         at HelloTest.main(HelloTest.java:11)
 ```
 
-libÈ­ ½ÃÅ²ÈÄ /usr/lib·Î º¹»çÇØÁÖ¾î¾ß ÇÕ´Ï´Ù.
+libí™” ì‹œí‚¨í›„ /usr/libë¡œ ë³µì‚¬í•´ì£¼ì–´ì•¼ í•©ë‹ˆë‹¤.
 
 ```
 $ sudo cp libHello.so /usr/lib/
@@ -126,10 +126,10 @@ $ java HelloTest
 Hello, World
 ```
 
--0-// Àú¸¸ ½Å±âÇÑ°Ç°¡¿ä@_@//
+-0-// ì €ë§Œ ì‹ ê¸°í•œê±´ê°€ìš”@_@//
 
-.java°¡ gcj¸¦ °ÅÃ³ ELFÆ÷¸ËÀ¸·Î º¯È¯µÈ°Íµµ ½Å±âÇÏ´øµ¥ ÀÌ·¸°Ô .c¸¦ ·ÎµåÇØ¼­ »ç¿ëÇÏ´Â °ÍÀ» º¸´Ï ±×Á® ÄÄÆÄÀÏ·¯ Á¦ÀÛÀÚµé¿¡°Ô °æ¿Ü°¨ÀÌ µì´Ï´Ù( Á¤¸» ´ë´ÜÇÏ½Ê´Ï´Ù!!!)
+.javaê°€ gcjë¥¼ ê±°ì²˜ ELFí¬ë§·ìœ¼ë¡œ ë³€í™˜ëœê²ƒë„ ì‹ ê¸°í•˜ë˜ë° ì´ë ‡ê²Œ .cë¥¼ ë¡œë“œí•´ì„œ ì‚¬ìš©í•˜ëŠ” ê²ƒì„ ë³´ë‹ˆ ê·¸ì ¸ ì»´íŒŒì¼ëŸ¬ ì œìž‘ìžë“¤ì—ê²Œ ê²½ì™¸ê°ì´ ë“­ë‹ˆë‹¤( ì •ë§ ëŒ€ë‹¨í•˜ì‹­ë‹ˆë‹¤!!!)
 
-Sun java jdk°¡ ºÎ´ã½º·´´Ù¸é open jdk¸¦ »ç¿ëÇØµµ µË´Ï´Ù.
+Sun java jdkê°€ ë¶€ë‹´ìŠ¤ëŸ½ë‹¤ë©´ open jdkë¥¼ ì‚¬ìš©í•´ë„ ë©ë‹ˆë‹¤.
 
-¾ÆÁ÷ ³»°øÀÌ ºÎÁ·ÇÏ¿© ¾Èµå·ÎÀÌµåÀÇ "¾È"ÀÚµµ ¸ð¸£Áö¸¸ "Java¿Í C¸¦ ÀÌ¿ëÇÑ ÇÁ·Î ¾Èµå·ÎÀÌµå °ÔÀÓ °³¹ß - ·ù±¤´Ô¹ø¿ª" Á¦¸ñ°ú ¸ñÂ÷¸¦ º¸´Ï ÁøÁ¤ÇÑ °³¹ßÀÚ(¾Èµå·ÎÀÌµåÂÊ È¤Àº ÀÚ¹Ù)°¡ µÇ·Á¸é Java´Â ¹°·ÐÀÌ¿ä C¿ª½Ã ³»ºÎ¿¡¼­ µ¹¾Æ°¡´Â °ÍºÎÅÍÇØ¼­ Àß ¾Ë¾Æ¾ß ÇÒ °Í °°½À´Ï´Ù.
+ì•„ì§ ë‚´ê³µì´ ë¶€ì¡±í•˜ì—¬ ì•ˆë“œë¡œì´ë“œì˜ "ì•ˆ"ìžë„ ëª¨ë¥´ì§€ë§Œ "Javaì™€ Cë¥¼ ì´ìš©í•œ í”„ë¡œ ì•ˆë“œë¡œì´ë“œ ê²Œìž„ ê°œë°œ - ë¥˜ê´‘ë‹˜ë²ˆì—­" ì œëª©ê³¼ ëª©ì°¨ë¥¼ ë³´ë‹ˆ ì§„ì •í•œ ê°œë°œìž(ì•ˆë“œë¡œì´ë“œìª½ í˜¹ì€ ìžë°”)ê°€ ë˜ë ¤ë©´ JavaëŠ” ë¬¼ë¡ ì´ìš” Cì—­ì‹œ ë‚´ë¶€ì—ì„œ ëŒì•„ê°€ëŠ” ê²ƒë¶€í„°í•´ì„œ ìž˜ ì•Œì•„ì•¼ í•  ê²ƒ ê°™ìŠµë‹ˆë‹¤.

@@ -1,34 +1,34 @@
 adb setting
 ================================
 
-Âü°í : http://blog.naver.com/asjgi?Redirect=Log&logNo=70133527976
-Âü°í : http://forum.falinux.com/zbxe/?mid=android&listStyle=list
+ì°¸ê³  : http://blog.naver.com/asjgi?Redirect=Log&logNo=70133527976
+ì°¸ê³  : http://forum.falinux.com/zbxe/?mid=android&listStyle=list
 
 
-NDK : jni¸¦ ½±°Ô ¾²±â À§ÇÑ wapper class
+NDK : jnië¥¼ ì‰½ê²Œ ì“°ê¸° ìœ„í•œ wapper class
 
 
-* java ´Ù¿î·Îµå.
+* java ë‹¤ìš´ë¡œë“œ.
  - http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 
-* android sdk ´Ù¿î·Îµå.
+* android sdk ë‹¤ìš´ë¡œë“œ.
  - http://developer.android.com/sdk/index.html
 
-* ADT bundle ¼ÂÆÃ.
+* ADT bundle ì…‹íŒ….
  - http://developer.android.com/sdk/installing/bundle.html
 
-* device ÆÇ¸Å»çÀÇ usbµå¶óÀÌ¹ö ´Ù¿î·Îµå.
- - usb »©°í ¼³Ä¡.
+* device íŒë§¤ì‚¬ì˜ usbë“œë¼ì´ë²„ ë‹¤ìš´ë¡œë“œ.
+ - usb ë¹¼ê³  ì„¤ì¹˜.
  - ex) lg : http://www.lgmobile.co.kr/lgmobile/front/download/retrieveDownloadMain.dev#phone
 
-* eclipse ¼ÂÆÃ.
+* eclipse ì…‹íŒ….
  - D:\adt-bundle-windows-x86_64\eclipse
- - Android SDK Manager => ºôµåÇÏ°íÀÚÇÏ´Â API·¹º§¼±ÅÃ install all.
+ - Android SDK Manager => ë¹Œë“œí•˜ê³ ìží•˜ëŠ” APIë ˆë²¨ì„ íƒ install all.
 
-* µð¹ÙÀÌ½º ¼ÂÆÃ.
- - ÈÞ´ëÆù - °³¹ßÀÚ¿É¼Ç - usb debug.
+* ë””ë°”ì´ìŠ¤ ì…‹íŒ….
+ - íœ´ëŒ€í° - ê°œë°œìžì˜µì…˜ - usb debug.
 
-# ±âº» ¸í·É¾î
+# ê¸°ë³¸ ëª…ë ¹ì–´
 ```
 > adb devices
 > adb shell
@@ -38,16 +38,16 @@ NDK : jni¸¦ ½±°Ô ¾²±â À§ÇÑ wapper class
 ```
 > adb shell
 
-$ top -m 5 # cpu »ç¿ë·® È®ÀÎ(15%¸é »ó´çÈ÷ Å«°ÅÀÓ, 75%ÀÌ»óÀÌ¸é µð¹ÙÀÌ½º°¡ ¾Ë¾Æ¼­ Á×ÀÌ´Ï ¸®¹Ô Á¶½É)
+$ top -m 5 # cpu ì‚¬ìš©ëŸ‰ í™•ì¸(15%ë©´ ìƒë‹¹ížˆ í°ê±°ìž„, 75%ì´ìƒì´ë©´ ë””ë°”ì´ìŠ¤ê°€ ì•Œì•„ì„œ ì£½ì´ë‹ˆ ë¦¬ë°‹ ì¡°ì‹¬)
 
-$ logcat  # ·Î±×º¼¶§
+$ logcat  # ë¡œê·¸ë³¼ë•Œ
 ```
 
 
-## ÆÐÅ¶º¼¶©
+## íŒ¨í‚·ë³¼ë•
 ```
-$ tcpdump ¿É¼Ç ÁÖ°í
-> adb pull ÇØ¼­ µ¥ÀÌÅÍ »Ì¾Æ³»¼­ ¿ÍÀÌ¾î»þÅ©·Î º¸¸é Æí¸®ÇÔ.
+$ tcpdump ì˜µì…˜ ì£¼ê³ 
+> adb pull í•´ì„œ ë°ì´í„° ë½‘ì•„ë‚´ì„œ ì™€ì´ì–´ìƒ¤í¬ë¡œ ë³´ë©´ íŽ¸ë¦¬í•¨.
 ```
 
 

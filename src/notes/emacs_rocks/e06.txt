@@ -1,9 +1,9 @@
-Emacs Rocks! ¿¡ÇÇ¼Òµå 06: ¿¹~! Snippets!
+Emacs Rocks! ì—í”¼ì†Œë“œ 06: ì˜ˆ~! Snippets!
 
 http://www.amara.org/videos/zEPH6HfPUVUr
 
  yas/expand
 
-yasnippet¿¡ µî·ÏÇÑ ¹®ÀåÀÌ ÀÖÀ¸¸é, ±×¿¡ µû¶ó ÅÛÇÃ¸´À» È®Àå½ÃÅ²´Ù.
+yasnippetì— ë“±ë¡í•œ ë¬¸ì¥ì´ ìˆìœ¼ë©´, ê·¸ì— ë”°ë¼ í…œí”Œë¦¿ì„ í™•ì¥ì‹œí‚¨ë‹¤.
 
 http://emacsrocks.com/e06.html

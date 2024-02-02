@@ -1,6 +1,6 @@
 
 
-# ¼³Ä¡½Ã È¯°æ
+# ì„¤ì¹˜ì‹œ í™˜ê²½
 
 ```
 windows 8 - 64bit
@@ -9,23 +9,23 @@ nodejs v0.10.5 - 64bit
 ```
 
 
-# Âü°íÀÚ·á
- - [node.js´Â ¹«¾ùÀÎ°¡? #1]
+# ì°¸ê³ ìë£Œ
+ - [node.jsëŠ” ë¬´ì—‡ì¸ê°€? #1]
  - [github swank-js]
  - [connect to nodejs and chrome from emacs]
  - [emacsrocks e11]
- - [emacsrocks e11-ÇÑ±¹¾î¹ø¿ª]
+ - [emacsrocks e11-í•œêµ­ì–´ë²ˆì—­]
 
-# nodejs && npm¼³Ä¡
-http://nodejs.org/download/ ¿¡¼­ ¼³Ä¡ÆÄÀÏÀ» ´Ù¿î ¹Ş´Â´Ù.
+# nodejs && npmì„¤ì¹˜
+http://nodejs.org/download/ ì—ì„œ ì„¤ì¹˜íŒŒì¼ì„ ë‹¤ìš´ ë°›ëŠ”ë‹¤.
 
-# swank-js¼³Ä¡
-cmdÃ¢À» ¿­¾î `npm install -g swank-js`·Î swank-js¸¦ ¼³Ä¡ÇØÁØ´Ù.
+# swank-jsì„¤ì¹˜
+cmdì°½ì„ ì—´ì–´ `npm install -g swank-js`ë¡œ swank-jsë¥¼ ì„¤ì¹˜í•´ì¤€ë‹¤.
 
 
-# emacs¼³Á¤
+# emacsì„¤ì •
 
-* `init.el`À» ¼öÁ¤ÇÏÀÚ.
+* `init.el`ì„ ìˆ˜ì •í•˜ì.
 
 ```elisp
 ;; [== packages ==]
@@ -39,13 +39,13 @@ cmdÃ¢À» ¿­¾î `npm install -g swank-js`·Î swank-js¸¦ ¼³Ä¡ÇØÁØ´Ù.
 	))
 ```
 
-* `M-x list-packages`¿¡¼­ ´ÙÀ½À» ¼³Ä¡ÇØÁÖÀÚ
+* `M-x list-packages`ì—ì„œ ë‹¤ìŒì„ ì„¤ì¹˜í•´ì£¼ì
  - `js2-mode`
  - `slime-js`
  - `auto-complete`
  - `ac-slime`
 
-* `init.el`¿¡ ´ÙÀ½À» Ãß°¡ÇØÁÖ°í, emacs¸¦ ²¯´Ù ÄÑÁÖÀÚ.
+* `init.el`ì— ë‹¤ìŒì„ ì¶”ê°€í•´ì£¼ê³ , emacsë¥¼ ê»ë‹¤ ì¼œì£¼ì.
 
 ```elisp
 ;; [== swank-js ==]
@@ -64,14 +64,14 @@ cmdÃ¢À» ¿­¾î `npm install -g swank-js`·Î swank-js¸¦ ¼³Ä¡ÇØÁØ´Ù.
 (global-set-key [f5] 'refresh-swank-js-autocomplete)
 ```
 
-# ºê¶ó¿ìÁ®¿Í emacs¿¬°á½ÃÄÑÁÖ±â.
-- cmd Ã¢¿¡¼­ `swank-js`·Î ¼­¹ö¸¦ ¶ç¿öÁÖÀÚ
-- emacs»ó¿¡¼­ `M-x slime-connect`ÈÄ Host: `127.0.0.1`, Port: `4005`¿¡ Á¢¼Ó.
-- ºê¶ó¿ìÁ®¸¦ ¶ç¿ö¼­ http://127.0.0.1:8009/swank-js/test.html ·Î ÀÌµ¿.
-- emacs»ó¿¡¼­ `,`ÈÄ, Command: `select-remote`, Remote: `ºê¶ó¿ìÁ®¸í`
+# ë¸Œë¼ìš°ì ¸ì™€ emacsì—°ê²°ì‹œì¼œì£¼ê¸°.
+- cmd ì°½ì—ì„œ `swank-js`ë¡œ ì„œë²„ë¥¼ ë„ì›Œì£¼ì
+- emacsìƒì—ì„œ `M-x slime-connect`í›„ Host: `127.0.0.1`, Port: `4005`ì— ì ‘ì†.
+- ë¸Œë¼ìš°ì ¸ë¥¼ ë„ì›Œì„œ http://127.0.0.1:8009/swank-js/test.html ë¡œ ì´ë™.
+- emacsìƒì—ì„œ `,`í›„, Command: `select-remote`, Remote: `ë¸Œë¼ìš°ì ¸ëª…`
 
-# È®ÀÎ
-* swank-js°¡ Á¦´ë·Î µ¿ÀÛÇÏ´ÂÁö Å×½ºÆ®.
+# í™•ì¸
+* swank-jsê°€ ì œëŒ€ë¡œ ë™ì‘í•˜ëŠ”ì§€ í…ŒìŠ¤íŠ¸.
 
 ```
 Remote selected: (browser) Firefox20.0
@@ -79,12 +79,12 @@ NODE> alert("test!")
 undefined
 FIREFOX-20.0> 
 ```
-* `.js`Ã¢°ú `repl`Ã¢¿¡¼­ f5¸¦ ´©¸¥ÈÄ, ÀÚµ¿¿Ï¼ºÀÌ È°¼ºÈ­‰ç´ÂÁö È®ÀÎ.
-* `.js`Ã¢¿¡¼­ `C-M-x`·Î Æò°¡½ÄÀÌ Á¦´ë·Î ¹İ¿µµÇ´ÂÁö È®ÀÎ.
+* `.js`ì°½ê³¼ `repl`ì°½ì—ì„œ f5ë¥¼ ëˆ„ë¥¸í›„, ìë™ì™„ì„±ì´ í™œì„±í™”ë¬ëŠ”ì§€ í™•ì¸.
+* `.js`ì°½ì—ì„œ `C-M-x`ë¡œ í‰ê°€ì‹ì´ ì œëŒ€ë¡œ ë°˜ì˜ë˜ëŠ”ì§€ í™•ì¸.
 
  [nodejs]: http://nodejs.org/download/
- [node.js´Â ¹«¾ùÀÎ°¡? #1]: http://blog.outsider.ne.kr/480?category=42
+ [node.jsëŠ” ë¬´ì—‡ì¸ê°€? #1]: http://blog.outsider.ne.kr/480?category=42
  [github swank-js]: https://github.com/swank-js/swank-js
  [connect to nodejs and chrome from emacs]: http://e-arrows.sakura.ne.jp/2011/06/connect-to-nodejs-and-chrome-from-emacs.html
  [emacsrocks e11]: http://emacsrocks.com/e11.html
- [emacsrocks e11-ÇÑ±¹¾î¹ø¿ª]: http://www.amara.org/ko/videos/uk3T9Gk3NXQ5/info/emacs-rocks-episode-11-swank-js/
+ [emacsrocks e11-í•œêµ­ì–´ë²ˆì—­]: http://www.amara.org/ko/videos/uk3T9Gk3NXQ5/info/emacs-rocks-episode-11-swank-js/

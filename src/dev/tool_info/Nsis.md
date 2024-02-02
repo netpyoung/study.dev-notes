@@ -10,15 +10,15 @@ makensis script.nsi
 3=info, warnings, and errors
 4=all output.
 /O
-ÄÜ¼ÖÃâ·Â ´ë½Å ·Î±× Ãâ·Â
+ì½˜ì†”ì¶œë ¥ ëŒ€ì‹  ë¡œê·¸ ì¶œë ¥
 /PAUSE
-ÀÛ¾÷Á¾·áÀü¿¡ ÀÏ½ÃÁ¤Áö
+ì‘ì—…ì¢…ë£Œì „ì— ì¼ì‹œì •ì§€
 
 
 
 installer.exe
-/S : stepÃ¢ ¶ç¿ìÁö ¾ÊÀ½
-/D="¼³Ä¡µÉ Àå¼Ò"
+/S : stepì°½ ë„ìš°ì§€ ì•ŠìŒ
+/D="ì„¤ì¹˜ë  ì¥ì†Œ"
 
 3.2.2 Uninstaller Specific Options
 _?= sets $INSTDIR. It also stops the uninstaller from copying itself to the temporary directory and running from there. It can be used along with ExecWait to wait for the uninstaller to finish. It must be the last parameter used in the command line and must not contain any quotes, even if the path contains spaces.
@@ -29,9 +29,9 @@ ExecWait '"$INSTDIR\uninstaller.exe" /S _?=$INSTDIR'
 
 !define
 
-$DESKTOP : µ¥½ºÆ®Å¾
-$INSTDIR : ¼³Ä¡µÇ´Â_°æ·Î
-$SMPROGRAMS : ½ºÅ¸Æ®¸Ş´º-ÇÁ·Î±×·¥Áî
+$DESKTOP : ë°ìŠ¤íŠ¸íƒ‘
+$INSTDIR : ì„¤ì¹˜ë˜ëŠ”_ê²½ë¡œ
+$SMPROGRAMS : ìŠ¤íƒ€íŠ¸ë©”ë‰´-í”„ë¡œê·¸ë¨ì¦ˆ
 
 outFile "b1.exe"
 section
@@ -49,11 +49,11 @@ fileClose $0
 installDir $DESKTOP
 section
 setOutPath $INSTDIR
-file b1.nsi # OutPath·Î ¼³Á¤ÇÑ Æú´õ¿¡ ÀÖ´Â ÆÄÀÏÀ» º¹»çÇÑ´Ù.
+file b1.nsi # OutPathë¡œ ì„¤ì •í•œ í´ë”ì— ìˆëŠ” íŒŒì¼ì„ ë³µì‚¬í•œë‹¤.
 sectionEnd
 
 
-# ¾ğÀÎ½ºÅç·¯ ¼½¼Ç ÀÌ¸§Àº Ç×»ó Uninstall
+# ì–¸ì¸ìŠ¤í†¨ëŸ¬ ì„¹ì…˜ ì´ë¦„ì€ í•­ìƒ Uninstall
 section
 writeUninstaller "$INSTDIR\uninstall.exe"
 sectionEnd
@@ -62,44 +62,44 @@ delete $INSTDIR\uninstaller.exe
 delete $INSTDIR\test.txt
 sectionEnd
 
-# ¸ÖÆ¼ÇÃ ¾ğÀÎ½ºÅç·¯ ¼¼¼Ç¿¡´Â un.À» ºÙ¿©¾ßÇÔ
+# ë©€í‹°í”Œ ì–¸ì¸ìŠ¤í†¨ëŸ¬ ì„¸ì…˜ì—ëŠ” un.ì„ ë¶™ì—¬ì•¼í•¨
 section "un.Hello"
 
-# ¹Ù·Î°¡±â »ı¼º
-createShortCut "$SMPROGRAMS\¸µÅ©¸í.lnk" "½ÇÇàÆÄÀÏ¸í"
+# ë°”ë¡œê°€ê¸° ìƒì„±
+createShortCut "$SMPROGRAMS\ë§í¬ëª….lnk" "ì‹¤í–‰íŒŒì¼ëª…"
 
-# ·¹Áö½ºÅÍÈ®ÀÎ
+# ë ˆì§€ìŠ¤í„°í™•ì¸
 readRegStr $0 HKLM "SOFTWARE\JavaSoft\Java Runtime Environment" CurrentVersion
 
-# ¾î¶°ÇÑ secitonº¸´Ùµµ ÀÏÂï ½ÃÀÛµÇ´Â Äİ¹éÇÔ¼ö.
+# ì–´ë– í•œ secitonë³´ë‹¤ë„ ì¼ì° ì‹œì‘ë˜ëŠ” ì½œë°±í•¨ìˆ˜.
 Function .onInit
 
 
 
-!include LogicLib.nsh # ·ÎÁ÷¶óÀÌºê·¯¸® if case for while µîµî
+!include LogicLib.nsh # ë¡œì§ë¼ì´ë¸ŒëŸ¬ë¦¬ if case for while ë“±ë“±
 # MUI2 (Mordern UI 2) : http://nsis.sourceforge.net/Docs/Modern%20UI%202/Readme.html
 
-var·Î ¼±¾ğÇÑ°Ç ¾îµğ¼­³ª Á¢±Ù°¡´É global
+varë¡œ ì„ ì–¸í•œê±´ ì–´ë””ì„œë‚˜ ì ‘ê·¼ê°€ëŠ¥ global
 
-registerµé
+registerë“¤
 $0, $1, $2, $3, $4, $5, $6, $7, $8, $9, $R0, $R1, $R2, $R3, $R4, $R5, $R6, $R7, $R8, $R9
-push, pop¿µÇâ¹ŞÀ½
+push, popì˜í–¥ë°›ìŒ
 
 
-Detail¹öÆ° ´©¸£¸é ³ª¿À´Â ¸Ş½ÃÁö
-DetailPrint "ºí¶óºí¶ó"
+Detailë²„íŠ¼ ëˆ„ë¥´ë©´ ë‚˜ì˜¤ëŠ” ë©”ì‹œì§€
+DetailPrint "ë¸”ë¼ë¸”ë¼"
 
 
-# ÁÖ¼®
+# ì£¼ì„
 ;, #, /* */
 
 
 plugin::command [parameters]
 
-¹®ÀÚ¿­ escape quote: $\
-escape ¹®ÀÚµé : $$, $\r, $\n, $\t 
+ë¬¸ìì—´ escape quote: $\
+escape ë¬¸ìë“¤ : $$, $\r, $\n, $\t 
 
-var /GLOBAL blabla ; Àü¿ªº¯¼ö blabla
+var /GLOBAL blabla ; ì „ì—­ë³€ìˆ˜ blabla
 
 
 $EXEDIR, $EXEFILE, $EXEPATH
@@ -121,4 +121,4 @@ Rename $INSTDIR\file.ext $INSTDIR\file.dat
 
 
 SetCompressor [/SOLID] [/FINAL] zlib|bzip2|lzma
-zlib°¡ µğÆúÆ®ÀÌ¸ç,  ¾ĞÃàÈ¿À²Àº lzma°¡ °¡Àå³ô´Ù
+zlibê°€ ë””í´íŠ¸ì´ë©°,  ì••ì¶•íš¨ìœ¨ì€ lzmaê°€ ê°€ì¥ë†’ë‹¤

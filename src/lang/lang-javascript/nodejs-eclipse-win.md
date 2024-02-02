@@ -1,7 +1,7 @@
-nodejs - eclipse¼³Á¤
+nodejs - eclipseì„¤ì •
 ============================
 
-# ¼³Ä¡½Ã È¯°æ
+# ì„¤ì¹˜ì‹œ í™˜ê²½
 
 ```
 windows 8 - 64bit
@@ -12,31 +12,31 @@ Eclipse IDE for Java EE Developers - 64bit
 ```
 
 
-# Âü°íÀÚ·á
- - [node.js´Â ¹«¾ùÀÎ°¡? #1]
- - http://nanstrong.tistory.com/entry/ÀÌÅ¬¸³½º-Nodejs-¿¬µ¿ÇÏ±â-Eclipse-Nodejs
+# ì°¸ê³ ìë£Œ
+ - [node.jsëŠ” ë¬´ì—‡ì¸ê°€? #1]
+ - http://nanstrong.tistory.com/entry/ì´í´ë¦½ìŠ¤-Nodejs-ì—°ë™í•˜ê¸°-Eclipse-Nodejs
 
-# nodejs && npm¼³Ä¡
-http://nodejs.org/download/ ¿¡¼­ ¼³Ä¡ÆÄÀÏÀ» ´Ù¿î ¹Ş´Â´Ù.
+# nodejs && npmì„¤ì¹˜
+http://nodejs.org/download/ ì—ì„œ ì„¤ì¹˜íŒŒì¼ì„ ë‹¤ìš´ ë°›ëŠ”ë‹¤.
 
 
-# eclipse ´Ù¿î·Îµå
-* http://www.eclipse.org/downloads/ »çÀÌÆ®·Î ÀÌµ¿
-* `Eclipse IDE for Java EE Developers` ´Ù¿î·Îµå
+# eclipse ë‹¤ìš´ë¡œë“œ
+* http://www.eclipse.org/downloads/ ì‚¬ì´íŠ¸ë¡œ ì´ë™
+* `Eclipse IDE for Java EE Developers` ë‹¤ìš´ë¡œë“œ
 
-# nodeclipse ¼³Ä¡.
-* eclipse½ÇÇà
+# nodeclipse ì„¤ì¹˜.
+* eclipseì‹¤í–‰
 * Help > Install New Software
-* http://www.nodeclipse.org/updates Ãß°¡
-* Nodeclipse¾Æ·¡ÀÖ´Â Nodeclipse¸¸ Ã¼Å© ¹× ¼³Ä¡(µû·Î ¼³Ä¡¾ÈÇÏ¸é chrome¶§¹®¿¡ ¿À·¡°É¸²)
+* http://www.nodeclipse.org/updates ì¶”ê°€
+* Nodeclipseì•„ë˜ìˆëŠ” Nodeclipseë§Œ ì²´í¬ ë° ì„¤ì¹˜(ë”°ë¡œ ì„¤ì¹˜ì•ˆí•˜ë©´ chromeë•Œë¬¸ì— ì˜¤ë˜ê±¸ë¦¼)
 
 
-# È®ÀÎ.
-- eclipse½ÇÇà
-- New -> NodeProject ¼±ÅÃ
-- `hello-world-server.js`ÆÄÀÏÀÌ ÀÖÀ»°Çµ¥, ¾ÈÀÇ ³»¿ë »èÁ¦.
-- `console.log("hi") ÀÔ·Â`
-- Run(Ctrl+F11) Node Application ½ÇÇà.
-- `hi`¶ó´Â ±ÛÀÚ°¡ Ãâ·ÂµÇ¸é ¼º°ø
+# í™•ì¸.
+- eclipseì‹¤í–‰
+- New -> NodeProject ì„ íƒ
+- `hello-world-server.js`íŒŒì¼ì´ ìˆì„ê±´ë°, ì•ˆì˜ ë‚´ìš© ì‚­ì œ.
+- `console.log("hi") ì…ë ¥`
+- Run(Ctrl+F11) Node Application ì‹¤í–‰.
+- `hi`ë¼ëŠ” ê¸€ìê°€ ì¶œë ¥ë˜ë©´ ì„±ê³µ
 
-[node.js´Â ¹«¾ùÀÎ°¡? #1]: http://blog.outsider.ne.kr/480?category=42
+[node.jsëŠ” ë¬´ì—‡ì¸ê°€? #1]: http://blog.outsider.ne.kr/480?category=42

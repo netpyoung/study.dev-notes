@@ -1,7 +1,7 @@
 # actionscript 2.0 reference chm
 http://onnerby.se/~daniel/chm/actionscript2/flash_as2lr/flash_as2lr.chm
 
-# action script 3 ÇÑ±¹ ¸Å´º¾ó pdf
+# action script 3 í•œêµ­ ë§¤ë‰´ì–¼ pdf
 http://help.adobe.com/ko_KR/ActionScript/3.0_ProgrammingAS3/flash_as3_programming.pdf
 
 
@@ -10,34 +10,34 @@ CLIK : Common Lightweight Interface Kit
 HUD : Heads Up Display
 
 
--- Adobe ¼³Á¤ ---------------------------------------------------------------------------------------
-# gfx ·±Ã³ ¼³Ä¡
-* È®Àå¸Å´ÏÀú ½ÇÇà : C:\Program Files\Adobe\Adobe Extension Manager CS5
-* »õ·Î¿î È®Àå ¼³Ä¡ÇÏ±â : C:/Program Files/Scaleform/GFx SDK 3.1/Resources/CLIK Tools/ Scaleform CLIK.mxp
+-- Adobe ì„¤ì • ---------------------------------------------------------------------------------------
+# gfx ëŸ°ì²˜ ì„¤ì¹˜
+* í™•ì¥ë§¤ë‹ˆì € ì‹¤í–‰ : C:\Program Files\Adobe\Adobe Extension Manager CS5
+* ìƒˆë¡œìš´ í™•ì¥ ì„¤ì¹˜í•˜ê¸° : C:/Program Files/Scaleform/GFx SDK 3.1/Resources/CLIK Tools/ Scaleform CLIK.mxp
 * Window > Other Panels > Scaleform Launcher
-* +´­·¯¼­ ÇÃ·¹ÀÌ¾î ¼³Ä¡ : C:/Program Files/Scaleform/GFx SDK 3.1/Bin/FxMediaPlayerAMP.exe
+* +ëˆŒëŸ¬ì„œ í”Œë ˆì´ì–´ ì„¤ì¹˜ : C:/Program Files/Scaleform/GFx SDK 3.1/Bin/FxMediaPlayerAMP.exe
 
-# actionscript2 ¼³Á¤
+# actionscript2 ì„¤ì •
 * Edit -> Preference -> Actionscript -> Actionscript 2.0 Settings...
-* + ¹öÆ° ´­·¯¼­ °æ·ÎÃß°¡ : C:\Program Files\Scaleform\GFx SDK 3.1\Resources\CLIK\
+* + ë²„íŠ¼ ëˆŒëŸ¬ì„œ ê²½ë¡œì¶”ê°€ : C:\Program Files\Scaleform\GFx SDK 3.1\Resources\CLIK\
 
-# ÆùÆ®
+# í°íŠ¸
 * Text -> Font Embedding
-* Family : Slate Mobile, Character ranges : Basic Latin (95/95 glyphs)¼±ÅÃÈÄ +´­·¯¼­ Ãß°¡
+* Family : Slate Mobile, Character ranges : Basic Latin (95/95 glyphs)ì„ íƒí›„ +ëˆŒëŸ¬ì„œ ì¶”ê°€
 
--- VC ÇÁ·ÎÁ§Æ® ¼³Á¤---------------------------------------------------------------------------------------
-GFx 3.1ºôµå½Ã ºôµå¼ÂÆÃ¿¡¼­ D3D9_Debug_Static·Î ºôµå(DXSDK_Aug08.exe¼³Ä¡ÇØ¾ßÇÔ.)
+-- VC í”„ë¡œì íŠ¸ ì„¤ì •---------------------------------------------------------------------------------------
+GFx 3.1ë¹Œë“œì‹œ ë¹Œë“œì…‹íŒ…ì—ì„œ D3D9_Debug_Staticë¡œ ë¹Œë“œ(DXSDK_Aug08.exeì„¤ì¹˜í•´ì•¼í•¨.)
 
-# ÇÁ·ÎÁ§Æ® ¼³Á¤
-C/C++ > ÀÏ¹İ
+# í”„ë¡œì íŠ¸ ì„¤ì •
+C/C++ > ì¼ë°˜
 "$(DXSDK_DIR)\include";"$(GFXSDK)\Src\GRenderer";" $(GFXSDK)\Src\GKernel";"$(GFXSDK)\Src\GFxXML";" $(GFXSDK)\Include"
 
-¸µÄ¿ > ÀÏ¹İ
+ë§ì»¤ > ì¼ë°˜
 tutorial : "$(DXSDK_DIR)\Lib\x86";"$(GFXSDK)\3rdParty\expat-2.0.1\lib";"$(GFXSDK)\3rdParty\zlib-1.2.3\Lib\$(PlatformName)\Msvc90\$(ConfigurationName)";"$(GFXSDK)\3rdParty\jpeg-6b\Lib\$(PlatformName)\Msvc90\$(ConfigurationName)";"$(GFXSDK)\Lib\$(PlatformName)\Msvc90\$(ConfigurationName)"
 //
 "$(DXSDK_DIR)\Lib\x86";"$(GFXSDK)\3rdParty\expat-2.0.1\lib";"$(GFXSDK)\3rdParty\libpng\Lib\$(PlatformName)\Msvc90\$(ConfigurationName)";"$(GFXSDK)\3rdParty\zlib-1.2.3\Lib\$(PlatformName)\Msvc90\$(ConfigurationName)";"$(GFXSDK)\3rdParty\jpeg-6b\Lib\$(PlatformName)\Msvc90\$(ConfigurationName)";"$(GFXSDK)\Lib\$(PlatformName)\Msvc90\$(ConfigurationName)";"$(GFXSDK)\3rdParty\fmod\pc\$(PlatformName)\lib"
 
-¸µÄ¿ > ÀÔ·Â
+ë§ì»¤ > ì…ë ¥
 tutorial : libgfx.lib libjpeg.lib zlib.lib imm32.lib winmm.lib
 //
 libgfx.lib libjpeg.lib libpng.lib zlib.lib imm32.lib winmm.lib d3d9.lib d3dx9.lib XInput.lib fmodexL_vc.lib libgrenderer_d3d9.lib
@@ -48,12 +48,12 @@ libgfx.lib libjpeg.lib libpng.lib zlib.lib imm32.lib winmm.lib d3d9.lib d3dx9.li
 
 -----------------------------------------------------------------------------------------
 
-MovieClipLoader, _root¿Í _lock
+MovieClipLoader, _rootì™€ _lock
 
 Variables in that movie can be accessed as _levelN.variableName (e.g., _level6.counter).
 
 
-ASSetPropFlags »ç¿ë¹ı
+ASSetPropFlags ì‚¬ìš©ë²•
 http://www.jowrney.com/xe/?mid=sas&listStyle=gallery&document_srl=8990
 
 How to use ASSetPropFlags in ActionScript 2.0 
@@ -61,11 +61,11 @@ http://www.ryanjuckett.com/programming/actionscript/29-how-to-use-assetpropflags
 -----------------------------------------------------------------------------------------
 
 $(GFXSDK)\gfxexport.exe
-gfxexport -i DDS -c ÆÄÀÏ¸í.swf
+gfxexport -i DDS -c íŒŒì¼ëª….swf
 
--i ¿É¼ÇÀº ÀÌ¹ÌÁö Æ÷¸ËÀ» Á¤ÀÇ. (DDS´Â DirectX ÇÃ·§Æû¿¡¼± °¡Àå ÀÏ¹İÀûÀÎ ÇüÅÂÀÎµ¥ ±× ÀÌÀ¯´Â DXT ÅØ½ºÃ³ ¾ĞÃàÀÌ °¡´É, ÀÏ¹İÀûÀ¸·Î 4¹è Á¤µµ ·±Å¸ÀÓ ÅØ½ºÃ³ ¸Ş¸ğ¸®¸¦ Àı¾à)
+-i ì˜µì…˜ì€ ì´ë¯¸ì§€ í¬ë§·ì„ ì •ì˜. (DDSëŠ” DirectX í”Œë«í¼ì—ì„  ê°€ì¥ ì¼ë°˜ì ì¸ í˜•íƒœì¸ë° ê·¸ ì´ìœ ëŠ” DXT í…ìŠ¤ì²˜ ì••ì¶•ì´ ê°€ëŠ¥, ì¼ë°˜ì ìœ¼ë¡œ 4ë°° ì •ë„ ëŸ°íƒ€ì„ í…ìŠ¤ì²˜ ë©”ëª¨ë¦¬ë¥¼ ì ˆì•½)
 
--c ¿É¼ÇÀº ¾ĞÃàÀ» Á¤ÀÇÇÑ´Ù. GFx ÆÄÀÏ ³» º¤ÅÍ ¹× ¾×¼Ç½ºÅ©¸³Æ® ÄÁÅÙÃ÷¸¸ÀÌ ¾ĞÃàµÈ´Ù. ÀÌ¹ÌÁö ¾ĞÃàÀº ¼±ÅÃÇÑ ÀÌ¹ÌÁö Ãâ·Â Æ÷¸Ë°ú DXT ¾ĞÃà ¿É¼Ç¿¡ µû¸¥´Ù
+-c ì˜µì…˜ì€ ì••ì¶•ì„ ì •ì˜í•œë‹¤. GFx íŒŒì¼ ë‚´ ë²¡í„° ë° ì•¡ì…˜ìŠ¤í¬ë¦½íŠ¸ ì»¨í…ì¸ ë§Œì´ ì••ì¶•ëœë‹¤. ì´ë¯¸ì§€ ì••ì¶•ì€ ì„ íƒí•œ ì´ë¯¸ì§€ ì¶œë ¥ í¬ë§·ê³¼ DXT ì••ì¶• ì˜µì…˜ì— ë”°ë¥¸ë‹¤
 
--share_images ¿É¼ÇÀº ¼­·Î ´Ù¸¥ SWF ÆÄÀÏ ³» µ¿ÀÏÇÑ ÀÌ¹ÌÁö¸¦ Ã£¾Æ³»¼­ ÇÏ³ªÀÇ °øÀ¯ »çº»¸¸À» ·ÎµùÇÔÀ¸·Î½á ¸Ş¸ğ¸® »ç¿ëÀ» Àı¾à
+-share_images ì˜µì…˜ì€ ì„œë¡œ ë‹¤ë¥¸ SWF íŒŒì¼ ë‚´ ë™ì¼í•œ ì´ë¯¸ì§€ë¥¼ ì°¾ì•„ë‚´ì„œ í•˜ë‚˜ì˜ ê³µìœ  ì‚¬ë³¸ë§Œì„ ë¡œë”©í•¨ìœ¼ë¡œì¨ ë©”ëª¨ë¦¬ ì‚¬ìš©ì„ ì ˆì•½
 -----------------------------------------------------------------------------------------

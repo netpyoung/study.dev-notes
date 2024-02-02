@@ -2,31 +2,31 @@
 
  
 
-cpio ¸í·É¾î : ÆÄÀÏÀ» ¿©·¯ Å×ÀÌÇÁ¿¡ ³ª´² ¹é¾÷ÇÒ ¼ö ÀÖ´Ù.
+cpio ëª…ë ¹ì–´ : íŒŒì¼ì„ ì—¬ëŸ¬ í…Œì´í”„ì— ë‚˜ëˆ  ë°±ì—…í•  ìˆ˜ ìžˆë‹¤.
 
  
 
-dump ¸í·É¾î : º¯È­°¡ ¹ß»ýÇÑ ÆÄÀÏ¸¸ ¹é¾÷ÇÏ´Â "ºÎºÐ ¹é¾÷"¸í·É¾î
+dump ëª…ë ¹ì–´ : ë³€í™”ê°€ ë°œìƒí•œ íŒŒì¼ë§Œ ë°±ì—…í•˜ëŠ” "ë¶€ë¶„ ë°±ì—…"ëª…ë ¹ì–´
 
  
 
-iostat ¸í·É¾î : ½Ã°£¿¡ ´ëÇÑ Æò±ÕÀûÀÎ ÀÔÃâ·Â Åë°è¸¦ º¸¿©ÁÜ
+iostat ëª…ë ¹ì–´ : ì‹œê°„ì— ëŒ€í•œ í‰ê· ì ì¸ ìž…ì¶œë ¥ í†µê³„ë¥¼ ë³´ì—¬ì¤Œ
 
  
 
-vmstat ¸í·É¾î : Ä¿³ÎÀÌ °¡Áö°í ÀÖ´Â Á¤º¸¸¦ Ã¼Å©(ÇÁ·Î¼¼½º, µð½ºÅ©, CPU, °¡»ó¸Þ¸ð¸®µî)
+vmstat ëª…ë ¹ì–´ : ì»¤ë„ì´ ê°€ì§€ê³  ìžˆëŠ” ì •ë³´ë¥¼ ì²´í¬(í”„ë¡œì„¸ìŠ¤, ë””ìŠ¤í¬, CPU, ê°€ìƒë©”ëª¨ë¦¬ë“±)
 
  
 
-ulimit ¸í·É¾î : ¸®¼Ò½ºµé °Ë»ö ¹× »ç¿ë Á¦ÇÑ
--a : ¸®½ºÆ®
--c : ÄÚ¾î´ýÇÁ(512Byte´ÜÀ§)
--d : ½ºÅÃ¼¼±×¸ÕÆ®(kb)
--v : °¡»ó¸Þ¸ð¸®(kb)
+ulimit ëª…ë ¹ì–´ : ë¦¬ì†ŒìŠ¤ë“¤ ê²€ìƒ‰ ë° ì‚¬ìš© ì œí•œ
+-a : ë¦¬ìŠ¤íŠ¸
+-c : ì½”ì–´ë¤í”„(512Byteë‹¨ìœ„)
+-d : ìŠ¤íƒì„¸ê·¸ë¨¼íŠ¸(kb)
+-v : ê°€ìƒë©”ëª¨ë¦¬(kb)
 
  
 
-trap ¸í·É¾î : ½Ã±×³Î Á¦¾î ¸í·É¾î
+trap ëª…ë ¹ì–´ : ì‹œê·¸ë„ ì œì–´ ëª…ë ¹ì–´
 
     $ trap 'echo "hi"' SIGINT
     $ trap -p
@@ -36,7 +36,7 @@ trap ¸í·É¾î : ½Ã±×³Î Á¦¾î ¸í·É¾î
 
  
 
-ulimit ¸í·É¾î
+ulimit ëª…ë ¹ì–´
 
 http://coffeenix.net/board_print.php?bd_code=146
 
@@ -46,7 +46,7 @@ http://coffeenix.net/board_print.php?bd_code=146
 
  
 
-nm ¸í·É¾î
+nm ëª…ë ¹ì–´
 
        nm - list symbols from object files
 

@@ -2,18 +2,18 @@ Crashrpt
 under the New BSD license.
 http://crashrpt.sourceforge.net/docs/html/getting_started.html
 
-À©µµ¿ì ¾îÇÃ¸®ÄÉÀÌ¼Ç(MS vc++) Å©·¡½¬ ¸®Æ÷Æ® ÇÁ·Î±×·¥.
+ìœˆë„ìš° ì–´í”Œë¦¬ì¼€ì´ì…˜(MS vc++) í¬ë˜ì‰¬ ë¦¬í¬íŠ¸ í”„ë¡œê·¸ë¨.
 
 Dr. Watson(XP)
 Dr. Watson is able to intercept unhandled SEH (Structured Exception Handling, SEH) exceptions in user-mode programs, and in OS modules.
-Dr.Watson -> MS ¼­¹ö -> °³¹ßÀÚ
-¿¡·¯ ¸®Æ÷Æ®¸¦ ÀúÀåÇÏ±â À§ÇÑ ¼­µå-ÆÄÆ¼ ¼­¹ö ÀÌ¿ë¿¡ ºÒÆíÇÔ.
-µğ¹ö°Å À¯Àú ÀÎÅÍÆäÀÌ½º³ª, ¸®Æ÷Æ® ³»¿ëÀ» Ä¿½ºÅèÇÏ±â¿¡ ºÒÆíÇÔ.
+Dr.Watson -> MS ì„œë²„ -> ê°œë°œì
+ì—ëŸ¬ ë¦¬í¬íŠ¸ë¥¼ ì €ì¥í•˜ê¸° ìœ„í•œ ì„œë“œ-íŒŒí‹° ì„œë²„ ì´ìš©ì— ë¶ˆí¸í•¨.
+ë””ë²„ê±° ìœ ì € ì¸í„°í˜ì´ìŠ¤ë‚˜, ë¦¬í¬íŠ¸ ë‚´ìš©ì„ ì»¤ìŠ¤í†°í•˜ê¸°ì— ë¶ˆí¸í•¨.
 
 WER(Windows Error Reporting)(Vista)
-´ÜÁ¡
-    Å¬·ÎÁî ¼Ò½º
-	·ÎÄÃ ¼­¹ö»ó ¸®Æ÷Æ®¸¦ ÀúÀåÇÒ¼ö ¾ø°í, ¿¡·¯ ¸®Æ÷Æ®¸¦ º¼·Á¸é µ·³»¾ßÇÔ(USD1500)
+ë‹¨ì 
+    í´ë¡œì¦ˆ ì†ŒìŠ¤
+	ë¡œì»¬ ì„œë²„ìƒ ë¦¬í¬íŠ¸ë¥¼ ì €ì¥í• ìˆ˜ ì—†ê³ , ì—ëŸ¬ ë¦¬í¬íŠ¸ë¥¼ ë³¼ë ¤ë©´ ëˆë‚´ì•¼í•¨(USD1500)
 
 Crashrpt
 CrashRpt is the fact that you have to distribute additional binaries (dbghelp.dll, CrashRpt.dll, CrashSender.exe)
@@ -25,4 +25,4 @@ C runtime libraries (CRT) as a Multi-threaded DLL (/MD compiler flag
 All modules in the client application must be linked to the same version of CRT DLL in order to use CrashRpt
 
 --------------------------------------------------------------------------------------
-¿¹¿Ü ÇÚµé¸µ : http://crashrpt.sourceforge.net/docs/html/exception_handling.html
+ì˜ˆì™¸ í•¸ë“¤ë§ : http://crashrpt.sourceforge.net/docs/html/exception_handling.html

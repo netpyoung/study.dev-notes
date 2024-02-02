@@ -1,11 +1,11 @@
-°£´ÜÇÑ µ¥¸ó.
+ê°„ë‹¨í•œ ë°ëª¬.
 =======
 
 
-1. ÀÏ´Ü sshÃ¢ ÇÏ³ª¸¦ ¶ç¿ö
-2. ÀÏ´Ü DaemonRoomÀ» ¸¸µé°í ±× ¾È¿¡ ÀÖ´Â
-3. watchRoomÀ» ±ú²ýÈ÷ Ä¡¿öµÐ´Ù.
-4. myDaemond.conf´Â ÆÄÀÏ¸í¸¸.. ±×³É confÀÏ»Ó log³²±â±â À§ÇÑ ÆÄÀÏÀÌ´Ù.
+1. ì¼ë‹¨ sshì°½ í•˜ë‚˜ë¥¼ ë„ì›Œ
+2. ì¼ë‹¨ DaemonRoomì„ ë§Œë“¤ê³  ê·¸ ì•ˆì— ìžˆëŠ”
+3. watchRoomì„ ê¹¨ë—ížˆ ì¹˜ì›Œë‘”ë‹¤.
+4. myDaemond.confëŠ” íŒŒì¼ëª…ë§Œ.. ê·¸ëƒ¥ confì¼ë¿ logë‚¨ê¸°ê¸° ìœ„í•œ íŒŒì¼ì´ë‹¤.
 
 ```sh
 [pyoung@hwarang DaemonRoom]$ rm watchRoom/*
@@ -17,13 +17,13 @@ myDaemond.conf  watchRoom
 myDaemond.conf  watchRoom
 [pyoung@hwarang DaemonRoom]$ cat myDaemond.conf
 [pyoung@hwarang DaemonRoom]$ ls -al watchRoom/
-ÇÕ°è 16
-drwxrwxr-x 2 pyoung pyoung 4096  2¿ù 20 09:59 .
-drwxrwxr-x 3 pyoung pyoung 4096  2¿ù 20 09:50 ..
+í•©ê³„ 16
+drwxrwxr-x 2 pyoung pyoung 4096  2ì›” 20 09:59 .
+drwxrwxr-x 3 pyoung pyoung 4096  2ì›” 20 09:50 ..
 [pyoung@hwarang DaemonRoom]$
 ```
 
-sshÅ¬¶óÀÌ¾ðÆ®¸¦ ÇÏ³ª ´õ¶ç¿ö¼­ daemonÀ» ½ÇÇàÇÑ´Ù.
+sshí´ë¼ì´ì–¸íŠ¸ë¥¼ í•˜ë‚˜ ë”ë„ì›Œì„œ daemonì„ ì‹¤í–‰í•œë‹¤.
 
 ```
 [pyoung@hwarang temp]$ ./daemon01
@@ -31,8 +31,8 @@ child!
 parent@
 ```
 
-ÀÏ´Ü watchRoom¿¡ ÆÄÀÏ aa¸¦ »ý¼ºÇØ º¸°í, logÆÄÀÏ(myDaemond.conf)¸¦ È®ÀÎÇØº»´Ù.
-ÀÌ¹ø¿¡´Â watchRoom¿¡ Æú´õ¸¦ »ý¼ºÇÏº¸°í ´Ù½Ã È®ÀÎÇØ º»´Ù.
+ì¼ë‹¨ watchRoomì— íŒŒì¼ aaë¥¼ ìƒì„±í•´ ë³´ê³ , logíŒŒì¼(myDaemond.conf)ë¥¼ í™•ì¸í•´ë³¸ë‹¤.
+ì´ë²ˆì—ëŠ” watchRoomì— í´ë”ë¥¼ ìƒì„±í•˜ë³´ê³  ë‹¤ì‹œ í™•ì¸í•´ ë³¸ë‹¤.
 
 ```
 [pyoung@hwarang DaemonRoom]$ echo "AA" >>  watchRoom/aa
@@ -45,14 +45,14 @@ BB Sat Feb 20 16:25:56 2010
 [pyoung@hwarang DaemonRoom]$
 ```
 
-¼Ò½º´Â ´ÙÀ½°ú °°´Ù.
-* mainÀº ´Ü¼øÈ÷ fork¸¸ ÇØÁÖ°í
-* init_daemonÀ¸·Î µ¥¸óÀ¸·Î ¸¸µé°í
-* check_dirÀ» ÀÌ¿ëÇÏ¿© Æ¯Á¤ Æú´õ(WATCH_DIR)¸¦ °¨½ÃÇÏ¿©
-* Æ¯Á¤ÆÄÀÏ(CONF_FILE)¿¡ ·Î±×¸¦ ³²±ä´Ù.
+ì†ŒìŠ¤ëŠ” ë‹¤ìŒê³¼ ê°™ë‹¤.
+* mainì€ ë‹¨ìˆœížˆ forkë§Œ í•´ì£¼ê³ 
+* init_daemonìœ¼ë¡œ ë°ëª¬ìœ¼ë¡œ ë§Œë“¤ê³ 
+* check_dirì„ ì´ìš©í•˜ì—¬ íŠ¹ì • í´ë”(WATCH_DIR)ë¥¼ ê°ì‹œí•˜ì—¬
+* íŠ¹ì •íŒŒì¼(CONF_FILE)ì— ë¡œê·¸ë¥¼ ë‚¨ê¸´ë‹¤.
 
-µ¥¸ó »ý¼º¹æ¹ýÀº
-http://netpyoung.tistory.com/75 ¸¦ ÂüÁ¶ÇÑ´Ù.
+ë°ëª¬ ìƒì„±ë°©ë²•ì€
+http://netpyoung.tistory.com/75 ë¥¼ ì°¸ì¡°í•œë‹¤.
 
 daemon01.c
 ```c

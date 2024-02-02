@@ -1,18 +1,18 @@
-Emacs Rocks! ¿¡ÇÇ¼Òµå 02: vimgolf ÀÌ±Û
+Emacs Rocks! ì—í”¼ì†Œë“œ 02: vimgolf ì´ê¸€
 
 http://www.amara.org/videos/UTIhTQ7anPyR
 
 F3 kmacro-start-macro
 
-ÈÄ¿¡ ´Ù½Ã µ¹¸®±â À§ÇØ, Å°º¸µå ÀÔ·ÂÀ» ÀúÀåÇÑ´Ù.
+í›„ì— ë‹¤ì‹œ ëŒë¦¬ê¸° ìœ„í•´, í‚¤ë³´ë“œ ì…ë ¥ì„ ì €ì¥í•œë‹¤.
 C-9 digit-argument
 
-´ÙÀ½¿¡ ¿À´Â ¸í·ÉÀ» 9¹ø ½ÇÇàÇÑ´Ù.
+ë‹¤ìŒì— ì˜¤ëŠ” ëª…ë ¹ì„ 9ë²ˆ ì‹¤í–‰í•œë‹¤.
 
 
 http://emacsrocks.com/e02.html
 
 
-Áö±İ º¸´Ï VimÀ¸·Î ´©°¡ 16Å¸¸¦ ÃÆ³×... ÈìÁ»¹«.
+ì§€ê¸ˆ ë³´ë‹ˆ Vimìœ¼ë¡œ ëˆ„ê°€ 16íƒ€ë¥¼ ì³¤ë„¤... í ì¢€ë¬´.
 
 http://vimgolf.com/challenges/4dcd7b572c8e510001000005

@@ -1,11 +1,11 @@
-Emacs Rocks! ¿¡ÇÇ¼Òµå 09: expand-region
+Emacs Rocks! ì—í”¼ì†Œë“œ 09: expand-region
 
 
 http://www.amara.org/videos/4NpbfZsllqhj
 
 C-@ expand-region
 
-semantic unitsÀ» ÀÌ¿ëÇÏ¿© ¼±ÅÃ ¿µ¿ªÀ» È®Àå½ÃÅ²´Ù. ¿©±â¼­ ¾òÀ» ¼ö ÀÖ½À´Ï´Ù.
+semantic unitsì„ ì´ìš©í•˜ì—¬ ì„ íƒ ì˜ì—­ì„ í™•ì¥ì‹œí‚¨ë‹¤. ì—¬ê¸°ì„œ ì–»ì„ ìˆ˜ ìˆìŠµë‹ˆë‹¤.
 
 
-¸µÅ© : http://emacsrocks.com/e09.html
+ë§í¬ : http://emacsrocks.com/e09.html
