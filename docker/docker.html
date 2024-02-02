@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="kr" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>docker - 넷평의 개발 노트</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="study.dev-notes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Index.html">들어가며</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git.html">git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../git/git-commit-message.html">git commit message</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Service</li><li class="chapter-item expanded "><a href="../docker/docker.html" class="active">docker</a></li><li class="chapter-item expanded "><a href="../jenkins/jenkins.html">jenkins</a></li><li class="chapter-item expanded affix "><li class="part-title">Os</li><li class="chapter-item expanded "><a href="../os-windows/os-windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../os-macos/os-macos.html">macOs</a></li><li class="chapter-item expanded "><a href="../os-linux/os-linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">News</li><li class="chapter-item expanded "><a href="../news/news.html">News</a></li><li class="chapter-item expanded affix "><li class="part-title">Document</li><li class="chapter-item expanded "><a href="../document/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../document/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../document/plantuml.html">Plantuml</a></li><li class="chapter-item expanded "><a href="../document/mermaid.html">Mermaid</a></li><li class="chapter-item expanded affix "><li class="part-title">Editor</li><li class="chapter-item expanded "><a href="../editor/editor-vscode.html">Vscode</a></li><li class="chapter-item expanded affix "><li class="part-title">Translate</li><li class="chapter-item expanded "><a href="../translate/omegat.html">OmegaT</a></li><li class="chapter-item expanded affix "><li class="part-title">Company</li><li class="chapter-item expanded "><a href="../company-amazon/company-amazon.html">Company Amazon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../company-amazon/amazon-s3.html">Amazon S3</a></li></ol></li><li class="chapter-item expanded "><a href="../company-google/company-google.html">Company Google</a></li><li class="chapter-item expanded "><a href="../company-microsoft/company-microsoft.html">Company Microsoft</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">넷평의 개발 노트</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/netpyoung/dev-notes" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/netpyoung/dev-notes/edit/main/src/docker/docker.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="docker"><a class="header" href="#docker">Docker</a></h1>
+<ul>
+<li><a href="https://learnxinyminutes.com/docs/docker/">https://learnxinyminutes.com/docs/docker/</a></li>
+<li><a href="https://www.docker.com/">https://www.docker.com/</a>
+<ul>
+<li><a href="https://docs.docker.com/">https://docs.docker.com/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="cmd"><a class="header" href="#cmd">cmd</a></h2>
+<pre><code class="language-sh">## open port
+docker@default:~$ echo 'export DOCKER_HOST=tcp://$(boot2docker ip 2&gt;/dev/null):8000' &gt;&gt; ~/.bash_profile
+
+## install image
+docker@default:~$ docker search ubuntu
+docker@default:~$ docker pull ubuntu:latest
+
+## run image
+docker@default:~$ docker run -it --name jekyll ubuntu
+
+
+
+
+docker@default:~$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES
+33b5f808449d        ubuntu              &quot;/bin/bash&quot;         About an hour ago   Up About an hour    0.0.0.0:8000-&gt;8000/tcp   jekyll
+
+## backup image
+docker@default:~$ docker commit 33b5f808449d github-pages
+docker@default:~$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+github-pages        latest              3ccaea30ec80        About an hour ago   641.5 MB
+ubuntu              latest              cdd474520b8c        45 hours ago        188 MB
+
+## set volum from VirtualBox
+docker@default:~$ docker run -it --name jekyll -p 8000:8000 -v /c/Users/pyoung/hello/netpyoung.github.io/:/site github-pages
+
+docker@default:~$ docker start jekyll
+docker@default:~$ docker attach jekyll
+</code></pre>
+<h2 id="with-jenkins"><a class="header" href="#with-jenkins">With Jenkins</a></h2>
+<pre><code class="language-sh"># pull
+git clone ...
+
+# unit-test
+docker run --rm \
+-v /var/jenkins_home/workspace/${JOB_NAME}:/app \
+-w /app \
+ruby:2.3 sh -c &quot;bundle install &amp;&amp; bundle exec ruby app_test.rb&quot;
+
+# build
+docker build --force-rm=true -t ${DOCKER_USER_ID}/ruby-app:latest .
+
+# tag
+docker tag ${DOCKER_USER_ID}/ruby-app ${DOCKER_USER_ID}/ruby-app:${BUILD_NUMBER}
+
+# push
+docker login -u ${DOCKER_USER_ID} -p {DOCKER_USER_PASSWOD}
+docker push ${DOCKER_USER_ID}/ruby-app:${BUILD_NUMBER}
+docker push ${DOCKER_USER_ID}/ruby-app:latest
+
+# deploy
+docker stop ruby-app
+docker rm ruby-app
+docker run -d -p 10000:4567 --name=ruby-app ${DOCKER_USER_ID}/ruby-app:${BUILD_NUMBER}
+</code></pre>
+<h2 id="docker-compose"><a class="header" href="#docker-compose">docker compose</a></h2>
+<pre><code class="language-yaml">version: '2'
+
+services:
+    app:
+        build: .
+        image: ${DOCKER_USER_ID}/ruby-app
+    unit:
+        image: ruby:2.3
+        volumes:
+            - ${WORKSPACE_PATH}/${JOB_NAME}:/app
+        working_dir: /app
+        command: bash -c &quot;bundle install &amp;&amp; bundle exec ruby app_test.rb&quot;
+    production:
+        image: ${DOCKER_USER_ID}/ruby-app:${BUILD_NUMBER}
+        ports:
+            - 10001:4567
+</code></pre>
+<pre><code class="language-yaml"># pull
+git clone ...
+
+# unit-test
+docker-compose run --rm unit
+
+# build
+docker-compose build app
+
+# tag
+
+# push
+
+# deploy
+docker-compose up -d production
+</code></pre>
+<h2 id="swarm"><a class="header" href="#swarm">swarm</a></h2>
+<ul>
+<li><a href="https://docs.docker.com/engine/swarm/">docker swarm</a></li>
+</ul>
+<p>DockerSwarm
+docker service update <br />
+--image localhost:5000/ruby-app:${BUILD_NUMBER} <br />
+ruby-app</p>
+<p>Kubernetes
+kubectl set image <br />
+-f deploy/ruby-app.yml <br />
+app=localhost:5000/ruby-app:${BUILD_NUMBER}</p>
+<h2 id="ref"><a class="header" href="#ref">Ref</a></h2>
+<p>https://github.com/skanehira/denops-docker.vim
+https://github.com/Silex/docker.el</p>
+<p><a href="https://pyrasis.com/jHLsAlwaysUpToDateDocker">이재홍의 언제나 최신 Docker</a></p>
+<p><a href="https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=125">Tacademy: 컨테이너 기반 가상화 플랫폼 ‘도커(Doker)’의 이해</a></p>
+<p><a href="http://wwwdev.kmooc.kr/courses/course-v1:WJTB+WJTB32+2023_01/about">K-MOOC: 도커(Docker) 기초</a></p>
+<p>https://www.44bits.io/ko/post/easy-deploy-with-docker</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../git/git-commit-message.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../jenkins/jenkins.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../git/git-commit-message.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../jenkins/jenkins.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html lang="kr" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>OmegaT - 넷평의 개발 노트</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="study.dev-notes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Index.html">들어가며</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git.html">git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../git/git-commit-message.html">git commit message</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Service</li><li class="chapter-item expanded "><a href="../docker/docker.html">docker</a></li><li class="chapter-item expanded "><a href="../jenkins/jenkins.html">jenkins</a></li><li class="chapter-item expanded affix "><li class="part-title">Os</li><li class="chapter-item expanded "><a href="../os-windows/os-windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../os-macos/os-macos.html">macOs</a></li><li class="chapter-item expanded "><a href="../os-linux/os-linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">News</li><li class="chapter-item expanded "><a href="../news/news.html">News</a></li><li class="chapter-item expanded affix "><li class="part-title">Document</li><li class="chapter-item expanded "><a href="../document/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../document/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../document/plantuml.html">Plantuml</a></li><li class="chapter-item expanded "><a href="../document/mermaid.html">Mermaid</a></li><li class="chapter-item expanded affix "><li class="part-title">Editor</li><li class="chapter-item expanded "><a href="../editor/editor-vscode.html">Vscode</a></li><li class="chapter-item expanded affix "><li class="part-title">Translate</li><li class="chapter-item expanded "><a href="../translate/omegat.html" class="active">OmegaT</a></li><li class="chapter-item expanded affix "><li class="part-title">Company</li><li class="chapter-item expanded "><a href="../company-amazon/company-amazon.html">Company Amazon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../company-amazon/amazon-s3.html">Amazon S3</a></li></ol></li><li class="chapter-item expanded "><a href="../company-google/company-google.html">Company Google</a></li><li class="chapter-item expanded "><a href="../company-microsoft/company-microsoft.html">Company Microsoft</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">넷평의 개발 노트</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/netpyoung/dev-notes" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/netpyoung/dev-notes/edit/main/src/translate/omegat.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="omegat"><a class="header" href="#omegat">OmegaT</a></h1>
+<ul>
+<li>
+<p>컴퓨터 보조 번역 - CAT(<code>C</code>omputer-<code>A</code>ssisted <code>T</code>ranslation)</p>
+</li>
+<li>
+<p>.tmx (<code>T</code>ranslation <code>M</code>emory <code>E</code>xchange)</p>
+</li>
+<li>
+<p>deepl</p>
+<ul>
+<li><a href="https://www.deepl.com/ko/app/">https://www.deepl.com/ko/app/</a></li>
+<li>무료버전이라도 데스크탑 어플리케이션 버전으로 설치후 단축키 <code>Ctrl + C + C</code>로 텍스트 번역후, <code>번역문 삽입</code>버튼을 눌러 빠르게 입력가능</li>
+<li><a href="https://blog.naver.com/british2/223205919525">https://blog.naver.com/british2/223205919525</a>
+<ul>
+<li>웹사이트 무료한도</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/omegat-org/omegat">repo</a></p>
+<ul>
+<li><a href="https://github.com/omegat-org/omegat/tree/master/doc_src/ja">https://github.com/omegat-org/omegat/tree/master/doc_src/ja</a></li>
+<li><a href="https://github.com/omegat-org/omegat/tree/master/doc_src/ko">https://github.com/omegat-org/omegat/tree/master/doc_src/ko</a></li>
+</ul>
+</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>omegat.tmx</td><td>여기에는 다른 OmegaT 프로젝트에서 재사용하기 위해 OmegaT가 내부적으로 사용하는 태그가 뒤따르는 번역이 포함됩니다.</td></tr>
+<tr><td>level1.tmx</td><td><code>TMX 1.4b 레벨 1</code> 데이터, 즉 태그 없이 번역의 텍스트 내용만 포함합니다.</td></tr>
+<tr><td>level2.tmx</td><td><code>TMX 1.4b level1 2</code> 데이터, 즉 번역의 텍스트 내용을 포함하며 <code>TMX</code> 표준에 의해 정의된 구문의 태그가 포함됩니다.</td></tr>
+</tbody></table>
+</div>
+<h2 id="git"><a class="header" href="#git">git</a></h2>
+<ul>
+<li>
+<p>git</p>
+<ul>
+<li><a href="https://omegat.sourceforge.io/manual-latest/en/howtos.html#howto.setupteamproject">https://omegat.sourceforge.io/manual-latest/en/howtos.html#howto.setupteamproject</a></li>
+<li><a href="https://github.com/omegat-org/omegat/blob/master/.gitignore">.gitignore</a></li>
+</ul>
+</li>
+<li>
+<p>OmegaT로 번역 중에는 정기적으로 자동으로 커밋과 푸시가 이루어진다.</p>
+</li>
+<li>
+<p>또, 번역문 생성 전과 프로젝트를 닫는 타이밍에서도 행해진다.</p>
+</li>
+<li>
+<p>Project &gt; New</p>
+<ul>
+<li>Repository Mapping... &gt; Remote repositories &gt; Add</li>
+</ul>
+</li>
+<li>
+<p>java -jar OmegaT.jar team init [lang1] [lang2]</p>
+</li>
+</ul>
+<p>OmegaT는 두 개의 파일만 수정합니다.</p>
+<ul>
+<li>omegat/project_save.tmx</li>
+<li>glossary/glossary.txt</li>
+</ul>
+<p>필터 ?? - <a href="https://okapiframework.org/wiki/index.php?title=Okapi_Filters_Plugin_for_OmegaT#Download_and_Installation">https://okapiframework.org/wiki/index.php?title=Okapi_Filters_Plugin_for_OmegaT#Download_and_Installation</a></p>
+<h2 id="glossary"><a class="header" href="#glossary">glossary/</a></h2>
+<ul>
+<li>
+<p>간단히 말해서 용어집.</p>
+</li>
+<li>
+<p>'UTF-8'로 인코딩된 'CSV'(콤마로 구분된), 'TSV' 형식(탭으로 구분된 값)의 간단한 텍스트 파일</p>
+</li>
+<li>
+<p>생성</p>
+<ul>
+<li>Ctrl + Shift + g</li>
+<li>Edit &gt; Create Glossary Entry</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-txt"># Glossary in tab-separated format -*- coding: utf-8 -*-
+hello	안녕	코맨트
+</code></pre>
+<ul>
+<li>
+<p><a href="https://github.com/nacyot/omegat-glossary/tree/master">https://github.com/nacyot/omegat-glossary/tree/master</a></p>
+</li>
+<li>
+<p><a href="https://github.com/clojure-kr/translation">https://github.com/clojure-kr/translation</a></p>
+</li>
+<li>
+<p>antconc</p>
+<ul>
+<li><a href="https://www.laurenceanthony.net/software/antconc/">https://www.laurenceanthony.net/software/antconc/</a></li>
+<li>A freeware corpus analysis toolkit for concordancing and text analysis.</li>
+</ul>
+</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>다음 세그먼트</td><td>Ctrl + N</td></tr>
+<tr><td>이전 세그먼트</td><td>Ctrl + P</td></tr>
+<tr><td>번역파일 생성(target/)</td><td>Ctrl+D</td></tr>
+<tr><td>glossary 추가</td><td>Ctrl + Shift + g</td></tr>
+</tbody></table>
+</div>
+<h2 id="사전"><a class="header" href="#사전">사전</a></h2>
+<ul>
+<li>
+<p><a href="https://ftp.tw.freebsd.org/distfiles/stardict/stardict-quick_eng-kor-2.4.2.tar.bz2">https://ftp.tw.freebsd.org/distfiles/stardict/stardict-quick_eng-kor-2.4.2.tar.bz2</a></p>
+</li>
+<li>
+<p>OpenAI 플러그인</p>
+<ul>
+<li><a href="https://wikidocs.net/197120">https://wikidocs.net/197120</a></li>
+<li><a href="https://github.com/ychoi-kr/omegat-plugin-openai-translate">https://github.com/ychoi-kr/omegat-plugin-openai-translate</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="프로젝트-구조"><a class="header" href="#프로젝트-구조">프로젝트 구조</a></h2>
+<pre><code class="language-txt">
+ProjectRoot
+├── dictionary/             : 
+├── glossary/               : 용어집 
+├── source/                 : 번역할 파일을 넣는 위치. 
+├── target/                 : 번역될 파일이 생성되는 위치.
+├── omegat/                 : 
+│   ├── ignored_words.txt   : 
+│   ├── learned_words.txt   : 
+│   ├── project_save.tmx    : OmegaT 는 번역 작업의 모든 내용을 번역 메모리( omegat폴더 project_save.tmx파일)에 저장합니다
+│   └── project_stats.txt   : 
+├── tm/                     : 번역 메모리 (`T`ranslation `M`emory) - 파일에 기록된 번역된 분절 정보는 현재 원문 분절과 정확히 일치하면 참조 번역 창에 표시됩니다.
+│   ├── auto/               : 자동(번역이 무조껀 맞다고 생각되면 넣을것)
+│   ├── enforce/            : project_save.tmx보다 우선 순위가 높은 것
+│   ├── mt/                 : 
+│   ├── penalty-xxx/        : &quot;xxx&quot;는 0 에서 100 까지의 수치 - ex) Penalty-30, 100% 일치하는 분절이 발견되면 일치율은 70%로 낮아져 표시
+│   └── tmx2source/         : 다른 대상 언어로 번역된 문서에서 비롯된 메모리가 포함. 번역할 세그먼트 아래에 직접 표시된 다른 대상 언어로 번역된 내용을 볼 수 있음.
+└── omegat.project          : xml. 프로젝트 설정 파일
+</code></pre>
+<h2 id="sample"><a class="header" href="#sample">sample</a></h2>
+<ul>
+<li>source: en-US</li>
+<li>translated: ko</li>
+</ul>
+<h2 id=""><a class="header" href="#"></a></h2>
+<p>tbx(term based exchange)
+utx(universal terminology exchange)
+sdltm(sdl translation memory)
+passolo glossary</p>
+<p>번역 메모리 매니저(TMM)</p>
+<h2 id="ref"><a class="header" href="#ref">Ref</a></h2>
+<ul>
+<li><a href="https://european-masters-translation-blog.ec.europa.eu/articles-emt-blog/multi-user-translation-and-open-source-cat-software-omegat-action-2022-05-10_en">https://european-masters-translation-blog.ec.europa.eu/articles-emt-blog/multi-user-translation-and-open-source-cat-software-omegat-action-2022-05-10_en</a></li>
+<li><a href="https://qiita.com/ktgw0316/items/b58579570a044f8d68cc">https://qiita.com/ktgw0316/items/b58579570a044f8d68cc</a>
+<ul>
+<li>일본인이 Bartosz Milewski의 &quot;Category Theory for Programmers&quot;를 번역하면서 남긴 작업환경</li>
+</ul>
+</li>
+<li><a href="https://tolgee.io/pricing/self-hosted#pricing-toggle">https://tolgee.io/pricing/self-hosted#pricing-toggle</a> - 셀프호스팅 무료</li>
+<li><a href="https://github.com/ever-co/ever-traduora">https://github.com/ever-co/ever-traduora</a></li>
+<li><a href="https://www.youtube.com/watch?v=q9n3_IZtL-w">youtube: OmegaT의 기본 사용법에 대해 알아보겠습니다.</a></li>
+<li><a href="https://github.com/nacyot/omegat-emacs.sexy">https://github.com/nacyot/omegat-emacs.sexy</a>
+<ul>
+<li><a href="https://github.com/nacyot/omegat-emacs.sexy/blob/master/.travis.yml">https://github.com/nacyot/omegat-emacs.sexy/blob/master/.travis.yml</a></li>
+</ul>
+</li>
+<li><a href="https://cestlaz.github.io/stories/emacs/">https://cestlaz.github.io/stories/emacs/</a></li>
+<li><a href="https://wikidocs.net/67058">3 OmegaT: 전문가를 위한 번역 도구</a></li>
+<li><a href="https://802.11ac.net/2021/02/05/dont-return-minus-1/#fn:1">https://802.11ac.net/2021/02/05/dont-return-minus-1/#fn:1</a></li>
+<li><a href="https://codeberg.org/miurahr/omegat-flat-theme">https://codeberg.org/miurahr/omegat-flat-theme</a></li>
+<li><a href="https://sourceforge.net/projects/omegat-gt-without-api-key/">https://sourceforge.net/projects/omegat-gt-without-api-key/</a></li>
+<li><a href="https://www.linkedin.com/pulse/unleashing-power-omegat-60-mastering-your-translation-v%C3%ADctor-parra/">https://www.linkedin.com/pulse/unleashing-power-omegat-60-mastering-your-translation-v%C3%ADctor-parra/</a></li>
+<li><a href="https://omegat.sourceforge.io/manual-standard/en/chapter.how.to.html#how.to.use.team.project">https://omegat.sourceforge.io/manual-standard/en/chapter.how.to.html#how.to.use.team.project</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../editor/editor-vscode.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../company-amazon/company-amazon.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../editor/editor-vscode.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../company-amazon/company-amazon.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
