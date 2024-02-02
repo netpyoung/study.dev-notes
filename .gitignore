@@ -1,0 +1,5 @@
+# mdbook
+/book/
+
+# Mac
+.DS_Store
