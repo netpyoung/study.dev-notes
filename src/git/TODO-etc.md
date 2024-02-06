@@ -1,0 +1,4 @@
+# etc
+
+- .meta
+- LF / CRLF

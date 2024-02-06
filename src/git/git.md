@@ -33,8 +33,16 @@ git log --author="이름" --name-only --pretty=format: | grep "\.cs$" | sort | u
   - <https://zenn.dev/mizchi/articles/gha-run-test-only-changed>
   - <https://tech.guitarrapc.com/entry/2023/06/15/000000>
 
+## orphan
 
-# Ref
+``` sh
+git checkout --orphan helloworld
+git rm -rf .
+git commit --allow-empty -m "helloworld"
+git push origin helloworld
+```
+
+## Ref
 
 - git real
   - <https://www.pluralsight.com/courses/code-school-git-real>

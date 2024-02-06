@@ -4,6 +4,31 @@
 - <https://www.docker.com/>
   - <https://docs.docker.com/>
 
+``` sh
+# 컨테이너 확인(실행중)
+docker ps
+# 컨테이너 확인(실행중 + 중지)
+docker ps -a
+
+# 컨테이너 중지
+docker stop
+
+# 컨테이너 삭제
+docker rm
+
+# 컨테이너 로그
+docker logs
+
+# 이미지 목록(다운로드된)
+docker images
+
+# 이미지 다운로드
+docker pull
+
+# 이미지 삭제
+docker rim
+```
+
 ## cmd
 
 ``` sh

@@ -1,5 +1,7 @@
 # Git Commit Message
 
+## Message
+
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
 | Fix              | 버그를 고친 경우                                                          |
@@ -26,7 +28,7 @@ Update TryParse code gen to use CodeWriter. (#46928)
 * Update TryParse code gen to use CodeWriter.
 ```
 
-# Ref
+### Ref
 
 - <https://www.conventionalcommits.org/en/v1.0.0/>
 - <https://blog.sourcerer.io/using-commit-message-standardization-to-enhance-your-release-and-feature-management-6778c4b9cd8e>
