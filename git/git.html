@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../Index.html">들어가며</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git.html" class="active">git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../git/git-commit-message.html">git commit message</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Service</li><li class="chapter-item expanded "><a href="../docker/docker.html">docker</a></li><li class="chapter-item expanded "><a href="../jenkins/jenkins.html">jenkins</a></li><li class="chapter-item expanded affix "><li class="part-title">Os</li><li class="chapter-item expanded "><a href="../os-windows/os-windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../os-macos/os-macos.html">macOs</a></li><li class="chapter-item expanded "><a href="../os-linux/os-linux.html">Linux</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../os-linux/archlinux.html">archlinux</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">News</li><li class="chapter-item expanded "><a href="../news/news.html">News</a></li><li class="chapter-item expanded affix "><li class="part-title">Document</li><li class="chapter-item expanded "><a href="../document/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../document/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../document/plantuml.html">Plantuml</a></li><li class="chapter-item expanded "><a href="../document/mermaid.html">Mermaid</a></li><li class="chapter-item expanded affix "><li class="part-title">Editor</li><li class="chapter-item expanded "><a href="../editor/editor-vscode.html">Vscode</a></li><li class="chapter-item expanded affix "><li class="part-title">Translate</li><li class="chapter-item expanded "><a href="../translate/omegat.html">OmegaT</a></li><li class="chapter-item expanded affix "><li class="part-title">Company</li><li class="chapter-item expanded "><a href="../company-amazon/company-amazon.html">Company Amazon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../company-amazon/amazon-s3.html">Amazon S3</a></li></ol></li><li class="chapter-item expanded "><a href="../company-google/company-google.html">Company Google</a></li><li class="chapter-item expanded "><a href="../company-microsoft/company-microsoft.html">Company Microsoft</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Index.html">들어가며</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git.html" class="active">git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../git/git-commit-message.html">git commit message</a></li><li class="chapter-item expanded "><a href="../git/github.html">github</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Service</li><li class="chapter-item expanded "><a href="../docker/docker.html">docker</a></li><li class="chapter-item expanded "><a href="../jenkins/jenkins.html">jenkins</a></li><li class="chapter-item expanded affix "><li class="part-title">Os</li><li class="chapter-item expanded "><a href="../os-windows/os-windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../os-macos/os-macos.html">macOs</a></li><li class="chapter-item expanded "><a href="../os-linux/os-linux.html">Linux</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../os-linux/archlinux.html">archlinux</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">News</li><li class="chapter-item expanded "><a href="../news/news.html">News</a></li><li class="chapter-item expanded affix "><li class="part-title">Document</li><li class="chapter-item expanded "><a href="../document/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../document/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../document/plantuml.html">Plantuml</a></li><li class="chapter-item expanded "><a href="../document/mermaid.html">Mermaid</a></li><li class="chapter-item expanded affix "><li class="part-title">Editor</li><li class="chapter-item expanded "><a href="../editor/editor-vscode.html">Vscode</a></li><li class="chapter-item expanded affix "><li class="part-title">Translate</li><li class="chapter-item expanded "><a href="../translate/omegat.html">OmegaT</a></li><li class="chapter-item expanded affix "><li class="part-title">Company</li><li class="chapter-item expanded "><a href="../company-amazon/company-amazon.html">Company Amazon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../company-amazon/amazon-s3.html">Amazon S3</a></li></ol></li><li class="chapter-item expanded "><a href="../company-google/company-google.html">Company Google</a></li><li class="chapter-item expanded "><a href="../company-microsoft/company-microsoft.html">Company Microsoft</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -193,7 +193,33 @@ git filter-branch --env-filter 'export GIT_COMMITTER_DATE=&quot;$GIT_AUTHOR_DATE
 </ul>
 <pre><code class="language-sh">git log --author=&quot;이름&quot; --name-only --pretty=format: | grep &quot;\.cs$&quot; | sort | uniq &gt; author.txt
 </code></pre>
-<h1 id="ref"><a class="header" href="#ref">Ref</a></h1>
+<h2 id="sparse-checkout"><a class="header" href="#sparse-checkout">sparse-checkout</a></h2>
+<ul>
+<li>
+<p>Git 2.25 - <a href="https://git-scm.com/docs/git-sparse-checkout">https://git-scm.com/docs/git-sparse-checkout</a></p>
+</li>
+<li>
+<p>Git 2.24 - <a href="https://git-scm.com/docs/partial-clone">https://git-scm.com/docs/partial-clone</a></p>
+</li>
+<li>
+<p>ref</p>
+<ul>
+<li><a href="https://github.blog/2020-01-13-highlights-from-git-2-25/">https://github.blog/2020-01-13-highlights-from-git-2-25/</a></li>
+<li><a href="https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/">https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/</a></li>
+<li><a href="https://github.blog/jp/2021-01-13-get-up-to-speed-with-partial-clone-and-shallow-clone/">https://github.blog/jp/2021-01-13-get-up-to-speed-with-partial-clone-and-shallow-clone/</a></li>
+<li><a href="https://tech.asoview.co.jp/entry/2023/03/14/095235">https://tech.asoview.co.jp/entry/2023/03/14/095235</a></li>
+<li><a href="https://zenn.dev/mizchi/articles/gha-run-test-only-changed">https://zenn.dev/mizchi/articles/gha-run-test-only-changed</a></li>
+<li><a href="https://tech.guitarrapc.com/entry/2023/06/15/000000">https://tech.guitarrapc.com/entry/2023/06/15/000000</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="orphan"><a class="header" href="#orphan">orphan</a></h2>
+<pre><code class="language-sh">git checkout --orphan helloworld
+git rm -rf .
+git commit --allow-empty -m &quot;helloworld&quot;
+git push origin helloworld
+</code></pre>
+<h2 id="ref"><a class="header" href="#ref">Ref</a></h2>
 <ul>
 <li>git real
 <ul>

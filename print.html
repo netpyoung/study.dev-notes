@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Index.html">들어가며</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="git/git.html">git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="git/git-commit-message.html">git commit message</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Service</li><li class="chapter-item expanded "><a href="docker/docker.html">docker</a></li><li class="chapter-item expanded "><a href="jenkins/jenkins.html">jenkins</a></li><li class="chapter-item expanded affix "><li class="part-title">Os</li><li class="chapter-item expanded "><a href="os-windows/os-windows.html">Windows</a></li><li class="chapter-item expanded "><a href="os-macos/os-macos.html">macOs</a></li><li class="chapter-item expanded "><a href="os-linux/os-linux.html">Linux</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="os-linux/archlinux.html">archlinux</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">News</li><li class="chapter-item expanded "><a href="news/news.html">News</a></li><li class="chapter-item expanded affix "><li class="part-title">Document</li><li class="chapter-item expanded "><a href="document/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="document/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="document/plantuml.html">Plantuml</a></li><li class="chapter-item expanded "><a href="document/mermaid.html">Mermaid</a></li><li class="chapter-item expanded affix "><li class="part-title">Editor</li><li class="chapter-item expanded "><a href="editor/editor-vscode.html">Vscode</a></li><li class="chapter-item expanded affix "><li class="part-title">Translate</li><li class="chapter-item expanded "><a href="translate/omegat.html">OmegaT</a></li><li class="chapter-item expanded affix "><li class="part-title">Company</li><li class="chapter-item expanded "><a href="company-amazon/company-amazon.html">Company Amazon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="company-amazon/amazon-s3.html">Amazon S3</a></li></ol></li><li class="chapter-item expanded "><a href="company-google/company-google.html">Company Google</a></li><li class="chapter-item expanded "><a href="company-microsoft/company-microsoft.html">Company Microsoft</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Index.html">들어가며</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="git/git.html">git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="git/git-commit-message.html">git commit message</a></li><li class="chapter-item expanded "><a href="git/github.html">github</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Service</li><li class="chapter-item expanded "><a href="docker/docker.html">docker</a></li><li class="chapter-item expanded "><a href="jenkins/jenkins.html">jenkins</a></li><li class="chapter-item expanded affix "><li class="part-title">Os</li><li class="chapter-item expanded "><a href="os-windows/os-windows.html">Windows</a></li><li class="chapter-item expanded "><a href="os-macos/os-macos.html">macOs</a></li><li class="chapter-item expanded "><a href="os-linux/os-linux.html">Linux</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="os-linux/archlinux.html">archlinux</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">News</li><li class="chapter-item expanded "><a href="news/news.html">News</a></li><li class="chapter-item expanded affix "><li class="part-title">Document</li><li class="chapter-item expanded "><a href="document/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="document/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="document/plantuml.html">Plantuml</a></li><li class="chapter-item expanded "><a href="document/mermaid.html">Mermaid</a></li><li class="chapter-item expanded affix "><li class="part-title">Editor</li><li class="chapter-item expanded "><a href="editor/editor-vscode.html">Vscode</a></li><li class="chapter-item expanded affix "><li class="part-title">Translate</li><li class="chapter-item expanded "><a href="translate/omegat.html">OmegaT</a></li><li class="chapter-item expanded affix "><li class="part-title">Company</li><li class="chapter-item expanded "><a href="company-amazon/company-amazon.html">Company Amazon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="company-amazon/amazon-s3.html">Amazon S3</a></li></ol></li><li class="chapter-item expanded "><a href="company-google/company-google.html">Company Google</a></li><li class="chapter-item expanded "><a href="company-microsoft/company-microsoft.html">Company Microsoft</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -193,7 +193,33 @@ git filter-branch --env-filter 'export GIT_COMMITTER_DATE=&quot;$GIT_AUTHOR_DATE
 </ul>
 <pre><code class="language-sh">git log --author=&quot;이름&quot; --name-only --pretty=format: | grep &quot;\.cs$&quot; | sort | uniq &gt; author.txt
 </code></pre>
-<h1 id="ref"><a class="header" href="#ref">Ref</a></h1>
+<h2 id="sparse-checkout"><a class="header" href="#sparse-checkout">sparse-checkout</a></h2>
+<ul>
+<li>
+<p>Git 2.25 - <a href="https://git-scm.com/docs/git-sparse-checkout">https://git-scm.com/docs/git-sparse-checkout</a></p>
+</li>
+<li>
+<p>Git 2.24 - <a href="https://git-scm.com/docs/partial-clone">https://git-scm.com/docs/partial-clone</a></p>
+</li>
+<li>
+<p>ref</p>
+<ul>
+<li><a href="https://github.blog/2020-01-13-highlights-from-git-2-25/">https://github.blog/2020-01-13-highlights-from-git-2-25/</a></li>
+<li><a href="https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/">https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/</a></li>
+<li><a href="https://github.blog/jp/2021-01-13-get-up-to-speed-with-partial-clone-and-shallow-clone/">https://github.blog/jp/2021-01-13-get-up-to-speed-with-partial-clone-and-shallow-clone/</a></li>
+<li><a href="https://tech.asoview.co.jp/entry/2023/03/14/095235">https://tech.asoview.co.jp/entry/2023/03/14/095235</a></li>
+<li><a href="https://zenn.dev/mizchi/articles/gha-run-test-only-changed">https://zenn.dev/mizchi/articles/gha-run-test-only-changed</a></li>
+<li><a href="https://tech.guitarrapc.com/entry/2023/06/15/000000">https://tech.guitarrapc.com/entry/2023/06/15/000000</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="orphan"><a class="header" href="#orphan">orphan</a></h2>
+<pre><code class="language-sh">git checkout --orphan helloworld
+git rm -rf .
+git commit --allow-empty -m &quot;helloworld&quot;
+git push origin helloworld
+</code></pre>
+<h2 id="ref"><a class="header" href="#ref">Ref</a></h2>
 <ul>
 <li>git real
 <ul>
@@ -207,6 +233,7 @@ git filter-branch --env-filter 'export GIT_COMMITTER_DATE=&quot;$GIT_AUTHOR_DATE
 <li><a href="https://git-scm.com/book/en/v2">Pro Git</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="git-commit-message"><a class="header" href="#git-commit-message">Git Commit Message</a></h1>
+<h2 id="message"><a class="header" href="#message">Message</a></h2>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td>Fix</td><td>버그를 고친 경우</td></tr>
 <tr><td>Test</td><td>테스트 추가, 테스트 리팩토링(프로덕션 코드 변경 X)</td></tr>
@@ -231,13 +258,104 @@ git filter-branch --env-filter 'export GIT_COMMITTER_DATE=&quot;$GIT_AUTHOR_DATE
 
 * Update TryParse code gen to use CodeWriter.
 </code></pre>
-<h1 id="ref-1"><a class="header" href="#ref-1">Ref</a></h1>
+<h3 id="ref-1"><a class="header" href="#ref-1">Ref</a></h3>
 <ul>
 <li><a href="https://www.conventionalcommits.org/en/v1.0.0/">https://www.conventionalcommits.org/en/v1.0.0/</a></li>
 <li><a href="https://blog.sourcerer.io/using-commit-message-standardization-to-enhance-your-release-and-feature-management-6778c4b9cd8e">https://blog.sourcerer.io/using-commit-message-standardization-to-enhance-your-release-and-feature-management-6778c4b9cd8e</a></li>
 <li><a href="https://github.com/dotnet/aspnetcore/commits/main">https://github.com/dotnet/aspnetcore/commits/main</a></li>
 <li><a href="https://blog.ssanj.net/posts/2015-10-22-git-commit-message-format.html">https://blog.ssanj.net/posts/2015-10-22-git-commit-message-format.html</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="github"><a class="header" href="#github">Github</a></h1>
+<h2 id="github-action"><a class="header" href="#github-action">Github Action</a></h2>
+<ul>
+<li><a href="https://docs.github.com/ko/billing/managing-billing-for-github-actions/about-billing-for-github-actions">https://docs.github.com/ko/billing/managing-billing-for-github-actions/about-billing-for-github-actions</a></li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th>요금</th><th>분(월)</th><th>스토리지</th></tr></thead><tbody>
+<tr><td>Gtihub Free</td><td>2,000</td><td>500 MB</td></tr>
+<tr><td>조직용 GitHub Free</td><td>2,000</td><td>500 MB</td></tr>
+</tbody></table>
+</div>
+<ul>
+<li>
+<p>ref</p>
+<ul>
+<li><a href="https://github.com/GuillaumeFalourd/useful-actions">https://github.com/GuillaumeFalourd/useful-actions</a></li>
+<li><a href="https://github.com/sdras/awesome-actions">https://github.com/sdras/awesome-actions</a></li>
+</ul>
+</li>
+<li>
+<p>checkout</p>
+<ul>
+<li><a href="https://github.com/actions/checkout/">actions/checkout</a></li>
+</ul>
+</li>
+<li>
+<p>cache</p>
+<ul>
+<li><a href="https://github.com/actions/cache/">actions/cache</a></li>
+</ul>
+</li>
+<li>
+<p>artifact</p>
+<ul>
+<li><a href="https://github.com/actions/upload-artifact">upload-artifact</a></li>
+<li><a href="https://github.com/actions/download-artifact">download-artifact</a></li>
+</ul>
+</li>
+<li>
+<p>release page</p>
+<ul>
+<li><a href="https://github.com/softprops/action-gh-release">softprops/action-gh-release</a></li>
+<li><a href="https://github.com/ncipollo/release-action">ncipollo/release-action</a></li>
+</ul>
+</li>
+<li>
+<p>gh page</p>
+<ul>
+<li>actions/configure-pages</li>
+<li>actions/upload-pages-artifact</li>
+<li>actions/deploy-pages</li>
+</ul>
+</li>
+<li>
+<p>changelog</p>
+<ul>
+<li><a href="https://github.com/mindsers/changelog-reader-action">mindsers/changelog-reader-action</a></li>
+<li><a href="https://github.com/Azure/action-release-workflows">Azure/action-release-workflows</a></li>
+</ul>
+</li>
+<li>
+<p>language</p>
+<ul>
+<li>ruby // <a href="https://github.com/ruby/setup-ruby">ruby/setup-ruby</a></li>
+<li>dotnet // <a href="https://github.com/actions/setup-dotnet">actions/setup-dotnet</a></li>
+</ul>
+</li>
+<li>
+<p>dev env</p>
+<ul>
+<li>NDK // <a href="https://github.com/nttld/setup-ndk">nttld/setup-ndk</a></li>
+<li>XCode // <a href="https://github.com/maxim-lobanov/setup-xcode">maxim-lobanov/setup-xcode</a></li>
+<li>MSys2 <a href="https://github.com/msys2/setup-msys2">msys2/setup-msys2</a></li>
+<li>MSBuild // <a href="https://github.com/microsoft/setup-msbuild">microsoft/setup-msbuild</a></li>
+<li>MSVC // <a href="https://github.com/ilammy/msvc-dev-cmd">ilammy/msvc-dev-cmd</a></li>
+<li>etc tools // <a href="https://github.com/taiki-e/install-action">taiki-e/install-action</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="etc"><a class="header" href="#etc">etc</a></h2>
+<ul>
+<li><a href="https://docs.github.com/ko/enterprise-cloud@latest/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages">https://docs.github.com/ko/enterprise-cloud@latest/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages</a></li>
+</ul>
+<pre><code class="language-yaml">schedule:
+  cron: &quot;0 0 */1 * *&quot;
+
+
+permissions:
+  contents: write
+
+
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="docker"><a class="header" href="#docker">Docker</a></h1>
 <ul>
 <li><a href="https://learnxinyminutes.com/docs/docker/">https://learnxinyminutes.com/docs/docker/</a></li>
@@ -247,6 +365,29 @@ git filter-branch --env-filter 'export GIT_COMMITTER_DATE=&quot;$GIT_AUTHOR_DATE
 </ul>
 </li>
 </ul>
+<pre><code class="language-sh"># 컨테이너 확인(실행중)
+docker ps
+# 컨테이너 확인(실행중 + 중지)
+docker ps -a
+
+# 컨테이너 중지
+docker stop
+
+# 컨테이너 삭제
+docker rm
+
+# 컨테이너 로그
+docker logs
+
+# 이미지 목록(다운로드된)
+docker images
+
+# 이미지 다운로드
+docker pull
+
+# 이미지 삭제
+docker rim
+</code></pre>
 <h2 id="cmd"><a class="header" href="#cmd">cmd</a></h2>
 <pre><code class="language-sh">## open port
 docker@default:~$ echo 'export DOCKER_HOST=tcp://$(boot2docker ip 2&gt;/dev/null):8000' &gt;&gt; ~/.bash_profile
