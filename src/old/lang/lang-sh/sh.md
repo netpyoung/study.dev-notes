@@ -1,31 +1,31 @@
 `상명대학교` 자료 참고
 
 ## $연산자.
-$? : 최근 수행된 명령의 반환값.
 
-$$ : shell's PID
-
-$0 : shell script name
-
-$1 ... $n : number of command
+- $? : 최근 수행된 명령의 반환값.
+- $$ : shell's PID
+- $0 : shell script name
+- $1 ... $n : number of command
 
 ## 따옴표.
-single 따옴표 ' : whitespaces(' ', '\t', '\n')가 포함된 스트링을 하나의 스트링으로 만들기 우하여 사용됨
 
-double 따옴표 " : whitespaces가 포함된 하나의 스트링으로 만들기 위하여 사용되나, 내부에 
+- single 따옴표 ' : whitespaces(' ', '\t', '\n')가 포함된 스트링을 하나의 스트링으로 만들기 우하여 사용됨
+- double 따옴표 " : whitespaces가 포함된 하나의 스트링으로 만들기 위하여 사용되나, 내부에 
 `'$'dollor`, `'\'backslash`, ``'backquote`들의 의미에 따라 substiution이 일어남.
 
 ## 입력과 출력
-리디렉션 : 입력 [n]<n생략시 표준입력
 
-출력 : `[n]>`, `[n]>>` n생략시 표준출력
-```
-ex)표준에러 출력
+- 리디렉션 : 입력 [n]<n생략시 표준입력
+- 출력 : `[n]>`, `[n]>>` n생략시 표준출력
+
+``` bash
+# ex)표준에러 출력
 2>
 ```
 
 ## subshell 예제
-```
+
+``` bash
 [pyoung@localhost c]$ i=10;
 [pyoung@localhost c]$ j=20;
 [pyoung@localhost c]$ echo $i $j
@@ -39,7 +39,8 @@ ex)표준에러 출력
 ```
 
 ## 그룹명령 ( '{' 다음에 space가 있어야 됨)
-```
+
+``` bash
 [pyoung@localhost c]$ i=10;
 [pyoung@localhost c]$ j=20;
 [pyoung@localhost c]$ echo $i $j
@@ -53,7 +54,8 @@ ex)표준에러 출력
 ```
 
 ## 명령 대치( '''따옴표와 '`'를 주의)
-```
+
+``` bash
 [pyoung@localhost c]$ pwd
 /home/pyoung/myHome/c
 [pyoung@localhost c]$ old=`pwd`
@@ -70,7 +72,8 @@ ex1  ex1.c  file  nice  nice.c  test
 ```
 
 ## 연산대치
-```
+
+``` bash
 [pyoung@localhost c]$ i=10; j=20; echo $i $j
 10 20
 [pyoung@localhost c]$ l=$(($i*$j)); echo $l
@@ -81,7 +84,8 @@ ex1  ex1.c  file  nice  nice.c  test
 ```
 
 ## '{', '}' 중괄호(Brace)의 이용
-```
+
+``` bash
 [pyoung@localhost c]$ echo a{b, c, d}e
 a{b, c, d}e
 [pyoung@localhost c]$ echo a{ b, c, d }e
@@ -94,7 +98,8 @@ abe ace ade
 ```
 
 ## 함수(function)
-```
+
+``` bash
 [function] name () { 리스트; }
 [pyoung@localhost c]$ function add() { echo $(($1+$2)); }
 [pyoung@localhost c]$ function hello() { echo Hello world! $*; }
@@ -106,11 +111,12 @@ Hello world! 1 2 3
 ```
 
 ## String test
-[[ 식 ]] or [ 식 ]
-결과값 0(=true) or 1(=false)
-괄호 앞뒤 space가 읽어야함
 
-```
+- [[ 식 ]] or [ 식 ]
+- 결과값 0(=true) or 1(=false)
+- 괄호 앞뒤 space가 읽어야함
+
+``` bash
 [pyoung@localhost c]$ i=10; j=20; [[ "$i" -eq "$j" ]]; echo $?
 1
 [pyoung@localhost c]$ [[ "$i" -lt "$j" ]]; echo $?
@@ -119,7 +125,8 @@ Hello world! 1 2 3
 ```
 
 연산자와 피연산자 사이도 띄어줘야 한다.
-```
+
+``` bash
 [pyoung@localhost c]$ str1=boy; str2=girl; [[ "$str1"=="$str2" ]]; echo $?
 0
 [pyoung@localhost c]$ str1=boy; str2=girl; [[ "$str1" == "$str2" ]]; echo $?
@@ -128,24 +135,28 @@ Hello world! 1 2 3
 ```
 
 ## 정수연산자
-* -eq(==)
-* -ne(!=)
-* -gt(>)
-* -ge(>=)
-* -lt(<)
-* -le(<=)
 
-# 문자열 연산자
-* ==, !=
-* <, >
-* -z(null)
-* -n(nc null)
+- -eq(==)
+- -ne(!=)
+- -gt(>)
+- -ge(>=)
+- -lt(<)
+- -le(<=)
 
-# 논리 연산자
-* -a(and)
-* -o(or)
-* !(not)
-```
+## 문자열 연산자
+
+- ==, !=
+- <, >
+- -z(null)
+- -n(nc null)
+
+## 논리 연산자
+
+- -a(and)
+- -o(or)
+- !(not)
+
+``` bash
 [pyoung@localhost ~]$ [ -e /etc/motd ]; echo $?
 0
 [pyoung@localhost ~]$ [ -h /etc/motd ]; echo $?
@@ -158,26 +169,29 @@ Hello world! 1 2 3
 ```
 
 ## 파일(File) 테스트
-[[ 식 ]] or [ 식 ]
+
+- `[[ 식 ]]` or `[ 식 ]`
 
 ### 파일연산자
-* -e(exist)
-* -f(file?)
-* -d(directory?)
-* -p(pipe?)
-* -h(symbolic link?)
-* -S(socket?)
-* -s(zeroSize?)
-* -r(readable?)
-* -w(writeable?)
-* -x(executeable?)
-* -g(set gid?)
-* -u(set uid?)
-* -nt(newer than?)
-* -ot(older than?)
+
+- -e(exist)
+- -f(file?)
+- -d(directory?)
+- -p(pipe?)
+- -h(symbolic link?)
+- -S(socket?)
+- -s(zeroSize?)
+- -r(readable?)
+- -w(writeable?)
+- -x(executeable?)
+- -g(set gid?)
+- -u(set uid?)
+- -nt(newer than?)
+- -ot(older than?)
 
 
 ## if사용형식 
+
 ```sh
 if test;
 then list;
@@ -188,18 +202,20 @@ fi
 ```
 
 ## for사용형식
+
 ```sh
 for name [ in word ]; do 리스트; done
 ```
 
 ## while사용형식
+
 ```sh
 while 테스트;
 do 리스트;
 done
 ```
 
-```
+``` bash
 [pyoung@localhost ~]$ i=10; j=20;
 [pyoung@localhost ~]$ if [ "$i" -lt "$j" ]; then echo i is less than j; else echo i is not less than j; fi
 i is less than j
@@ -212,15 +228,18 @@ i is less than j
 ```
 
 ## 기타명령어
-* read 변수
-* echo 식
-* return 식
-* exit 정수
+
+- read 변수
+- echo 식
+- return 식
+- exit 정수
 
 
 
 ## 셸프로그램(Shell Programs)
+
 첫줄
+
 ```sh
 #!/bin/bash
 ```
@@ -231,6 +250,7 @@ $chmod 755 파일이름; ./파일이름 인수 ...
 ```
 
 args Test
+
 ```sh
 [pyoung@localhost bash]$ cat ./args.sh
 #/bin/bash
@@ -285,6 +305,7 @@ long three
 ```
 
 replace suffix
+
 ```sh
 [pyoung@localhost bash]$ cat rfe.sh
 #!/bin/bash
@@ -308,7 +329,8 @@ a.d  args.sh  b.d  c.d  rfe.sh
 ```
 
 small test
-```
+
+``` bash
 [pyoung@localhost hw-01]$ cat small.sh
 #!/bin/bash
 
@@ -327,7 +349,8 @@ fi
 ```
 
 sum test
-```
+
+``` bash
 [pyoung@localhost hw-01]$ cat sum.sh
 #!/bin/sh
 
