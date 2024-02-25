@@ -10,3 +10,8 @@
   - [Parsec](https://parsec.app/)
   - [Snipaste](https://www.snipaste.com/)
   - CoreDirector
+
+
+## Ref
+
+- <https://ikrima.dev/dev-notes/devbox/devbox-win-tools/>
