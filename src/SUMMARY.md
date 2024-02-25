@@ -23,6 +23,7 @@
 # News
 
 - [News](./news/news.md)
+  - [pope-tv](./news/pope/pope-tv.md)
 
 # Document
 
