@@ -9,6 +9,6 @@ src = "src"
 [output.html]
 no-section-label = true
 site-url = "/dev-notes/"
-git-repository-url = "https://github.com/netpyoung/dev-notes"
+git-repository-url = "https://github.com/netpyoung/study.dev-notes"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/netpyoung/dev-notes/edit/main/{path}"
+edit-url-template = "https://github.com/netpyoung/study.dev-notes/edit/main/{path}"
