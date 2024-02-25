@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Amazon S3 - 넷평의 개발 노트</title>
+        <title>Architecture Decision Records - 넷평의 개발 노트</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../Index.html">들어가며</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git.html">git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../git/git-commit-message.html">git commit message</a></li><li class="chapter-item expanded "><a href="../git/github.html">github</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Service</li><li class="chapter-item expanded "><a href="../docker/docker.html">docker</a></li><li class="chapter-item expanded "><a href="../jenkins/jenkins.html">jenkins</a></li><li class="chapter-item expanded affix "><li class="part-title">Os</li><li class="chapter-item expanded "><a href="../os-windows/os-windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../os-macos/os-macos.html">macOs</a></li><li class="chapter-item expanded "><a href="../os-linux/os-linux.html">Linux</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../os-linux/archlinux.html">archlinux</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">News</li><li class="chapter-item expanded "><a href="../news/news.html">News</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../news/pope/pope-tv.html">pope-tv</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Document</li><li class="chapter-item expanded "><a href="../document/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../document/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../document/plantuml.html">Plantuml</a></li><li class="chapter-item expanded "><a href="../document/mermaid.html">Mermaid</a></li><li class="chapter-item expanded "><a href="../document/changelog.html">Change Log</a></li><li class="chapter-item expanded "><a href="../document/ADR.html">Architecture Decision Records</a></li><li class="chapter-item expanded affix "><li class="part-title">Editor</li><li class="chapter-item expanded "><a href="../editor/editor-vscode.html">Vscode</a></li><li class="chapter-item expanded affix "><li class="part-title">Translate</li><li class="chapter-item expanded "><a href="../translate/omegat.html">OmegaT</a></li><li class="chapter-item expanded affix "><li class="part-title">Company</li><li class="chapter-item expanded "><a href="../company-amazon/company-amazon.html">Company Amazon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../company-amazon/amazon-s3.html" class="active">Amazon S3</a></li></ol></li><li class="chapter-item expanded "><a href="../company-google/company-google.html">Company Google</a></li><li class="chapter-item expanded "><a href="../company-microsoft/company-microsoft.html">Company Microsoft</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Index.html">들어가며</a></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../git/git.html">git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../git/git-commit-message.html">git commit message</a></li><li class="chapter-item expanded "><a href="../git/github.html">github</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Service</li><li class="chapter-item expanded "><a href="../docker/docker.html">docker</a></li><li class="chapter-item expanded "><a href="../jenkins/jenkins.html">jenkins</a></li><li class="chapter-item expanded affix "><li class="part-title">Os</li><li class="chapter-item expanded "><a href="../os-windows/os-windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../os-macos/os-macos.html">macOs</a></li><li class="chapter-item expanded "><a href="../os-linux/os-linux.html">Linux</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../os-linux/archlinux.html">archlinux</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">News</li><li class="chapter-item expanded "><a href="../news/news.html">News</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../news/pope/pope-tv.html">pope-tv</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Document</li><li class="chapter-item expanded "><a href="../document/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../document/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../document/plantuml.html">Plantuml</a></li><li class="chapter-item expanded "><a href="../document/mermaid.html">Mermaid</a></li><li class="chapter-item expanded "><a href="../document/changelog.html">Change Log</a></li><li class="chapter-item expanded "><a href="../document/ADR.html" class="active">Architecture Decision Records</a></li><li class="chapter-item expanded affix "><li class="part-title">Editor</li><li class="chapter-item expanded "><a href="../editor/editor-vscode.html">Vscode</a></li><li class="chapter-item expanded affix "><li class="part-title">Translate</li><li class="chapter-item expanded "><a href="../translate/omegat.html">OmegaT</a></li><li class="chapter-item expanded affix "><li class="part-title">Company</li><li class="chapter-item expanded "><a href="../company-amazon/company-amazon.html">Company Amazon</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../company-amazon/amazon-s3.html">Amazon S3</a></li></ol></li><li class="chapter-item expanded "><a href="../company-google/company-google.html">Company Google</a></li><li class="chapter-item expanded "><a href="../company-microsoft/company-microsoft.html">Company Microsoft</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -150,7 +150,7 @@
                         <a href="https://github.com/netpyoung/study.dev-notes" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/netpyoung/study.dev-notes/edit/main/src/company-amazon/amazon-s3.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/netpyoung/study.dev-notes/edit/main/src/document/ADR.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -179,32 +179,22 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="s3"><a class="header" href="#s3">S3</a></h1>
-<p>Amazon S3(<code>Amazon</code> <code>S</code>imple <code>S</code>torage <code>S</code>ervice)</p>
-<h2 id="s3-ninja"><a class="header" href="#s3-ninja">S3 ninja</a></h2>
+                        <h1 id="architecture-decision-records"><a class="header" href="#architecture-decision-records">Architecture Decision Records</a></h1>
 <ul>
-<li><a href="https://s3ninja.net/">https://s3ninja.net/</a>
-<ul>
-<li><a href="https://github.com/scireum/s3ninja">https://github.com/scireum/s3ninja</a></li>
-<li><a href="https://anthony-f-tannous.medium.com/emulating-aws-s3-d56ba9cdc72">https://anthony-f-tannous.medium.com/emulating-aws-s3-d56ba9cdc72</a></li>
-</ul>
-</li>
-<li>리전설정
-<ul>
-<li><a href="https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-region-selection.html">https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-region-selection.html</a></li>
-</ul>
-</li>
+<li><a href="https://github.com/npryce/adr-tools">https://github.com/npryce/adr-tools</a></li>
+<li><a href="https://pypi.org/project/adr-tools-python/">https://pypi.org/project/adr-tools-python/</a></li>
+<li><a href="https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions">https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions</a></li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../company-amazon/company-amazon.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../document/changelog.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../company-google/company-google.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../editor/editor-vscode.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -214,11 +204,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../company-amazon/company-amazon.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../document/changelog.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../company-google/company-google.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../editor/editor-vscode.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
