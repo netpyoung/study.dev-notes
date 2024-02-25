@@ -10,6 +10,14 @@
 - <https://gist.github.com/rxaviers/7360908>
 - <https://www.webfx.com/tools/emoji-cheat-sheet/>
 
+⛰️ 3D
+💬
+
+😓 난이도
+🕒 플레이 타임
+🖥️ 사양
+💵 가격
+🔞 선정성 
 
 
 ✨
@@ -92,8 +100,16 @@ migration/move
 📊
 
       - name: 🧫 Test
+      - 🧪
+      - 🕵️‍♀️ 🕵️ 🕵️‍♂️
+      - 👩‍⚕️ 🧑‍⚕️ 👨‍⚕️
+      - 👩‍🔬 🧑‍🔬 👨‍🔬
+      - 👩‍🌾 🧑‍🌾 👨‍🌾
 
       - name: 🌋 Build
+      - tag 
+        - 🏷️
+        - 🔖
 🧽 
 ➕
 ➖
@@ -147,6 +163,21 @@ migration/move
 ☯/👽 리스프
 😈 이맥스
 
+    ♻ Backport
+    📱 Android
+    🪟 Windows
+    🐧 Linux
+    🍎 MacOS
+        🍏 iOS
+    👓 Close stale issues
+    👓 Remove Labels
+    📜 Documentation
+    🧽 Format checks
+    🧹 Static Tests
+    🌎 Push Translations
+    🌍 Sync Translations
+    🤹 Script checks
+    🗝️ Generate certificates and synchronize
 
 ### example
 

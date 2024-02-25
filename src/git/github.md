@@ -25,15 +25,22 @@
   - [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
   - [ncipollo/release-action](https://github.com/ncipollo/release-action)
 - gh page
-  - actions/configure-pages
-  - actions/upload-pages-artifact
-  - actions/deploy-pages
+  - [actions/configure-pages ](https://github.com/actions/configure-pages)
+  - [actions/upload-pages-artifact](https://github.com/actions/upload-pages-artifact) 
+  - [actions/deploy-pages ](https://github.com/actions/deploy-pages)
 - changelog
   - [mindsers/changelog-reader-action](https://github.com/mindsers/changelog-reader-action)
   - [Azure/action-release-workflows](https://github.com/Azure/action-release-workflows)
 - language
   - ruby // [ruby/setup-ruby](https://github.com/ruby/setup-ruby)
   - dotnet // [actions/setup-dotnet](https://github.com/actions/setup-dotnet)
+- quality
+  - codeql
+    - <https://codeql.github.com/>
+    - <https://github.com/github/codeql-action>
+      - github/codeql-action/init
+      - github/codeql-action/autobuild
+      - github/codeql-action/analyze
 - dev env
   - NDK // [nttld/setup-ndk](https://github.com/nttld/setup-ndk)
   - XCode // [maxim-lobanov/setup-xcode](https://github.com/maxim-lobanov/setup-xcode)
@@ -41,6 +48,8 @@
   - MSBuild // [microsoft/setup-msbuild](https://github.com/microsoft/setup-msbuild)
   - MSVC // [ilammy/msvc-dev-cmd](https://github.com/ilammy/msvc-dev-cmd)
   - etc tools // [taiki-e/install-action](https://github.com/taiki-e/install-action)
+- etc
+  - labeling // [actions/labeler](https://github.com/actions/labeler)
 
 
 

@@ -30,6 +30,8 @@
 - [AsciiDoc](./document/asciidoc.md)
 - [Plantuml](./document/plantuml.md)
 - [Mermaid](./document/mermaid.md)
+- [Change Log](./document/changelog.md)
+- [Architecture Decision Records](./document/ADR.md)
 
 # Editor
 

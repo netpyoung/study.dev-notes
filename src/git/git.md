@@ -5,6 +5,14 @@
 - <https://www.toptal.com/developers/gitignore>
 
 
+|      |                                   |
+| ---- | --------------------------------- |
+| 2.34 | 기본 Merge 전략: recursive => ort |
+| 2.33 | ort Merge 전략 추가               |
+| 2.25 | sparse checkout                   |
+| 2.24 | partial clone                     |
+
+
 ## git sinppet
 
 ``` sh
@@ -41,6 +49,17 @@ git rm -rf .
 git commit --allow-empty -m "helloworld"
 git push origin helloworld
 ```
+
+## interpret-trailers
+
+- <https://git-scm.com/docs/git-interpret-trailers>
+
+
+## merge 전략
+
+- ort(Ostensously Recursive's Twin)
+- <https://git-scm.com/docs/merge-strategies>
+- [Git의 새로운 기본 Merge 전략 ort](https://blog.outsider.ne.kr/1707)
 
 ## Ref
 

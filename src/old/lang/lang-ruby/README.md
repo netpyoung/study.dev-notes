@@ -87,3 +87,8 @@ http://codehunk.wordpress.com/2009/01/14/ruby-on-emacsjourney-from-textmate-to-e
 http://kldp.org/node/110632
 
  
+
+ ## lib
+
+ - console color
+   - https://github.com/fazibear/colorize
