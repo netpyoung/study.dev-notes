@@ -1,5 +1,13 @@
 # pope-tv
 
+- 변화하는 코딩표준! Async 접미사! [시청](https://youtu.be/b49E0weZ8rI?si=vzvHm9ZM-I2wKPhz)
+  - `C#`
+  - MS와 다르게 사용하는 포프 C#코딩 스텐다드는 Async 접미사를 쓰지 않음.
+    - Async를 뒤에 붙이면
+      - 장점: 함수 이름보고 이 함수가 Async함수인지 알 수 있음.
+      - 단점: 함수 이름이 길어짐. async/non async함수 전환시 함수이름 리펙토링 비용이 있음.
+    - 디버그는 허용. 단, 릴리즈 빌드시 모든 경고는 에러이기에 Async 접미사를 안쓰는걸로 가자.
+    - [CS4014](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs4014)로 추정
 - 함수, 이렇게 만들면 넌 주니어 [시청](https://youtu.be/Wd6FJ1s_ZUc?si=aKG6I-o0cfDWlmDq)
   - `#주니어` `#네이밍`
   - 코드 연산을 그대로 함수명은 주니어
@@ -69,6 +77,10 @@
 - E0531. OOP는 허접한 개발자 때문에 발전했다? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0531.txt)**] [**[시청](https://youtu.be/oHaGgLRZy3Y)**]
 - E0530. 막코딩의 편안함 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0530.txt)**] [**[시청](https://youtu.be/gbFDex5J4Ys)**]
 - E0529. 스마트폰으로 긴급대응 시스템 구축하기 (무려 공짜) [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0529.txt)**] [**[시청](https://youtu.be/07OatEIOWu0)**]
+  - `#알람`
+  - [galarm](https://www.galarmapp.com/)
+    - <https://galarm.zendesk.com/hc/en-us/articles/360044349951-What-do-I-get-as-part-of-the-premium-subscription>
+  - 전화번호기반 스마트폰으로 알람 쏴주기
 - E0528. 버전 vs 데이터 마이그레이션 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0528.txt)**] [**[시청](https://youtu.be/foMT1qinKDk)**]
 - E0527. 이거 안 하면 로그 남겨봐야 아무 소용 없음 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0527.txt)**] [**[시청](https://youtu.be/T6lIBZTLdvY)**]
 - E0526. 외부 라이브러리와 버그 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0526.txt)**] [**[시청](https://youtu.be/jxG0_9dzLzI)**]
@@ -170,6 +182,8 @@
 - E0435. 코딩스탠다드: 람다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0435.txt)**] [**[시청](https://youtu.be/HDWB64VS1MY)**]
   - `#코딩스탠다드`
 - E0434. 만원의 가치 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0434.txt)**] [**[시청](https://youtu.be/1uyvPooQzWI)**]
+  - 시간을 산다
+  - 포프티비 책의 할인을 요구받았지만 거절 > 효율성을 사는데에 이 정도 가격은 낭비가 아니다.
 - E0433. 치과 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0433.txt)**] [**[시청](https://youtu.be/514u5NapLks)**]
 - E0432. 포트폴리오의 가치 및 의미 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0432.txt)**] [**[시청](https://youtu.be/rquI6w4gLIs)**]
 - E0431. 새 프로그래밍 교육기관을 준비 중입니다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0431.txt)**] [**[시청](https://youtu.be/VpgFRPOVzCA)**]
@@ -228,6 +242,11 @@
 - E0379. 스키닝이란 무엇인가? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0379.txt)**] [**[시청](https://youtu.be/tMjHWakXXhg)**]
 - E0378. 울 아파트 전기차 충전 허가 상황을 보면 느낀점 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0378.txt)**] [**[시청](https://youtu.be/LF9bAROsve0)**]
 - E0377. 와이파이 사이렌으로 긴급대응 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0377.txt)**] [**[시청](https://youtu.be/1U7YAAl128A)**]
+  - `#알람`
+  - `D-Link DCH‑S220`
+    - 와이파이 사이렌
+    - 911 정말 심각한 문제
+    - 912 문제는 문제인데 8시간 있다 고쳐도 상관 없는
 - E0376. 댓글 관리자 및 도덕심의 단계 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0376.txt)**] [**[시청](https://youtu.be/EAbI7sRaTHU)**]
 - E0375. TypeMock으로 유닛테스트를 간편히? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0375.txt)**] [**[시청](https://youtu.be/dlodz834S84)**]
 - E0374. 새 전자화폐: 포프코인 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0374.txt)**] [**[시청](https://youtu.be/ja5aY4qLysk)**]
@@ -388,6 +407,9 @@
 - E0227. 선입견을 가져라 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0227.txt)**] [**[시청](https://youtu.be/Q5EuiZkzOH0)**]
 - E0226. 프로그래밍의 반은 디버깅 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0226.txt)**] [**[시청](https://youtu.be/rHgYy7JrP1c)**]
 - E0225. 가벼운 스타트업 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0225.txt)**] [**[시청](https://youtu.be/yra-fJ7-b9Y)**]
+  - `#책`
+  - `린 스타트업 - 에릭 리에스`
+  - The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses -  Eric Ries
 - E0224. 포프TV 라이브 계획 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0224.txt)**] [**[시청](https://youtu.be/lIOSYKTNN4M)**]
 - E0223. 포프티비 게스트가 적은 이유 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0223.txt)**] [**[시청](https://youtu.be/_thV5zfzq38)**]
 - E0222. VISC = 자동 멀티스레딩? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0222.txt)**] [**[시청](https://youtu.be/XuqWv5IC-pA)**]
@@ -584,6 +606,8 @@
 - E0041. 추천 유틸리티 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0041.txt)**] [**[시청](https://youtu.be/6-S7PRLVDRw)**]
 - E0040. 물리기반 렌더링 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0040.txt)**] [**[시청](https://youtu.be/DIEv3Uw1leo)**]
 - E0039. 책자랑: HLSL 개발 조리법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0039.txt)**] [**[시청](https://youtu.be/IXGTaI2zjOc)**]
+  - `책`
+  - `HLSL Development Cookbook`
 - E0038. 야근에 대해 말해보자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0038.txt)**] [**[시청](https://youtu.be/XBHS9r-z80U)**]
 - E0037. 포프의 시간관리법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0037.txt)**] [**[시청](https://youtu.be/GYkEvhwh2b0)**]
 - E0036. 한국인이 잘못쓰는 영어: Main Idea First [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0036.txt)**] [**[시청](https://youtu.be/dqk4qzczZxE)**]
@@ -635,3 +659,5 @@
 
 - <https://github.com/popekim/popetv-transcript>
 - <https://codebeautify.org/sort-text-lines>
+- [무료 자동자막 프로그램으로 99% 정확도로 자막생성이 된다!? | VREW x Whisper ](https://www.youtube.com/watch?v=pLsID33oDKA)
+  - VREW + 음성분석엔진 Whisper

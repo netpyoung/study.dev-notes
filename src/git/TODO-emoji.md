@@ -179,6 +179,10 @@ migration/move
     🤹 Script checks
     🗝️ Generate certificates and synchronize
 
+🚩🚩🚩👨‍👩‍👦‍👦 해당 프로젝트 속한 인원 확인
+👀 확인하였음
+
+
 ### example
 
 Inspired by [dannyfritz/commit-message-emoji](https://github.com/dannyfritz/commit-message-emoji)

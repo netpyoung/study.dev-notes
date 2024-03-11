@@ -48,8 +48,10 @@
   - MSBuild // [microsoft/setup-msbuild](https://github.com/microsoft/setup-msbuild)
   - MSVC // [ilammy/msvc-dev-cmd](https://github.com/ilammy/msvc-dev-cmd)
   - etc tools // [taiki-e/install-action](https://github.com/taiki-e/install-action)
-- etc
+- issue
   - labeling // [actions/labeler](https://github.com/actions/labeler)
+- project
+  - [actions/add-to-project](https://github.com/actions/add-to-project)
 
 
 
@@ -67,3 +69,87 @@ permissions:
 
 
 ```
+
+## 이슈 라벨링
+
+- ref
+  - <https://docs.github.com/ko/issues/using-labels-and-milestones-to-track-work/managing-labels>
+  - <https://github.com/lablup/backend.ai/labels>
+
+|                        |                                                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------------------------- |
+| action:on hold         | Hold it. Wait for the restart.                                                                    |
+|                        |                                                                                                   |
+| area:docs              | Documentations                                                                                    |
+| area:i18n              | Localization                                                                                      |
+| area:infrastructure    | Infrastructure-related issues                                                                     |
+| area:security          | Security issue.                                                                                   |
+| area:upstream          | Issues with root cause from upstream 3rd parties                                                  |
+| area:ux                | UI / UX issue.                                                                                    |
+|                        |                                                                                                   |
+| comp:agent             | Related to Agent component                                                                        |
+| comp:appproxy          | Related to App Proxy component                                                                    |
+| comp:cli               | Related to CLI component                                                                          |
+| comp:client            | Related to Client component                                                                       |
+| comp:common            | Related to Common component                                                                       |
+| comp:installer         | Related to Installer                                                                              |
+| comp:manager           | Related to Manager component                                                                      |
+| comp:storage-proxy     | Related to Storage proxy component                                                                |
+| comp:webserver         | Related to Web Server component                                                                   |
+| comp:webui             | Related to WebUI component                                                                        |
+|                        |                                                                                                   |
+| dependencies           | Pull requests that update a dependency file                                                       |
+|                        |                                                                                                   |
+| effort:easy            | Need to understand only a specific region of codes (good first issue, easy).                      |
+| effort:epic            | Need to split into multiple sub-issues (epic).                                                    |
+| effort:hard            | Need to understand many components / a large extent of contextual or historical information.      |
+| effort:normal          | Need to understand a few modules / some extent of contextual or historical information.           |
+|                        |                                                                                                   |
+| github_actions         | Pull requests that update GitHub Actions code                                                     |
+|                        |                                                                                                   |
+| hacktoberfest-accepted |
+|                        |                                                                                                   |
+| impact:breaking        | Breaking or highlighted changes.                                                                  |
+| impact:invisible       | This change is invisible to users (internal changes).                                             |
+| impact:visible         | This change is visible to users.                                                                  |
+|                        |                                                                                                   |
+| ossca-23               | OSS Contribution Academy mentee's contributions.                                                  |
+|                        |                                                                                                   |
+| pending:backport       | Waiting for backports                                                                             |
+|                        |                                                                                                   |
+| platform:enterprise    | Backend.AI Enterprise support.                                                                    |
+| platform:general       | General platform issues. Most issues are general.                                                 |
+|                        |                                                                                                   |
+| require:config-update  | Local config update required. Consult the PR description or updated documentation.                |
+| require:db-migration   | Automatically set when alembic migrations are added or updated                                    |
+| require:pants-export   | Dependencies updated. You need to run `pants export --resolve=python-default` to make it working. |
+|                        |                                                                                                   |
+| size:L                 | 100~500 LoC                                                                                       |
+| size:M                 | 30~100 LoC                                                                                        |
+| size:S                 | 10~30 LoC                                                                                         |
+| size:XL                | 500~ LoC                                                                                          |
+| size:XS                | ~10 LoC                                                                                           |
+|                        |                                                                                                   |
+| skip:changelog         | Make the action workflow to skip towncrier check                                                  |
+| skip:ci                | Make the action workflow to skip running lint, check, and test (use with caution!)                |
+|                        |                                                                                                   |
+| status:duplicate       | This issue is duplicated.                                                                         |
+| status:help wanted     | Extra attention is needed.                                                                        |
+| status:invalid         | This issue is invalid.                                                                            |
+| status:open            | Waiting for volunteer / assignnee.                                                                |
+| status:rejected        | There is no plan to fix this issue.                                                               |
+|                        |                                                                                                   |
+| type:bug               | Reports about that are not working                                                                |
+| type:enhance           | Enhance component, behavior, internals without user-facing features                               |
+| type:feature           | Add new features                                                                                  |
+| type:feedback          | A suggestion about feature.                                                                       |
+| type:maintenance       | Maintenance issue.                                                                                |
+| type:question          | A question about feature.                                                                         |
+| type:refactor          | Refactoring current implementation.                                                               |
+|                        |                                                                                                   |
+| urgency:blocker        | IT SHOULD BE RESOLVED BEFORE NEXT RELEASE!                                                        |
+| urgency:1              | If no other duties are available, volunteer to help.                                              |
+| urgency:2              | With time limit, it should be finished within it; otherwise, resolve it when no other chores.     |
+| urgency:3              | Must be finished within a certain time frame.                                                     |
+| urgency:4              | As soon as feasible, implementation is essential.                                                 |
+| urgency:5              | It is imperative that action be taken right away.                                                 |
