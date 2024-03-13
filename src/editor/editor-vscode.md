@@ -17,3 +17,14 @@
   - markdownlint
 - vscode-pdf
 - EditorConfig for VS Code
+
+## language
+
+- clojure
+  - [Calva: Clojure & ClojureScript Interactive Programming](https://marketplace.visualstudio.com/items?itemName=betterthantomorrow.calva)
+  - [Calva Spritz](https://marketplace.visualstudio.com/items?itemName=betterthantomorrow.calva-spritz)
+    - A workaround for Calva + LiveShare
+
+## Etc
+
+- [AsciiDoc](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode)

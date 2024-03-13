@@ -8,6 +8,12 @@
       - 단점: 함수 이름이 길어짐. async/non async함수 전환시 함수이름 리펙토링 비용이 있음.
     - 디버그는 허용. 단, 릴리즈 빌드시 모든 경고는 에러이기에 Async 접미사를 안쓰는걸로 가자.
     - [CS4014](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs4014)로 추정
+- 더 많은 정보가 필요하면 넌 주니어 [시청](https://youtu.be/fUCMIf_4Pnc?si=Q5HuOXj0IRdZPENQ)
+  - `#주니어`
+  - 주니어 때는 사수의 부정적인 피드백을 굉장히 고마워 해야함
+  - 버그에 대한 대응이 어떻게 되는지 **꼼꼼히** 보는 리드 혹은 프로젝트 매니저가 반드시 있어야 한다.
+  - 이미 재현가능한(repro case) 버그가 있는데, 고칠 생각을 안하면 주니어
+    - need more info 는 재현 불가능시 요청하는 것인데, 고칠 생각을 안하고 이용하는 사람들이 있다.
 - 함수, 이렇게 만들면 넌 주니어 [시청](https://youtu.be/Wd6FJ1s_ZUc?si=aKG6I-o0cfDWlmDq)
   - `#주니어` `#네이밍`
   - 코드 연산을 그대로 함수명은 주니어
@@ -51,6 +57,11 @@
 - E0552. 내가 재활용하지 않는 사회 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0552.txt)**] [**[시청](https://youtu.be/qDYQhVDIjaU)**]
 - E0551. 프로젝트 세팅 못하는 넌 주니어 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0551.txt)**] [**[시청](https://youtu.be/U2I_dx57zIo)**]
   - `#주니어`
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0550. 효율적인 테스트 코드 작성법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0550.txt)**] [**[시청](https://youtu.be/gs1qM1TF5zA)**]
   - 데이터 위주의 함수는 구현 후에 곧바로 테스트 코드 작성해도 됨.
     - 그 외의 경우는 버그가 나오면 테스트 코드를 작성해서 재발을 막을 것.
@@ -109,6 +120,11 @@
 - E0503. 외주자는 회사정치에 신경 안 씁니다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0503.txt)**] [**[시청](https://youtu.be/Ey9Vq-5DbOA)**]
 - E0502. 아마존은 연봉 적게 주는 나쁜 회사? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0502.txt)**] [**[시청](https://youtu.be/F4XsJXp6-XE)**]
 - E0501. 정말 기이한 직장동료 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0501.txt)**] [**[시청](https://youtu.be/MGiWMUVSj3I)**]
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0500. 그래픽 프로그래머의 모니터 색감을 어떻게 설정하는가? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0500.txt)**] [**[시청](https://youtu.be/eJCDVnzyXoU)**]
 - E0499. 올바른 변수 이름 짓는 법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0499.txt)**] [**[시청](https://youtu.be/ZtkIwGZZAq8)**]
 - E0498. 반드시 알아야 할 비지니스 영어 축약어 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0498.txt)**] [**[시청](https://youtu.be/DNBPPLRFZM8)**]
@@ -163,6 +179,11 @@
 - E0453. 연령대별 해야할 일 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0453.txt)**] [**[시청](https://youtu.be/ya_irhS28s8)**]
 - E0452. 내가 스마트폰을 쓰는 이유 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0452.txt)**] [**[시청](https://youtu.be/5WXZxfMCT0w)**]
 - E0451. 열린 회사 (open company) [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0451.txt)**] [**[시청](https://youtu.be/YrweCYauK6o)**]
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0450. 모바일 페이의 승자? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0450.txt)**] [**[시청](https://youtu.be/eoRKq73rLWc)**]
 - E0449. 믿음과 학습속도 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0449.txt)**] [**[시청](https://youtu.be/UOloBnuxQeM)**]
 - E0448. 구글 갓과 프로그래밍 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0448.txt)**] [**[시청](https://youtu.be/M_TbDhI_xms)**]
@@ -218,6 +239,11 @@
 - E0403. 버그이야기 - 개발자의 거짓말 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0403.txt)**] [**[시청](https://youtu.be/9dQXI-TTfMc)**]
 - E0402. 연봉협상 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0402.txt)**] [**[시청](https://youtu.be/u-4DmO36Fs8)**]
 - E0401. 장기 기억력과 실력 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0401.txt)**] [**[시청](https://youtu.be/dDd-MnWsqq0)**]
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0400. 엔지니어와 UX [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0400.txt)**] [**[시청](https://youtu.be/rWAhtEagW5Y)**]
 - E0399. 버그 이야기 - 야구게임 편 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0399.txt)**] [**[시청](https://youtu.be/HY4X1JD9AUE)**]
 - E0398. 거짓말쟁이의 패턴 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0398.txt)**] [**[시청](https://youtu.be/kilGnfyhMkg)**]
@@ -277,10 +303,17 @@
 - E0353. 시그래프 발표계기 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0353.txt)**] [**[시청](https://youtu.be/6sJ5YubLAcQ)**]
 - E0352. 대학을 통한 북미취업 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0352.txt)**] [**[시청](https://youtu.be/bEhVT1Axv-k)**]
 - E0351. 선의의 거짓말은 없다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0351.txt)**] [**[시청](https://youtu.be/ugRUJgXHGD4)**]
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0350. 약 파는 개발자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0350.txt)**] [**[시청](https://youtu.be/mk7V3Ne_Cow)**]
 - E0349. 담배와 개발자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0349.txt)**] [**[시청](https://youtu.be/BDWT_lkUuC0)**]
 - E0348. 왜이리 자격증에 목을 매는가 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0348.txt)**] [**[시청](https://youtu.be/U-Pe7REA8RE)**]
 - E0347. A급 B급 인재 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0347.txt)**] [**[시청](https://youtu.be/V5N19Plazfk)**]
+  - A급인재 손을 안대도 일이 돌아가고 정말 중요한 이야기만 하고 넘어갈 수 있다.
+  - B급인재 중요한 이야기 가기전에 중요하기 전혀 중요하지 않은 이야기를 해야함.
 - E0346. 드디어 보이는 Git의 미래 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0346.txt)**] [**[시청](https://youtu.be/I6SiIXDzhHA)**]
 - E0345. 공포가 사람을 움직인다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0345.txt)**] [**[시청](https://youtu.be/ufw18EaAx0w)**]
 - E0344. [게임직군] 원화가 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0344.txt)**] [**[시청](https://youtu.be/jY8P5F79vBM)**]
@@ -290,6 +323,10 @@
 - E0340. 나는 내성적이다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0340.txt)**] [**[시청](https://youtu.be/ujBdBg-oh3c)**]
 - E0339. 회사운영 자동화 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0339.txt)**] [**[시청](https://youtu.be/xMai8B-ZfUQ)**]
 - E0338. 게임직군: 테크 아티스트 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0338.txt)**] [**[시청](https://youtu.be/czfzGMJtAIo)**]
+  - `#TA`
+  - 테크아티스트
+    - 프로그래머 출신 테크아티스트, 아티스트 출신 테크아티스트. 성향이 갈리나 둘 다 유용
+    - 있으면, 아티스트랑 프로그래머간 싸우는 경우가 적어짐
 - E0337. SQL vs NoSQL [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0337.txt)**] [**[시청](https://youtu.be/5llIti9VK48)**]
 - E0336. Enum을 쓰자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0336.txt)**] [**[시청](https://youtu.be/AVVWaRg6Q3A)**]
 - E0335. 윈10 나이트 라이트 모드와 EyeLeo [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0335.txt)**] [**[시청](https://youtu.be/9aa1FPxhHOw)**]
@@ -328,6 +365,11 @@
 - E0303. 언리얼4 개발팁 7선 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0303.txt)**] [**[시청](https://youtu.be/kRotMh5lX8I)**]
 - E0302. null이란 무엇인가? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0302.txt)**] [**[시청](https://youtu.be/N08BSA3rwhU)**]
 - E0301. 나는 금수저? 흙수저? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0301.txt)**] [**[시청](https://youtu.be/gaG5LfNsBHc)**]
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0300. 독커, Azure, AWS [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0300.txt)**] [**[시청](https://youtu.be/rweZ2NvIM0Q)**]
 - E0299. 버그 만드는 걸 두려워하지 마라 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0299.txt)**] [**[시청](https://youtu.be/hjE2vWa0BWY)**]
 - E0298. 팬레터, 나의 로망, 프로그래밍 언어 제작 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0298.txt)**] [**[시청](https://youtu.be/RKuzVHVbZBs)**]
@@ -378,6 +420,10 @@
 - E0253. 기회는 왔을때 잡는다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0253.txt)**] [**[시청](https://youtu.be/21jUVgp8nhA)**]
 - E0252. 게임직군: UI와 툴스 프로그래머 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0252.txt)**] [**[시청](https://youtu.be/i1llUVM0DXw)**]
 - E0251. 주인님 자격증이 나오다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0251.txt)**] [**[시청](https://youtu.be/-hoi35nZIcs)**]
+
+
+------------------------------------------------------------------------------------------------
+
 - E0250. 브렉싯과 소수삥뜯기 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0250.txt)**] [**[시청](https://youtu.be/sl939nMdxxk)**]
 - E0249. 틀렸을 때의 즐거움 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0249.txt)**] [**[시청](https://youtu.be/2b58A1mgpv4)**]
 - E0248. 해적질 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0248.txt)**] [**[시청](https://youtu.be/0p-nscGNdPQ)**]
@@ -436,6 +482,11 @@
 - E0203. 역시 미래는 모바일 No 머신러닝 Yes [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0203.txt)**] [**[시청](https://youtu.be/vhicinJb2OA)**]
 - E0202. 새로운 기계의 영혼 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0202.txt)**] [**[시청](https://youtu.be/r9Mf4xl3Rtg)**]
 - E0201. 포프TV Top 5, 그리고 뒷이야기 (2015) [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0201.txt)**] [**[시청](https://youtu.be/bMaYASpaxbs)**]
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0200. 생긴대로 사는법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0200.txt)**] [**[시청](https://youtu.be/t4jocIEKEEM)**]
 - E0199. Code Contracts [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0199.txt)**] [**[시청](https://youtu.be/hqUkfgU4wjk)**]
 - E0198. 코드몽키를 위한 코딩 스탠다드 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0198.txt)**] [**[시청](https://youtu.be/dIMySJ-HQ5k)**]
@@ -487,6 +538,11 @@
 - E0153. 주4시간 근무 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0153.txt)**] [**[시청](https://youtu.be/916ru3Bt1xQ)**]
 - E0152. 재택근무가 하고파요 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0152.txt)**] [**[시청](https://youtu.be/jo7Y6hEzfkk)**]
 - E0151. 나는 머신이다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0151.txt)**] [**[시청](https://youtu.be/PBXEmfWRock)**]
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0150. 게임해킹, 게임물리 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0150.txt)**] [**[시청](https://youtu.be/qq_eDBPxGts)**]
 - E0149. 애니 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0149.txt)**] [**[시청](https://youtu.be/v-B2FKeI69k)**]
 - E0148. 왼손/오른손 좌표계 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0148.txt)**] [**[시청](https://youtu.be/UpqhInULZK4)**]
@@ -540,6 +596,11 @@
 - E0103. 리얼타임? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0103.txt)**] [**[시청](https://youtu.be/gxwE2cmUiUc)**]
 - E0102. 게임 프로그래머를 관두는 이유 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0102.txt)**] [**[시청](https://youtu.be/0fzg1kL0Y2U)**]
 - E0101. 공부잘하는 친구를 사랑하라 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0101.txt)**] [**[시청](https://youtu.be/bQMgInFW8TA)**]
+
+
+------------------------------------------------------------------------------------------------
+
+
 - E0100. 100회 기념, 대마법사, 오해를 풀자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0100.txt)**] [**[시청](https://youtu.be/8LPwmHQi3sQ)**]
 - E0099. 텍스처 품질향상 꼼수 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0099.txt)**] [**[시청](https://youtu.be/b8UdZh4e7tY)**]
 - E0098. Hi-Z 최적화 아이디어 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0098.txt)**] [**[시청](https://youtu.be/7XXSPRiJKjo)**]
@@ -594,6 +655,9 @@
 - E0052. 게임프로그래머가 되는 이유 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0052.txt)**] [**[시청](https://youtu.be/RuXTmcypGNo)**]
 - E0051. C#이 C++보다 빨라진다? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0051.txt)**] [**[시청](https://youtu.be/K0RDs8705WE)**]
   - `#C++`
+
+------------------------------------------------------------------------------------------------
+
 - E0050. 슈팅게임 알고리듬 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0050.txt)**] [**[시청](https://youtu.be/NgFp5D1trAA)**]
 - E0049. 스페셜리스트 vs 제너럴리스트 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0049.txt)**] [**[시청](https://youtu.be/9n--830SKk0)**]
 - E0048. 언리얼 엔진에서 지원하는 머테리얼 레이어 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0048.txt)**] [**[시청](https://youtu.be/MlqMUdkItcY)**]
@@ -607,7 +671,7 @@
 - E0040. 물리기반 렌더링 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0040.txt)**] [**[시청](https://youtu.be/DIEv3Uw1leo)**]
 - E0039. 책자랑: HLSL 개발 조리법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0039.txt)**] [**[시청](https://youtu.be/IXGTaI2zjOc)**]
   - `책`
-  - `HLSL Development Cookbook`
+  - [HLSL Development Cookbook](https://www.amazon.com/HLSL-Development-Cookbook-Doron-Feinstein/dp/1849694206)
 - E0038. 야근에 대해 말해보자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0038.txt)**] [**[시청](https://youtu.be/XBHS9r-z80U)**]
 - E0037. 포프의 시간관리법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0037.txt)**] [**[시청](https://youtu.be/GYkEvhwh2b0)**]
 - E0036. 한국인이 잘못쓰는 영어: Main Idea First [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0036.txt)**] [**[시청](https://youtu.be/dqk4qzczZxE)**]
@@ -641,19 +705,50 @@
   - `#C++`
 - E0011. 원화가 북미취업 케이스 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0011.txt)**] [**[시청](https://youtu.be/B7jIpD2B2nY)**]
 - E0010. 녹내장, 오디오북, 불법복제 그리고 전자책 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0010.txt)**] [**[시청](https://youtu.be/vhpCjCYNyr4)**]
+  - `#skip`
+  - 컴퓨터를 한곳에 고정시키고 계속 바라보면 주변근육으로 인해 녹내장이 발병할 수 도 있다.
+  - [녹내장은 무엇인가요?](https://blog.naver.com/lasik9779/40108380220)
+    - 말기에 가서 중심 시력만 남게 된 경우에야 시력장애가 있음을 알게 되는 무서운 병입니다.
+    - 정기적인 안압검사와 시야검사 및 시신경유두검사를 받아보는 것이 바람직합니다.
+    - 또한 심신의 과로를 피하고 어두운 곳에서 일하거나 책을 보지 않도록 하고, 한꺼번에 많은 양의 물이나 커피 등을 마시지 않도록 주의하셔야해요.
+  - 눈을 쉴 수 있는 방법 오디오 북.
+  - 한국이 책값이 정말 싸다.
 - E0009. 탑프로그래머라면 하드웨어 쯤은... [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0009.txt)**] [**[시청](https://youtu.be/g4sXh0NR0Dk)**]
+  - `#하드웨어`
+  - 하드웨어 & 어셈블리를 이해하고, 하드웨어를 교체/추가하지 않고도 최적화할 방법을 할고 있다면 개발 비용을 엄청 절약할 수 있다.
+  - 하드웨어 이해도가 있다면, 거기에 맞춰서 처음부터 코드나 알고리즘을 효율적으로 설계할 수 있고 나중에 최적화 할 일도 많이 줄어들 수 있다.
+  - 탑클래스가 되기 위해서는 하드웨어 이해 또한 필수이다.
 - E0008. 내가 못쓰는 C++11: constexpr [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0008.txt)**] [**[시청](https://youtu.be/OlxOKdrQhO0)**]
   - `#C++`
+  - 쓰고 싶은데 아직은 못쓴다. 당시(2013. 7. 4.)
+  - [코딩스텐다드](https://github.com/popekim/dev-docs-ko/blob/main/coding-standards/cpp.md)
+    - 단순 상수 변수에는 const 대신 constexpr 을 사용한다.
 - E0007. 마이크로소프트 MVP [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0007.txt)**] [**[시청](https://youtu.be/7FVPdRGVZMA)**]
+  - `#skip`
+  - ms mvp 뽑아줬다
 - E0006. 영어회화 공부법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0006.txt)**] [**[시청](https://youtu.be/CoOXdml5ny8)**]
+  - `#영어`
+  - 화상채팅으로 대화하는 습관
 - E0005. 내가 쓰는 C++11: auto [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0005.txt)**] [**[시청](https://youtu.be/GmyXz-HQY-U)**]
   - `#C++`
+  - [코딩스텐다드](https://github.com/popekim/dev-docs-ko/blob/main/coding-standards/cpp.md)
+    - 반복자나 new 키워드가 같은 줄에 있어서, 어떤 개체가 만들어지는 지 명확하게 드러나는 경우가 아니라면 auto 키워드를 사용하지 않는다.
 - E0004. KGC 2013 발표신청 완료! 근데 공짜 티셔츠좀 T_T [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0004.txt)**] [**[시청](https://youtu.be/aGMhLZtw8hE)**]
+  - `#Shader`
+  - [아티스트에게 사랑받는 3DS Max 우버쉐이더](https://blog.popekim.com/ko/2013/10/02/artist-friendly-uber-shader.html)
+    - Shader 조작 UI
 - E0003. 모바일게임이 천하를 평정할까? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0003.txt)**] [**[시청](https://youtu.be/TsmxaxoY7rY)**]
+  - `#skip`
+  - 뉴스 내용을 그대로 받아들이기보다 말을 누가했는지, 의도가 무엇인지 한번 판단
 - E0002. 텍스트 보단 비디오 (개국인사?) [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0002.txt)**] [**[시청](https://youtu.be/wjTL6-lKRIM)**]
+  - `#skip`
+  - 사람들이 부담감없이 정보를 접하기에는 듣는거나 보는게 낫다.
 - E0001. 프로그래머가 수학을 못하면 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0001.txt)**] [**[시청](https://youtu.be/yMQncICQFYs)**]
+  - `#수학`
   - 수학과 프로그래밍은 논리력과 밀접한 관련이 있습니다. 수학이 약하다면, 논리력 또한 약할 확률이 높습니다. 이런 경우, 훌륭한 프로그래머가 되기는 어려울 것입니다.
-
+    - 1. 수학을 못하면 프로그래밍 못한다.
+    - 2. 수학을 못한다고 주장할때 암기력이 모자란지, 논리력이 모자란지 확실하게.
+      - 논리력이 모자라면 프로그래밍을 포기하시는게...
 
 ## Ref
 
