@@ -181,7 +181,195 @@
                     <main>
                         <h1 id="mermaid"><a class="header" href="#mermaid">Mermaid</a></h1>
 <ul>
-<li><a href="https://mermaid.js.org/">https://mermaid.js.org/</a></li>
+<li><a href="https://mermaid.js.org/">https://mermaid.js.org/</a>
+<ul>
+<li>JavaScript based diagramming and charting tool</li>
+</ul>
+</li>
+<li><a href="https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/">https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/</a>
+<ul>
+<li>Mermaid는 Javascript를 이용 브라우저에서 실행되며 SVG를 이용 렌더링</li>
+<li>Plantuml에는 Java와 GraphViz가 필요합니다.</li>
+</ul>
+</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>확장자</td><td><code>.mermaid</code> , <code>.mmd</code></td></tr>
+<tr><td>MIME type</td><td><code>text/vnd.mermaid</code></td></tr>
+</tbody></table>
+</div>
+<h2 id="test"><a class="header" href="#test">TEST</a></h2>
+<h2 id="etc"><a class="header" href="#etc">ETC</a></h2>
+<pre><code class="language-mermaid">---
+title: Node with text
+---
+
+%% this is comment
+
+flowchart LR
+    id1[This is the text in the box]
+
+    A -- text --&gt; B -- text2 --&gt; C
+
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px
+
+</code></pre>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody>
+<tr><td>TB</td><td>위에서 아레</td><td>Top to bottom</td></tr>
+<tr><td>TD</td><td>위에서 아레</td><td>Top-down/ same as top to bottom</td></tr>
+<tr><td>BT</td><td>아레서 위</td><td>Bottom to top</td></tr>
+<tr><td>RL</td><td>오른쪽에서 왼쪽</td><td>Right to left</td></tr>
+<tr><td>LR</td><td>왼쪽에서 오른쪽</td><td>Left to right</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>sequenceDiagram</td><td></td></tr>
+<tr><td>gitGraph</td><td></td></tr>
+<tr><td>flowchart</td><td></td></tr>
+<tr><td>classDiagram</td><td></td></tr>
+<tr><td>stateDiagram-v2</td><td></td></tr>
+<tr><td>C4Context</td><td>미묘...</td></tr>
+</tbody></table>
+</div>
+<pre><code>subgraph title
+    graph definition
+end
+</code></pre>
+<p><code>%%</code>는 주석</p>
+<pre><code class="language-mermaid">graph TD;
+    A--&gt;B;
+    A--&gt;C{b};
+    B--&gt;D[Sqaure];
+    C--&gt;D;
+</code></pre>
+<p>GameSir G8 Galileo</p>
+<h2 id="vscode-extension"><a class="header" href="#vscode-extension">VSCode Extension</a></h2>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tomoyukim.vscode-mermaid-editor">Mermaid Editor</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting">Mermaid Markdown Syntax Highlighting</a></li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th>commit type</th></tr></thead><tbody>
+<tr><td>NORMAL</td></tr>
+<tr><td>REVERSE</td></tr>
+<tr><td>HIGHLIGHT</td></tr>
+</tbody></table>
+</div>
+<pre><code class="language-mermaid">---
+title: Git branch - Client
+---
+
+%%{init: {
+  'logLevel': 'debug',
+  'theme': 'default',
+  'themeVariables': {
+    'git0': '#000000',
+    'git1': '#00ff00',
+    'git2': '#f000ff',
+    'git3': '#ff0000'
+  },
+  'gitGraph': { 'rotateCommitLabel': false }
+}}%%
+
+%% gitGraph TB:
+gitGraph LR:
+    commit
+    
+    branch task/issue-id
+    checkout task/issue-id
+    commit
+    checkout main
+    merge task/issue-id
+    commit
+    
+    branch release
+    checkout release
+    commit type:HIGHLIGHT id: "merge with main" tag:"0.0.0"
+
+    branch hotfix/issue-id
+    checkout hotfix/issue-id
+    commit
+
+    checkout release
+    merge hotfix/issue-id tag: "0.0.1"
+
+</code></pre>
+<pre><code class="language-mermaid">---
+title: Git branch - Server
+---
+
+%%{init: {
+  'logLevel': 'debug',
+  'theme': 'default',
+  'themeVariables': {
+    'git0': '#000000',
+    'git1': '#00ff00',
+    'git2': '#f000ff',
+    'git3': '#f000ff',
+    'git4': '#ff0000'
+  },
+  'gitGraph': { 'rotateCommitLabel': false }
+}}%%
+
+%% gitGraph TB:
+gitGraph LR:
+    commit
+    
+    branch task/issue-id
+    checkout task/issue-id
+    commit
+    checkout main
+    merge task/issue-id
+    commit
+
+    branch server/dev
+    checkout server/dev
+    commit type:HIGHLIGHT id: "merge with main"
+
+    
+    branch server/live
+    checkout server/live
+    commit type:HIGHLIGHT id: "merge with server/dev" tag:"0.0.0"
+
+    branch hotfix/issue-id
+    checkout hotfix/issue-id
+    commit
+
+    checkout server/live
+    merge hotfix/issue-id tag: "0.0.1"
+</code></pre>
+<pre><code class="language-mermaid">---
+title: Git branch - Localize
+---
+
+%%{init: {
+  'logLevel': 'debug',
+  'theme': 'default',
+  'themeVariables': {
+    'git0': '#000000',
+    'git1': '#00ff00',
+    'git2': '#f000ff',
+    'git3': '#ff0000'
+  },
+  'gitGraph': { 'rotateCommitLabel': false }
+}}%%
+
+%% gitGraph TB:
+gitGraph LR:
+    commit
+    
+    commit
+    
+    branch distribute/dev
+    checkout distribute/dev
+    commit type:HIGHLIGHT id: "merge with main"
+
+
+    branch distribute/live
+    checkout distribute/live
+    commit type:HIGHLIGHT id: "merge with distribute/dev"
+</code></pre>
+<h2 id="ref"><a class="header" href="#ref">Ref</a></h2>
+<ul>
+<li>https://www.dandoescode.com/blog/plantuml-vs-mermaid</li>
 </ul>
 
                     </main>
