@@ -1,5 +1,7 @@
 # pope-tv
 
+자꾸 봤던걸 또 보게 된다. 그냥 정리해놔서 봤던걸 또 보는 일이 없게 하자.
+
 - 변화하는 코딩표준! Async 접미사! [시청](https://youtu.be/b49E0weZ8rI?si=vzvHm9ZM-I2wKPhz)
   - `C#`
   - MS와 다르게 사용하는 포프 C#코딩 스텐다드는 Async 접미사를 쓰지 않음.
@@ -389,6 +391,8 @@
 - E0284. 영어가 한국어보다 좋은 언어다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0284.txt)**] [**[시청](https://youtu.be/GrVPISKZF2w)**]
 - E0283. 버텍스 압축 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0283.txt)**] [**[시청](https://youtu.be/y5B7Ay46W-0)**]
 - E0282. 북미취업가이드북 2판 출시 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0282.txt)**] [**[시청](https://youtu.be/Qkjsrl329xg)**]
+  - 1판은 북미취업 이렇게 해야한다. 실패를 해도 잃을게 없는
+  - 2판 비자문제(매년 바뀌지), 미국쪽이 어려운 이유, 캐나다 찍고 가는거에 대한 이점.
 - E0281. 구글 미워요 자바 싫어요 마소 짱짱 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0281.txt)**] [**[시청](https://youtu.be/JPqenmtKE18)**]
 - E0280. 인터넷과 지식인 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0280.txt)**] [**[시청](https://youtu.be/jBY410dyY4s)**]
 - E0279. 일상 훔쳐보기와 시간 때우기 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0279.txt)**] [**[시청](https://youtu.be/prYbsSfhBAQ)**]

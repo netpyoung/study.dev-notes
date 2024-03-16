@@ -28,3 +28,9 @@
 ## Etc
 
 - [AsciiDoc](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode)
+- GitLens
+- Todo Tree
+- Project Manager
+- Error Lens
+- Code Spell Checker
+- vscode-hanspell
