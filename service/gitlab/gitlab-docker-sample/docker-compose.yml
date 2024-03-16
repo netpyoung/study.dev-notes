@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  gitlab:
+    image: "gitlab/gitlab-ee:14.4.2-ee.0"
+    hostname: "gitlab.example.com"
+    environment:
+      GITLAB_TIMEZONE: "Asia/Seoul"
+      GITLAB_OMNIBUS_CONFIG: |
+        nginx['custom_gitlab_server_config'] = "location /-/plantuml/ { \n    proxy_cache off; \n    proxy_pass  http://plantuml:8004/; \n}\n"
+    ports:
+      - "8003:80"
+      - "443:443"
+      - "22:22"
+    volumes:
+      - "/c/pyoung/serv/gitlab/config:/etc/gitlab"
+      - "/c/pyoung/serv/gitlab/logs:/var/log/gitlab"
+      - "/c/pyoung/serv/gitlab/data:/var/opt/gitlab"
+
+  plantuml:
+    image: plantuml/plantuml-server:jetty
+    ports:
+      - 8004:8080

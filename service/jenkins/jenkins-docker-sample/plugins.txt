@@ -1,0 +1,8 @@
+build-monitor-plugin
+build-name-setter
+workflow-aggregator 
+console-tail
+log-parser
+slack
+ws-cleanup
+sonar
