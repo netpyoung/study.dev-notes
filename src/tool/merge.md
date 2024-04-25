@@ -1,5 +1,6 @@
 # Merge
 
+
 ## TortoiseGit
 
 | p4merge | https://www.perforce.com/downloads/visual-merge-tool              |
@@ -16,3 +17,6 @@
 | ------ | --------------------------------------------------------------------------------------------------------- |
 | diff   | C:\Program Files\KDiff3\bin\kdiff3.exe %base %mine --L1 %bname --L2 %yname                                |
 | merge  | C:\Program Files\KDiff3\bin\kdiff3.exe %base %mine %theirs -o %merged --L1 %bname --L2 %yname --L3 %tname |
+
+
+diffmerge https://www.sourcegear.com/diffmerge/index.html

@@ -2,6 +2,23 @@
 
 자꾸 봤던걸 또 보게 된다. 그냥 정리해놔서 봤던걸 또 보는 일이 없게 하자.
 
+- 회의 효율 극대화: 컴퓨터 대신 이걸 가져가야 하는 이유 [시청](https://youtu.be/JPXS6hwYp8Q?si=qaIVx33_wMeMlrVz)
+  - 공책. 요약하는 능력. 회의끝나고 그날 복기.
+- 멀티스레딩 마스터하기: 10년의 여정 [시청](https://youtu.be/yl8_ZRDA5pw?si=YlNUEgBN-Jrpr22p)
+  - `#멀티스레딩`
+  - 10년 정도면 단순하게 작성하는데 물이오르게됨.
+- 개선안 제시 못하면 주니어 [시청](https://youtu.be/0fvLIcLP2r8?si=Ttq1dR0MKpgCnOf0)
+  - `#주니어`
+  - 개선안을 제시를 못하거나 안해, 했는데 자꾸 아니래 => 주니어
+  - 내가 무언가를 책임지는 부분이 있냐, 누군가의 지시없이 할 수 있는것이 충분히 많아졌냐.
+- 이런 테크 회사는 빤스런 [시청](https://www.youtube.com/watch?v=DfLpnKcYoDg)
+  - `#빤스런`
+  - 컴파일러 경고를 건들지 않고 있다.
+  - 디버그 빌드가 엄청 느리다. => 디버깅 하는 사람이 없다.
+  - 기존 코드를 바꾸는 것을 엄청 무서워함.
+  - 버그 대쉬보드의 버그 숫자가 줄지 않고 계속 오름.
+  - TODO 커맨트를 박지 않는다.
+  - TODO를 박을때 정해진 포맷이 없다.
 - 변화하는 코딩표준! Async 접미사! [시청](https://youtu.be/b49E0weZ8rI?si=vzvHm9ZM-I2wKPhz)
   - `C#`
   - MS와 다르게 사용하는 포프 C#코딩 스텐다드는 Async 접미사를 쓰지 않음.
@@ -29,6 +46,17 @@
 - 잊혀져 가는 중요한 프로그래밍 개념: 감시값 (sentinel value) [시청](https://youtu.be/xvqIEwmiSw4?si=J954WDdwTwn71J_0)
 - 이 코드 못 짜면 넌 주니어 [시청](https://youtu.be/B0zU6v2nBdA?si=U2o0C6n6VuNPvpOM)
   - `#주니어`
+  - 사실 뭔가를 공부하고 면접을 봐야 한다, 이미 시니어는 아닌 경우가 많다.
+  - 시니어 면접을 갔는데, 코딩 면접은 안보고 이야기만 한다
+    - 그런 주니어들만 모인 회사다.
+    - 자기는 시니어라고 믿고 있는 주니어들이 들어와 있다.
+  - 5분 준다
+    - 버블쇼트 O(n*n)
+      - for (int i = 0; i < arr.Length - 1; ++i)
+        - for (int j = 0; j < arr.Length - 1 - i; ++j)
+          - if (arr[j] > arr[j + 1])
+            - swap
+    - 문자열 뒤집기
 - Assert 어디에 넣을지 모르면 넌 주니어 [시청](https://youtu.be/6ts1Uxp_i3w?si=dSdGOrpkrHqAQa35)
   - `#주니어`
 - 스마트폰 알림 끄고 상사에게 칭찬 받는 법 [시청](https://youtu.be/hb6Us_evNG8?si=A7rG-L3cbqsdNHwe)
@@ -41,6 +69,7 @@
 - E0568. 클린코드 때문에 취업 실패한 썰 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0568.txt)**] [**[시청](https://youtu.be/HoP8qWpucWA)**]
 - E0567. 예민하다 못해 까탈스런 동료를 두면 좋은 점 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0567.txt)**] [**[시청](https://youtu.be/f3uXSVXwK-M)**]
 - E0566. 취업 전에 반드시 알아야 하는 자료구조들 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0566.txt)**] [**[시청](https://youtu.be/9u4jL9hedPk)**]
+  - 트리, 해시맵 만들 수 있어야함
 - E0565. AI 기반 천사모드 검색엔진: 너무 한쪽에 치우치지 않은채 좋은 정보들을 얻을 수는 없을까? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0565.txt)**] [**[시청](https://youtu.be/bxvB4oJWbdE)**]
 - E0564. 싱글톤 패턴은 안티 패턴인가? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0564.txt)**] [**[시청](https://youtu.be/4n-40Wahc50)**]
 - E0563. 곧바로 취업되는 프로그래밍 언어, 가장 빨리 취업되는 공부법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0563.txt)**] [**[시청](https://youtu.be/Np0sOJEm7mU)**]
@@ -106,6 +135,21 @@
 - E0519. 지문인식: 2만 원에 PC 보안 향상 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0519.txt)**] [**[시청](https://youtu.be/PwJn50xDM54)**]
 - E0518. 단순 반복 업무 싫어하세요? 그럼 어떡하시려구요? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0518.txt)**] [**[시청](https://youtu.be/cri10U7R0UQ)**]
 - E0517. 탑 프로그래머의 데스크 셋업 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0517.txt)**] [**[시청](https://youtu.be/HiB6lcpph3c)**]
+  - 데스크: 전동 높이조절 데스크
+    - - Desk: UpLift 900 Sit-Stand Ergonomic Desk Base + Ikea 상판
+  - 바닥: 고무판(서서 일할때)
+  - 의자: Herman-Miller Aeron - 머리있는거
+  - 모니터: 델 U시리즈
+  - 컴퓨터 캐이스: https://www.fractal-design.com/products/cases/define/define-r5/black/
+  - Mouse: RollerMouse Red
+  - Keyboard: Realforce 조용한 버전
+  - Speakers: Rokit 5
+  - Headset: Sennheiser PC 320 Game
+  - Audio Interface: PreSonus AudioBox USB 2x2
+  - 방송
+    - WebCam: Logitech BRIO
+    - Mic: Yeti Blue USB
+  - 창정렬: Gridmove
 - E0516. 포프TV 꾸준 인기영상 TOP5 (2019년) [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0516.txt)**] [**[시청](https://youtu.be/WykARqYkEjQ)**]
 - E0515. 2019년 포프TV 신작 베스트 5편 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0515.txt)**] [**[시청](https://youtu.be/EGcM2-yGEQQ)**]
 - E0514. 워라하(워크/라이프 하모니)를 위한 포프TV (인사 없음) [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0514.txt)**] [**[시청](https://youtu.be/KlJNPk4eriU)**]
@@ -190,6 +234,7 @@
 - E0449. 믿음과 학습속도 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0449.txt)**] [**[시청](https://youtu.be/UOloBnuxQeM)**]
 - E0448. 구글 갓과 프로그래밍 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0448.txt)**] [**[시청](https://youtu.be/M_TbDhI_xms)**]
 - E0447. Hash Table은 프로그래머의 기본기 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0447.txt)**] [**[시청](https://youtu.be/S7vni1hdsZE)**]
+  - 해시태이블 만들 수 있는가
 - E0446. Visual C++의 유니티 빌드 기능 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0446.txt)**] [**[시청](https://youtu.be/S3u862k6Bc4)**]
   - `#C++`
 - E0445. 니 기억은 언제나 틀리다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0445.txt)**] [**[시청](https://youtu.be/N7r8cqzSXQQ)**]
@@ -315,7 +360,10 @@
 - E0348. 왜이리 자격증에 목을 매는가 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0348.txt)**] [**[시청](https://youtu.be/U-Pe7REA8RE)**]
 - E0347. A급 B급 인재 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0347.txt)**] [**[시청](https://youtu.be/V5N19Plazfk)**]
   - A급인재 손을 안대도 일이 돌아가고 정말 중요한 이야기만 하고 넘어갈 수 있다.
+    - 어떤일을 볼때 가능성도 보고 실재 어떤 영향을 끼칠 지도 본다.
   - B급인재 중요한 이야기 가기전에 중요하기 전혀 중요하지 않은 이야기를 해야함.
+  - [강박적 집착증 스티브 잡스 "바보들의 팽창을 막아라"](https://blog.naver.com/businessinsight/221039428481)
+  - [GN⁺: 스티브 잡스, 최고의 직원들은 프로세스가 아닌 콘텐츠에 집중한다고 말함 (inc.com)](https://news.hada.io/topic?id=12644)
 - E0346. 드디어 보이는 Git의 미래 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0346.txt)**] [**[시청](https://youtu.be/I6SiIXDzhHA)**]
 - E0345. 공포가 사람을 움직인다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0345.txt)**] [**[시청](https://youtu.be/ufw18EaAx0w)**]
 - E0344. [게임직군] 원화가 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0344.txt)**] [**[시청](https://youtu.be/jY8P5F79vBM)**]
@@ -633,6 +681,9 @@
 - E0075. 책욕심 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0075.txt)**] [**[시청](https://youtu.be/XvRewqjJ3dU)**]
 - E0074. Power 낮잠 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0074.txt)**] [**[시청](https://youtu.be/a9zPoKNx3rQ)**]
 - E0073. 논리력은 어떻게 판단하나? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0073.txt)**] [**[시청](https://youtu.be/QIUFGe1q0wU)**]
+  - 필연적 인과관계. A가 있어났으면 B는 반드시 일어나야 되는 상황.
+  - 전제와 결론이 필연적 인과관계인지, 전제가 사실인지
+  - 결론이 맞다, 아니다 라는 걸 판단 할 수 있는 사람
 - E0072. Debug 빌드를 유지하자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0072.txt)**] [**[시청](https://youtu.be/eOF6IZU4nxQ)**]
 - E0071. 겸손한 개발자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0071.txt)**] [**[시청](https://youtu.be/kw3YhGRMAUU)**]
 - E0070. 내가 쓰는 C++11: Scoped Lock [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0070.txt)**] [**[시청](https://youtu.be/EzH5ZWzA2QI)**]

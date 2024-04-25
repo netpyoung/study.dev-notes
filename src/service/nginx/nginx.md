@@ -2,6 +2,7 @@
 
 - 그냥 실행파일로 실행 추천
 - [download](http://nginx.org/en/download.html)
+- <https://github.com/h5bp/server-configs-nginx>
 
 
 ``` cmd

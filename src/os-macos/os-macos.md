@@ -23,11 +23,12 @@ xattr -d com.apple.quarantine {해당파일이름}
 -r  If a file argument is a directory, act as if the entire contents of the directory
        recursively were also specified (so that every file in the directory tree is acted upon).
 
-
 ## lipo
 
 lipo -info
 lipo -create
+
+## XCFramework
 
 ## otool
 

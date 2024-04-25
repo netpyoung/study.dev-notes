@@ -3,6 +3,7 @@
 ## Github Action
 
 - <https://docs.github.com/ko/billing/managing-billing-for-github-actions/about-billing-for-github-actions>
+- <https://docs.github.com/en/actions/using-workflows/about-workflows>
 
 | 요금               | 분(월) | 스토리지 |
 | ------------------ | ------ | -------- |
@@ -52,6 +53,8 @@
   - labeling // [actions/labeler](https://github.com/actions/labeler)
 - project
   - [actions/add-to-project](https://github.com/actions/add-to-project)
+- notify
+  - 여러개가 있는데 서비스에 맞게 찾아보자
 
 
 
@@ -153,3 +156,19 @@ permissions:
 | urgency:3              | Must be finished within a certain time frame.                                                     |
 | urgency:4              | As soon as feasible, implementation is essential.                                                 |
 | urgency:5              | It is imperative that action be taken right away.                                                 |
+
+## .github/
+
+
+``` txt
+.github/
+  workflows/
+  ISSUE_TEMPLATE/
+    bug_report.md
+  pull_request_template.md
+```
+
+## codeql
+
+- <https://docs.github.com/en/code-security/codeql-cli>
+- <https://learn.microsoft.com/en-us/dotnet/devops/dotnet-secure-github-action>

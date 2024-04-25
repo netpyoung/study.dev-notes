@@ -67,6 +67,16 @@
 - https://help.clickup.com/hc/en-us/articles/6304361756951-Create-Custom-Task-IDs
 
 
+## quire
+
+- https://quire.io/
+
+|      |              |         |            |
+| ---- | ------------ | ------- | ---------- |
+| Free | Professional | Premium | Enterprise |
+| 0    | 7.65         | 13.95   | 19.95      |
+
+
 ## 이하 쓰레기
 
 - Kantree

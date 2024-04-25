@@ -15,7 +15,13 @@ NDK : jni를 쉽게 쓰기 위한 wapper class
  - http://developer.android.com/sdk/index.html
 
 * ADT bundle 셋팅.
+ - http://developer.android.com/sdk/index.html
  - http://developer.android.com/sdk/installing/bundle.html
+ - DOWNLOAD FOR OTHER PLATFORMS > ADT Bundle > Mac OS X 64-bit 다운로드.
+ - 압축해제후, "~/adt-bundle-mac"로 폴더 이동.
+ - "~/adt-bundle-mac/sdk/tools/android" 실행
+ - Tools랑 API 레벨 가장높은거 체크해서 모두 install. accept all.
+
 
 * device 판매사의 usb드라이버 다운로드.
  - usb 빼고 설치.

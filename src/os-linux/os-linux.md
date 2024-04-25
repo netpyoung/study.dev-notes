@@ -25,6 +25,10 @@
 - tree
   - [broot](https://github.com/Canop/broot)
 
+ngrok비슷하게 로컬 터널 무료 : https://localtunnel.github.io/www/
+
+RGBA채널 보는거 지원 가벼운 이미지뷰어: https://github.com/woelper/oculante
+
 ## Ref
 
 - <https://github.com/johnalanwoods/maintained-modern-unix>

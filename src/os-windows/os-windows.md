@@ -5,6 +5,13 @@
   - [MobaXterm](https://mobaxterm.mobatek.net/)
   - [NeatDownloadManager](https://www.neatdownloadmanager.com/index.php/en/)
   - [MuMu Player](https://www.mumuplayer.com/index.html)
+    - NetEase에서 만든 에뮬
+    - `//192.168.1.100/Share/My project` 이런식으로 네트워크 주소가 들어갔는데 접속 못하면 크래쉬가 난다. 그럴때
+      - C:\Program Files\MuMu9\emulator\nemu9\EmulatorShell\last_open_dir.ini
+        ``` ini
+        [General]
+        last_apk_open_dir=C:/temp/My project
+        ```
   - [Parsec](https://parsec.app/)
   - [Snipaste](https://www.snipaste.com/)
   - CoreDirector
@@ -28,6 +35,7 @@
 - [everything](http://www.voidtools.com/)
 - [ConEmu](https://conemu.github.io/)
 - [AstroGrep](http://astrogrep.sourceforge.net/)
+  - 혹은 [dnGrep](https://github.com/dnGrep/dnGrep)
 - [RapidEE](https://www.rapidee.com/en/about)
 - [Visual Studio](https://www.visualstudio.com/ko/downloads/)
   - english, python, desktop
