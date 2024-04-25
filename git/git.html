@@ -180,6 +180,9 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="git"><a class="header" href="#git">Git</a></h1>
+<ul>
+<li><a href="https://docs.gitea.com/next/installation/comparison">https://docs.gitea.com/next/installation/comparison</a></li>
+</ul>
 <h2 id="ignore"><a class="header" href="#ignore">ignore</a></h2>
 <ul>
 <li><a href="https://www.toptal.com/developers/gitignore">https://www.toptal.com/developers/gitignore</a></li>
@@ -236,6 +239,25 @@ git push origin helloworld
 <li><a href="https://git-scm.com/docs/merge-strategies">https://git-scm.com/docs/merge-strategies</a></li>
 <li><a href="https://blog.outsider.ne.kr/1707">Git의 새로운 기본 Merge 전략 ort</a></li>
 </ul>
+<h3 id="fast-forward"><a class="header" href="#fast-forward">fast forward</a></h3>
+<ul>
+<li>base와 다른 브랜치가 참조하는 커밋들이 동일 선상에 위치하고 있다.
+<ul>
+<li>이 때 두 브랜치는 Fast-foward 상태에 있다고 한다.</li>
+</ul>
+</li>
+</ul>
+<p>--ff
+fast-forward 관계에 있는 경우 새로운 commit을 생성하지 않고 브랜치의 참조 값만 변경되도록
+--no-ff
+non fast forward
+merge 대상과 fast-forward 관계여도 강제로 merge commit을 생성하고 병합한다</p>
+<h3 id="squash"><a class="header" href="#squash">squash</a></h3>
+<p>짓누르다</p>
+<p>--squash
+feature 커밋들을 하나로 모아서 base에 합침</p>
+<h3 id="rebase"><a class="header" href="#rebase">rebase</a></h3>
+<p>base 재설정 - 커밋을 복사 붙여넣어가기 (커밋 id가 달라짐)</p>
 <h2 id="ref"><a class="header" href="#ref">Ref</a></h2>
 <ul>
 <li>git real
