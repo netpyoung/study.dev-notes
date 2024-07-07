@@ -2,12 +2,14 @@
 
 자꾸 봤던걸 또 보게 된다. 그냥 정리해놔서 봤던걸 또 보는 일이 없게 하자.
 
-- 회의 효율 극대화: 컴퓨터 대신 이걸 가져가야 하는 이유 [시청](https://youtu.be/JPXS6hwYp8Q?si=qaIVx33_wMeMlrVz)
+- 회사의 피드백: 주니어에서 벗어나기 위한 조언 [시청](https://youtu.be/eRQwxz8YcT4)
+  - 
+- 회의 효율 극대화: 컴퓨터 대신 이걸 가져가야 하는 이유 [시청](https://youtu.be/JPXS6hwYp8Q)
   - 공책. 요약하는 능력. 회의끝나고 그날 복기.
-- 멀티스레딩 마스터하기: 10년의 여정 [시청](https://youtu.be/yl8_ZRDA5pw?si=YlNUEgBN-Jrpr22p)
+- 멀티스레딩 마스터하기: 10년의 여정 [시청](https://youtu.be/yl8_ZRDA5pw)
   - `#멀티스레딩`
   - 10년 정도면 단순하게 작성하는데 물이오르게됨.
-- 개선안 제시 못하면 주니어 [시청](https://youtu.be/0fvLIcLP2r8?si=Ttq1dR0MKpgCnOf0)
+- 개선안 제시 못하면 주니어 [시청](https://youtu.be/0fvLIcLP2r8)
   - `#주니어`
   - 개선안을 제시를 못하거나 안해, 했는데 자꾸 아니래 => 주니어
   - 내가 무언가를 책임지는 부분이 있냐, 누군가의 지시없이 할 수 있는것이 충분히 많아졌냐.
@@ -19,7 +21,7 @@
   - 버그 대쉬보드의 버그 숫자가 줄지 않고 계속 오름.
   - TODO 커맨트를 박지 않는다.
   - TODO를 박을때 정해진 포맷이 없다.
-- 변화하는 코딩표준! Async 접미사! [시청](https://youtu.be/b49E0weZ8rI?si=vzvHm9ZM-I2wKPhz)
+- 변화하는 코딩표준! Async 접미사! [시청](https://youtu.be/b49E0weZ8rI)
   - `C#`
   - MS와 다르게 사용하는 포프 C#코딩 스텐다드는 Async 접미사를 쓰지 않음.
     - Async를 뒤에 붙이면
@@ -27,13 +29,13 @@
       - 단점: 함수 이름이 길어짐. async/non async함수 전환시 함수이름 리펙토링 비용이 있음.
     - 디버그는 허용. 단, 릴리즈 빌드시 모든 경고는 에러이기에 Async 접미사를 안쓰는걸로 가자.
     - [CS4014](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs4014)로 추정
-- 더 많은 정보가 필요하면 넌 주니어 [시청](https://youtu.be/fUCMIf_4Pnc?si=Q5HuOXj0IRdZPENQ)
+- 더 많은 정보가 필요하면 넌 주니어 [시청](https://youtu.be/fUCMIf_4Pnc)
   - `#주니어`
   - 주니어 때는 사수의 부정적인 피드백을 굉장히 고마워 해야함
   - 버그에 대한 대응이 어떻게 되는지 **꼼꼼히** 보는 리드 혹은 프로젝트 매니저가 반드시 있어야 한다.
   - 이미 재현가능한(repro case) 버그가 있는데, 고칠 생각을 안하면 주니어
     - need more info 는 재현 불가능시 요청하는 것인데, 고칠 생각을 안하고 이용하는 사람들이 있다.
-- 함수, 이렇게 만들면 넌 주니어 [시청](https://youtu.be/Wd6FJ1s_ZUc?si=aKG6I-o0cfDWlmDq)
+- 함수, 이렇게 만들면 넌 주니어 [시청](https://youtu.be/Wd6FJ1s_ZUc)
   - `#주니어` `#네이밍`
   - 코드 연산을 그대로 함수명은 주니어
     - 유저 어카운트가 생성된지 7일 미만 참, 이상 거짓
@@ -43,8 +45,8 @@
             - IsNewUser
   - 함수 이름에 And/Or 가 들어가면 나쁜 함수 이름일 가능성이 높음. 
   - 함수 외부에서 호출할때 그 사람한테 어떤 의미가 있는지를 알려주는 함수명.
-- 잊혀져 가는 중요한 프로그래밍 개념: 감시값 (sentinel value) [시청](https://youtu.be/xvqIEwmiSw4?si=J954WDdwTwn71J_0)
-- 이 코드 못 짜면 넌 주니어 [시청](https://youtu.be/B0zU6v2nBdA?si=U2o0C6n6VuNPvpOM)
+- 잊혀져 가는 중요한 프로그래밍 개념: 감시값 (sentinel value) [시청](https://youtu.be/xvqIEwmiSw4)
+- 이 코드 못 짜면 넌 주니어 [시청](https://youtu.be/B0zU6v2nBdA)
   - `#주니어`
   - 사실 뭔가를 공부하고 면접을 봐야 한다, 이미 시니어는 아닌 경우가 많다.
   - 시니어 면접을 갔는데, 코딩 면접은 안보고 이야기만 한다
@@ -57,9 +59,9 @@
           - if (arr[j] > arr[j + 1])
             - swap
     - 문자열 뒤집기
-- Assert 어디에 넣을지 모르면 넌 주니어 [시청](https://youtu.be/6ts1Uxp_i3w?si=dSdGOrpkrHqAQa35)
+- Assert 어디에 넣을지 모르면 넌 주니어 [시청](https://youtu.be/6ts1Uxp_i3w)
   - `#주니어`
-- 스마트폰 알림 끄고 상사에게 칭찬 받는 법 [시청](https://youtu.be/hb6Us_evNG8?si=A7rG-L3cbqsdNHwe)
+- 스마트폰 알림 끄고 상사에게 칭찬 받는 법 [시청](https://youtu.be/hb6Us_evNG8)
 - E0572. 마크다운의 잘못된 스펙. 이렇게 고쳐볼까? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0572.txt)**] [**[시청](https://youtu.be/gxVBvis38us)**]
 - E0571. 문서는 웬만하면 마크다운(markdown)으로 씁시다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0571.txt)**] [**[시청](https://youtu.be/8z2SRtYpJuQ)**]
 - E0570. 문서를 못쓰면 넌 주니어 #주니어 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0570.txt)**] [**[시청](https://youtu.be/2yxUkrCvNa8)**]
@@ -363,6 +365,7 @@
     - 어떤일을 볼때 가능성도 보고 실재 어떤 영향을 끼칠 지도 본다.
   - B급인재 중요한 이야기 가기전에 중요하기 전혀 중요하지 않은 이야기를 해야함.
   - [강박적 집착증 스티브 잡스 "바보들의 팽창을 막아라"](https://blog.naver.com/businessinsight/221039428481)
+    - 픽사대학교는 1주일에 4시간 이상 110개 강좌를 들을 수 있도록 프로그램이 짜여 있다. 전통적인 대기업의 사내 MBA과정과 달리 마술, 접시돌리기, 데생, 연극, 판토마임 등으로 커리큘럼이 구성돼 있다. 행정직, 기술직, 경영진은 물론 건물관리인이나 경비직원까지 누구나 수업을 들을 수 있다. 
   - [GN⁺: 스티브 잡스, 최고의 직원들은 프로세스가 아닌 콘텐츠에 집중한다고 말함 (inc.com)](https://news.hada.io/topic?id=12644)
 - E0346. 드디어 보이는 Git의 미래 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0346.txt)**] [**[시청](https://youtu.be/I6SiIXDzhHA)**]
 - E0345. 공포가 사람을 움직인다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0345.txt)**] [**[시청](https://youtu.be/ufw18EaAx0w)**]
