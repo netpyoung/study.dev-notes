@@ -271,6 +271,92 @@ feature 커밋들을 하나로 모아서 base에 합침</p>
 <li><a href="https://opentutorials.org/course/2708">지옥에서 온 Git</a></li>
 <li><a href="https://git-scm.com/book/en/v2">Pro Git</a></li>
 </ul>
+<h2 id="flow"><a class="header" href="#flow">Flow</a></h2>
+<ul>
+<li>https://qiita.com/ogomr/items/36350d515434d6674caa</li>
+</ul>
+<pre><code class="language-mermaid">---
+title: Example Git diagram
+config:
+    theme: base
+    gitGraph:
+        mainBranchOrder: 1
+        mainBranchName: dev
+        showCommitLabel: true
+    themeVariables:
+        git0: "#00A0F0"
+        git1: "#F0A000"
+        git2: "#F0F000"
+        git3: "#FF0000"
+---
+
+%% ref: https://mermaid.js.org/syntax/gitgraph.html
+
+gitGraph TB:
+    commit
+    %% =========================== Feature
+    branch feature/1-hello order: 0
+    checkout feature/1-hello
+    commit
+    checkout dev
+    merge feature/1-hello
+    commit
+    %% =========================== Release
+    branch release order: 2
+    checkout release
+    commit tag:"0.0.1"
+    checkout dev
+    merge release
+    checkout release
+    %% =========================== HotFix
+    branch hotfix/2-fix order: 3
+    checkout hotfix/2-fix
+    commit
+    checkout release
+    merge hotfix/2-fix
+    commit tag:"0.0.2"
+    checkout dev
+    merge release
+</code></pre>
+<pre><code class="language-plantuml">skinparam shadowing false
+skinparam ArrowColor #dimgray
+skinparam EntityBorderColor #gray
+skinparam SequenceLifeLineBorderColor #gray
+skinparam NoteBorderColor #grey
+skinparam roundcorner 15
+skinparam maxmessagesize 60
+
+entity "feature/1-hello" as branch_fix     #00A0F0
+entity "dev" as branch_dev             #F0A000
+entity "release" as branch_release     #F0F000
+entity "hotfix/2-fix" as branch_hotfix #FF0000
+
+
+== dev client/server ==
+
+branch_dev -&gt; branch_fix : branch
+branch_fix -&gt; branch_fix : commit
+branch_fix -&gt;o branch_dev : Pull Request
+
+== dist client ==
+branch_dev -&gt; branch_release : for release
+branch_release -&gt; branch_release : tag
+note right
+0.0.1
+endnote
+branch_dev o&lt;- branch_release : merge
+
+== hotfix client ==
+branch_release -&gt; branch_hotfix : branch
+branch_hotfix -&gt; branch_hotfix : commit
+branch_release o&lt;- branch_hotfix
+branch_release -&gt; branch_release : tag
+note right
+0.0.2
+endnote
+branch_dev o&lt;- branch_release : merge
+
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="git-commit-message"><a class="header" href="#git-commit-message">Git Commit Message</a></h1>
 <ul>
 <li>ref: <a href="git/../document/changelog.html">chagelog</a></li>
@@ -341,6 +427,7 @@ $GIT_DIR/hooks</p>
 <li><a href="https://dev.to/krzysztofkaczy9/do-you-really-need-husky-247b">https://dev.to/krzysztofkaczy9/do-you-really-need-husky-247b</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="github"><a class="header" href="#github">Github</a></h1>
+<p>Settings &gt; Branches &gt; Branch Protection Rule &gt; Require status checks to pass before merging</p>
 <h2 id="github-action"><a class="header" href="#github-action">Github Action</a></h2>
 <ul>
 <li><a href="https://docs.github.com/ko/billing/managing-billing-for-github-actions/about-billing-for-github-actions">https://docs.github.com/ko/billing/managing-billing-for-github-actions/about-billing-for-github-actions</a></li>
@@ -810,6 +897,8 @@ last_apk_open_dir=C:/temp/My project
 <li><code>TortoiseGit &gt; Settings &gt; DiffViewer &gt; MergeTool &gt; C:\Program Files\Perforce\p4merge.exe %base %theirs %mine %merged</code></li>
 </ul>
 </li>
+<li><a href="https://obsproject.com/ko">OSB</a></li>
+<li>https://www.snipaste.com/</li>
 </ul>
 <h2 id="language"><a class="header" href="#language">language</a></h2>
 <ul>
@@ -831,6 +920,8 @@ last_apk_open_dir=C:/temp/My project
 <li><a href="https://ikrima.dev/dev-notes/devbox/devbox-win-tools/">https://ikrima.dev/dev-notes/devbox/devbox-win-tools/</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="os-macos"><a class="header" href="#os-macos">OS macOs</a></h1>
+<h2 id="mermaid"><a class="header" href="#mermaid">mermaid</a></h2>
+<p>https://github.com/mermaid-js/mermaid-cli</p>
 <h2 id="xattr"><a class="header" href="#xattr">xattr</a></h2>
 <p>macOS
 extended attributes</p>
@@ -1003,20 +1094,88 @@ add Lock = Caps_Lock
 <li><a href="https://qiita.com/">qiita</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="pope-tv"><a class="header" href="#pope-tv">pope-tv</a></h1>
+<ul>
+<li>https://www.youtube.com/@포프티비</li>
+</ul>
 <p>자꾸 봤던걸 또 보게 된다. 그냥 정리해놔서 봤던걸 또 보는 일이 없게 하자.</p>
 <ul>
-<li>회의 효율 극대화: 컴퓨터 대신 이걸 가져가야 하는 이유 <a href="https://youtu.be/JPXS6hwYp8Q?si=qaIVx33_wMeMlrVz">시청</a>
+<li>탑 개발자의 생산성을 100배 올리는 가성비 최고 AI 도구 <a href="https://youtu.be/c9QvzMbln54">시청</a>
+<ul>
+<li>자기가 뭘 원하는지 아는 사람에게는 코파일럿이 좋음.</li>
+<li>코파일럿 장점
+<ul>
+<li>함수작성 의도 이해 자동완성.
+<ul>
+<li>함수 시그네쳐, 주석, 예제</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ChatGPT를 찬양하면 생기는 일 <a href="https://youtu.be/EhSaUvhSI5I">시청</a>
+<ul>
+<li>검증하는 작업이 피곤하다.</li>
+<li>영어에는 강하다. 변수/함수명짓기.</li>
+</ul>
+</li>
+<li>AI가 바꿀 미래: 당신의 직업은 안전합니까? <a href="https://youtu.be/KB-sdBLs4nY">시청</a>
+<ul>
+<li>스킵</li>
+</ul>
+</li>
+<li>이메일 관리는 하나로 충분합니다 <a href="https://youtu.be/Cs7FP28DG74">시청</a>
+<ul>
+<li>여러개의 이메일을 관리하기 힘들다.
+<ul>
+<li>과거 스팸 메일로 이메일을 여러개 쓰는 사람들이 있었다.</li>
+</ul>
+</li>
+<li>1개의 이메일 주소로 여러개 만드는 법이 있음 + 필터</li>
+</ul>
+</li>
+<li>왜 배열은 0부터 시작할까? 프로그래밍의 비밀 <a href="https://youtu.be/TjpP1udN58k">시청</a>
+<ul>
+<li>메모리 오프셋 개념</li>
+</ul>
+</li>
+<li>진정한 1인분의 의미: 협업과 책임의 중요성 <a href="https://youtu.be/1dHD4aBXO24">시청</a>
+<ul>
+<li>1.2인분을 하고 있어야만 1인분. (0.2는 남을 도와 줄 수 있는 여유)</li>
+</ul>
+</li>
+<li>회사의 피드백: 주니어에서 벗어나기 위한 조언 <a href="https://youtu.be/eRQwxz8YcT4">시청</a>
+<ul>
+<li>스스로 답할 줄 알아야 / 다시 질문 해 주세요 =&gt; 이 정도는 아셔야 되요.</li>
+</ul>
+</li>
+<li>회의 효율 극대화: 컴퓨터 대신 이걸 가져가야 하는 이유 <a href="https://youtu.be/JPXS6hwYp8Q">시청</a>
 <ul>
 <li>공책. 요약하는 능력. 회의끝나고 그날 복기.</li>
 </ul>
 </li>
-<li>멀티스레딩 마스터하기: 10년의 여정 <a href="https://youtu.be/yl8_ZRDA5pw?si=YlNUEgBN-Jrpr22p">시청</a>
+<li>Git Sparse Checkout과 LFS: 모노리포 관리의 최적 솔루션
+<ul>
+<li><code>#git</code></li>
+</ul>
+</li>
+<li>효율적인 Git 리포 관리: 서브모듈 대신 이것을 사용하면...?
+<ul>
+<li><code>#git</code></li>
+</ul>
+</li>
+<li>한 방에 개발 환경 설정하기: Junction
+<ul>
+<li><code>#git</code></li>
+</ul>
+</li>
+<li>멀티스레딩 마스터하기: 10년의 여정 <a href="https://youtu.be/yl8_ZRDA5pw">시청</a>
 <ul>
 <li><code>#멀티스레딩</code></li>
 <li>10년 정도면 단순하게 작성하는데 물이오르게됨.</li>
 </ul>
 </li>
-<li>개선안 제시 못하면 주니어 <a href="https://youtu.be/0fvLIcLP2r8?si=Ttq1dR0MKpgCnOf0">시청</a>
+<li>개선안 제시 못하면 주니어 <a href="https://youtu.be/0fvLIcLP2r8">시청</a>
 <ul>
 <li><code>#주니어</code></li>
 <li>개선안을 제시를 못하거나 안해, 했는데 자꾸 아니래 =&gt; 주니어</li>
@@ -1034,7 +1193,7 @@ add Lock = Caps_Lock
 <li>TODO를 박을때 정해진 포맷이 없다.</li>
 </ul>
 </li>
-<li>변화하는 코딩표준! Async 접미사! <a href="https://youtu.be/b49E0weZ8rI?si=vzvHm9ZM-I2wKPhz">시청</a>
+<li>변화하는 코딩표준! Async 접미사! <a href="https://youtu.be/b49E0weZ8rI">시청</a>
 <ul>
 <li><code>C#</code></li>
 <li>MS와 다르게 사용하는 포프 C#코딩 스텐다드는 Async 접미사를 쓰지 않음.
@@ -1051,7 +1210,7 @@ add Lock = Caps_Lock
 </li>
 </ul>
 </li>
-<li>더 많은 정보가 필요하면 넌 주니어 <a href="https://youtu.be/fUCMIf_4Pnc?si=Q5HuOXj0IRdZPENQ">시청</a>
+<li>더 많은 정보가 필요하면 넌 주니어 <a href="https://youtu.be/fUCMIf_4Pnc">시청</a>
 <ul>
 <li><code>#주니어</code></li>
 <li>주니어 때는 사수의 부정적인 피드백을 굉장히 고마워 해야함</li>
@@ -1063,7 +1222,7 @@ add Lock = Caps_Lock
 </li>
 </ul>
 </li>
-<li>함수, 이렇게 만들면 넌 주니어 <a href="https://youtu.be/Wd6FJ1s_ZUc?si=aKG6I-o0cfDWlmDq">시청</a>
+<li>함수, 이렇게 만들면 넌 주니어 <a href="https://youtu.be/Wd6FJ1s_ZUc">시청</a>
 <ul>
 <li><code>#주니어</code> <code>#네이밍</code></li>
 <li>코드 연산을 그대로 함수명은 주니어
@@ -1091,8 +1250,8 @@ add Lock = Caps_Lock
 <li>함수 외부에서 호출할때 그 사람한테 어떤 의미가 있는지를 알려주는 함수명.</li>
 </ul>
 </li>
-<li>잊혀져 가는 중요한 프로그래밍 개념: 감시값 (sentinel value) <a href="https://youtu.be/xvqIEwmiSw4?si=J954WDdwTwn71J_0">시청</a></li>
-<li>이 코드 못 짜면 넌 주니어 <a href="https://youtu.be/B0zU6v2nBdA?si=U2o0C6n6VuNPvpOM">시청</a>
+<li>잊혀져 가는 중요한 프로그래밍 개념: 감시값 (sentinel value) <a href="https://youtu.be/xvqIEwmiSw4">시청</a></li>
+<li>이 코드 못 짜면 넌 주니어 <a href="https://youtu.be/B0zU6v2nBdA">시청</a>
 <ul>
 <li><code>#주니어</code></li>
 <li>사실 뭔가를 공부하고 면접을 봐야 한다, 이미 시니어는 아닌 경우가 많다.</li>
@@ -1126,12 +1285,12 @@ add Lock = Caps_Lock
 </li>
 </ul>
 </li>
-<li>Assert 어디에 넣을지 모르면 넌 주니어 <a href="https://youtu.be/6ts1Uxp_i3w?si=dSdGOrpkrHqAQa35">시청</a>
+<li>Assert 어디에 넣을지 모르면 넌 주니어 <a href="https://youtu.be/6ts1Uxp_i3w">시청</a>
 <ul>
 <li><code>#주니어</code></li>
 </ul>
 </li>
-<li>스마트폰 알림 끄고 상사에게 칭찬 받는 법 <a href="https://youtu.be/hb6Us_evNG8?si=A7rG-L3cbqsdNHwe">시청</a></li>
+<li>스마트폰 알림 끄고 상사에게 칭찬 받는 법 <a href="https://youtu.be/hb6Us_evNG8">시청</a></li>
 <li>E0572. 마크다운의 잘못된 스펙. 이렇게 고쳐볼까? [<strong><a href="https://github.com/popekim/popetv-transcript/blob/main/Data/0572.txt">자막</a></strong>] [<strong><a href="https://youtu.be/gxVBvis38us">시청</a></strong>]</li>
 <li>E0571. 문서는 웬만하면 마크다운(markdown)으로 씁시다 [<strong><a href="https://github.com/popekim/popetv-transcript/blob/main/Data/0571.txt">자막</a></strong>] [<strong><a href="https://youtu.be/8z2SRtYpJuQ">시청</a></strong>]</li>
 <li>E0570. 문서를 못쓰면 넌 주니어 #주니어 [<strong><a href="https://github.com/popekim/popetv-transcript/blob/main/Data/0570.txt">자막</a></strong>] [<strong><a href="https://youtu.be/2yxUkrCvNa8">시청</a></strong>]
@@ -1522,7 +1681,11 @@ add Lock = Caps_Lock
 </ul>
 </li>
 <li>B급인재 중요한 이야기 가기전에 중요하기 전혀 중요하지 않은 이야기를 해야함.</li>
-<li><a href="https://blog.naver.com/businessinsight/221039428481">강박적 집착증 스티브 잡스 "바보들의 팽창을 막아라"</a></li>
+<li><a href="https://blog.naver.com/businessinsight/221039428481">강박적 집착증 스티브 잡스 "바보들의 팽창을 막아라"</a>
+<ul>
+<li>픽사대학교는 1주일에 4시간 이상 110개 강좌를 들을 수 있도록 프로그램이 짜여 있다. 전통적인 대기업의 사내 MBA과정과 달리 마술, 접시돌리기, 데생, 연극, 판토마임 등으로 커리큘럼이 구성돼 있다. 행정직, 기술직, 경영진은 물론 건물관리인이나 경비직원까지 누구나 수업을 들을 수 있다.</li>
+</ul>
+</li>
 <li><a href="https://news.hada.io/topic?id=12644">GN⁺: 스티브 잡스, 최고의 직원들은 프로세스가 아닌 콘텐츠에 집중한다고 말함 (inc.com)</a></li>
 </ul>
 </li>
@@ -2109,7 +2272,13 @@ add Lock = Caps_Lock
 <ul>
 <li><a href="https://plantuml.com">https://plantuml.com</a></li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="mermaid"><a class="header" href="#mermaid">Mermaid</a></h1>
+<h2 id="for-macos"><a class="header" href="#for-macos">for macos</a></h2>
+<p>brew install graphviz
+brew install plantuml</p>
+<p>vscode &gt; Settings &gt; Extensions &gt; Markdown Preview Enhanced &gt; Markdown-preview-enhanced: Plantuml Jar Path
+/opt/homebrew/Cellar/plantuml/1.2024.4/libexec/plantuml.jar</p>
+<p>fd plantuml.jar /opt/homebrew/Cellar/plantuml/</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mermaid-1"><a class="header" href="#mermaid-1">Mermaid</a></h1>
 <ul>
 <li><a href="https://mermaid.js.org/">https://mermaid.js.org/</a>
 <ul>
