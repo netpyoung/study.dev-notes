@@ -55,7 +55,9 @@
   - <http://hotkoehls.com/2015/04/use-perforce-p4merge-with-tortoisegit/>
   - `TortoiseGit > Settings > DiffViewer > C:\Program Files\Perforce\p4merge.exe  %base %mine`
   - `TortoiseGit > Settings > DiffViewer > MergeTool > C:\Program Files\Perforce\p4merge.exe %base %theirs %mine %merged`
-  
+- [OSB](https://obsproject.com/ko)
+- https://www.snipaste.com/
+
 ## language
 
 - ruby - <https://github.com/oneclick/rubyinstaller2>

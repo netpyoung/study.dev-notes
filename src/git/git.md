@@ -94,3 +94,94 @@ base 재설정 - 커밋을 복사 붙여넣어가기 (커밋 id가 달라짐)
 - [git - the simple guide](https://rogerdudler.github.io/git-guide/)
 - [지옥에서 온 Git](https://opentutorials.org/course/2708)
 - [Pro Git](https://git-scm.com/book/en/v2)
+
+
+## Flow
+
+- https://qiita.com/ogomr/items/36350d515434d6674caa
+
+``` mermaid
+---
+title: Example Git diagram
+config:
+    theme: base
+    gitGraph:
+        mainBranchOrder: 1
+        mainBranchName: dev
+        showCommitLabel: true
+    themeVariables:
+        git0: "#00A0F0"
+        git1: "#F0A000"
+        git2: "#F0F000"
+        git3: "#FF0000"
+---
+
+%% ref: https://mermaid.js.org/syntax/gitgraph.html
+
+gitGraph TB:
+    commit
+    %% =========================== Feature
+    branch feature/1-hello order: 0
+    checkout feature/1-hello
+    commit
+    checkout dev
+    merge feature/1-hello
+    commit
+    %% =========================== Release
+    branch release order: 2
+    checkout release
+    commit tag:"0.0.1"
+    checkout dev
+    merge release
+    checkout release
+    %% =========================== HotFix
+    branch hotfix/2-fix order: 3
+    checkout hotfix/2-fix
+    commit
+    checkout release
+    merge hotfix/2-fix
+    commit tag:"0.0.2"
+    checkout dev
+    merge release
+```
+
+``` plantuml
+skinparam shadowing false
+skinparam ArrowColor #dimgray
+skinparam EntityBorderColor #gray
+skinparam SequenceLifeLineBorderColor #gray
+skinparam NoteBorderColor #grey
+skinparam roundcorner 15
+skinparam maxmessagesize 60
+
+entity "feature/1-hello" as branch_fix     #00A0F0
+entity "dev" as branch_dev             #F0A000
+entity "release" as branch_release     #F0F000
+entity "hotfix/2-fix" as branch_hotfix #FF0000
+
+
+== dev client/server ==
+
+branch_dev -> branch_fix : branch
+branch_fix -> branch_fix : commit
+branch_fix ->o branch_dev : Pull Request
+
+== dist client ==
+branch_dev -> branch_release : for release
+branch_release -> branch_release : tag
+note right
+0.0.1
+endnote
+branch_dev o<- branch_release : merge
+
+== hotfix client ==
+branch_release -> branch_hotfix : branch
+branch_hotfix -> branch_hotfix : commit
+branch_release o<- branch_hotfix
+branch_release -> branch_release : tag
+note right
+0.0.2
+endnote
+branch_dev o<- branch_release : merge
+
+```

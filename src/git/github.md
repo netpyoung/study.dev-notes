@@ -1,5 +1,7 @@
 # Github
 
+Settings > Branches > Branch Protection Rule > Require status checks to pass before merging
+
 ## Github Action
 
 - <https://docs.github.com/ko/billing/managing-billing-for-github-actions/about-billing-for-github-actions>
