@@ -69,6 +69,20 @@
   - 컴퓨터 프로세스를 운영 체제 및 장치에서 분리하여 맬웨어 및 기타 공격으로부터 보호
   - VBS Visualization-Based Security
   - Hypervisor-Protected Code Integrity (HVCI)
+ 
+## Windows 11
+
+- [윈도우11 마우스 우클릭 메뉴를 윈도우10 스타일로 변경하기](https://playcraft.tistory.com/472)
+
+``` cmd
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+taskkill /f /im explorer.exe
+explorer.exe
+```
+
+- [윈도우11 작업표시줄 그룹해제 및 위치, 오류 설정방법,Explorer Patcher 필요없음](https://bizstoryway.tistory.com/161)
+  - 설정 > 개인설정 > 작업표시줄  > 작업 표시줄 동작 > 작업 표시줄 단추 합치기 및 레이블 숨기기 > 안함
+
 
 
 ## Ref
