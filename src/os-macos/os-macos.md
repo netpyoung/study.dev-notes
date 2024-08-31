@@ -42,3 +42,12 @@ otool -L
 
 install_name_tool -id
 install_name_tool -change
+
+
+## disable Input Source Indicating Bubble
+
+- https://apple.stackexchange.com/questions/464783/what-s-that-coloured-icon-with-an-a-inside-it-in-text/465466#465466
+
+``` sh
+sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+```
