@@ -205,6 +205,12 @@ lipo -create</p>
 <h2 id="install_name_tool"><a class="header" href="#install_name_tool">install_name_tool</a></h2>
 <p>install_name_tool -id
 install_name_tool -change</p>
+<h2 id="disable-input-source-indicating-bubble"><a class="header" href="#disable-input-source-indicating-bubble">disable Input Source Indicating Bubble</a></h2>
+<ul>
+<li>https://apple.stackexchange.com/questions/464783/what-s-that-coloured-icon-with-an-a-inside-it-in-text/465466#465466</li>
+</ul>
+<pre><code class="language-sh">sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+</code></pre>
 
                     </main>
 
