@@ -57,6 +57,8 @@
   - `TortoiseGit > Settings > DiffViewer > MergeTool > C:\Program Files\Perforce\p4merge.exe %base %theirs %mine %merged`
 - [OSB](https://obsproject.com/ko)
 - https://www.snipaste.com/
+- https://www.grc.com/dns/benchmark.htm
+  - [인터넷이 빨라지는 DNS 속도 테스트 (DNS benchmark)](https://qsurf.tistory.com/13)
 
 ## language
 
