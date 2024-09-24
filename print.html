@@ -1125,6 +1125,33 @@ add Lock = Caps_Lock
 </ul>
 <p>자꾸 봤던걸 또 보게 된다. 그냥 정리해놔서 봤던걸 또 보는 일이 없게 하자.</p>
 <ul>
+<li>전 이제 DB 스크립트 버전 관리 안 하려고요 <a href="https://youtu.be/7QrDlon3F54">시청</a>
+<ul>
+<li>ORM(Object Relational Mapping)
+<ul>
+<li>장점 많다.</li>
+<li>단점
+<ul>
+<li>성능 저하 문제를 일으킬 수 있고</li>
+<li>DB 테이블과의 매핑이 정확하지 않을 때도 있다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DB access레이어를 코드로 관리하고 거기서 DB스키마를 뽑아내는게 좋다.</li>
+<li>DB는 언제나 변한다
+<ul>
+<li>DB 스크립트 버전 관리를 하면 파일이 쌓이게 되는데 깨진것을 찾이 어렵다. 수정시 전체 다 정검하면서 고치지 않기 때문에.</li>
+</ul>
+</li>
+<li>웹툴로 바꾸자.
+<ul>
+<li>테이블을 고치면 ORM코드도 변경해야된다.</li>
+<li>데이터가 변경시 스냅샷을 찍어 저장 - 히스토리.</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>방어적 프로그래머, 이렇게 폭망하다 <a href="https://youtu.be/6hHGnH3G5ng">시청</a>
 <ul>
 <li><code>#skip</code></li>
