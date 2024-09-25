@@ -2,6 +2,11 @@
 
 - 어차피 jenkins 설정도 복잡하지 않고, 한번설치하고 계속 쓰는경우가 많으니 war로 실행하는게 간편
 
+- <https://www.jenkins.io/>
+  - <https://www.jenkins.io/doc/>
+
+- [환경변수](https://www.jenkins.io/doc/book/pipeline/jenkinsfile/#using-environment-variables)
+
 ## using war
 
 - <https://www.jenkins.io/download/> 에서 war파일을 다운받아서 실행
