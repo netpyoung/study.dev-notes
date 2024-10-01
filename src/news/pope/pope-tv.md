@@ -6,7 +6,9 @@
 
 
 
-
+- 코딩표준 DateTime.Now를 절대 쓰지 않는 이유 [시청](https://youtu.be/FsnfNFdKNcA)
+  - DateTime.Now를 금지하고, 대신 DateTime.UtcNow를 사용
+  - 하나의 타임존으로 관리. 보여줄때만 변환
 - 전 이제 DB 스크립트 버전 관리 안 하려고요 [시청](https://youtu.be/7QrDlon3F54)
   - ORM(Object Relational Mapping)
     - 장점 많다.
