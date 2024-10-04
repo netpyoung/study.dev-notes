@@ -671,6 +671,7 @@
 - E0143. 개발경력 3년이면 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0143.txt)**] [**[시청](https://youtu.be/ie2epvAsAGE)**]
 - E0142. 불쌍한 게임기획자 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0142.txt)**] [**[시청](https://youtu.be/jkETXjE4hSs)**]
 - E0141. 쓸데없는 인터페이스 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0141.txt)**] [**[시청](https://youtu.be/tL3sB6qaIoM)**]
+  - 인터페이스:클래스 - 1:1 로 되어있는데 불편하다 (디버깅) 오버엔지니어링 하지말자
 - E0140. 마이크로소프트의 미래 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0140.txt)**] [**[시청](https://youtu.be/LTWJQs7ffeI)**]
 - E0139. 디버깅은 해봤니? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0139.txt)**] [**[시청](https://youtu.be/vkMuFXeUAYA)**]
 - E0138. 쉬프트키 대신 더블 탭을 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0138.txt)**] [**[시청](https://youtu.be/75cCAnbFRP4)**]
