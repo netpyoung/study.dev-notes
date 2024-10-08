@@ -5,8 +5,10 @@
 자꾸 봤던걸 또 보게 된다. 그냥 정리해놔서 봤던걸 또 보는 일이 없게 하자.
 
 
-
-- 코딩표준 DateTime.Now를 절대 쓰지 않는 이유 [시청](https://youtu.be/FsnfNFdKNcA)
+- [코딩표준] 왜 C#의 새 문법을 금지했을까? 물음표 연산자 금지 이유 공개
+  - 삼항연산자는 씀
+  - 다른 언어에 흔하지 않은 널 관련 (??/?.)는 안씀.
+- [코딩표준] DateTime.Now를 절대 쓰지 않는 이유 [시청](https://youtu.be/FsnfNFdKNcA)
   - DateTime.Now를 금지하고, 대신 DateTime.UtcNow를 사용
   - 하나의 타임존으로 관리. 보여줄때만 변환
 - 전 이제 DB 스크립트 버전 관리 안 하려고요 [시청](https://youtu.be/7QrDlon3F54)
