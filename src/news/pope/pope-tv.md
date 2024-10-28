@@ -4,7 +4,18 @@
 
 자꾸 봤던걸 또 보게 된다. 그냥 정리해놔서 봤던걸 또 보는 일이 없게 하자.
 
-
+- [코딩표준] 반올림도 마음대로 못한다고? Round() 함수 사용 금지 이유! [시청](hhttps://youtu.be/D87AE7QtenU)
+  - .NET의 Math.Round 메서드는 기본적으로 "Banker's Rounding" 방식을 사용. 가장 가까운 짝수로 반올림.
+  - double result = Math.Round(2.5); // 결과: 2
+  - double result = Math.Round(2.5, MidpointRounding.AwayFromZero); // 결과: 3
+  - 햇갈리니 별도의 함수를 만듬. MathUtil.Round_Normal / MathUtil.Round_Banker
+- [코딩표준] TODO 주석도 룰이 있다고? 이게 진짜 중요합니다! [시청](https://youtu.be/vWGctKunvoI)
+  - 문자열 검색. 모아서 통계, 그래프, 쉽게 찾기
+  - ex) `TODO(pyoung): blabla`
+  - 버그를 몇개 고칠게있다. TODO를 몇개 고칠게 있다. 템플릿이 있는게 무조건 좋음.  통계를 뽑고 추세를 확인 => 뭘 해야할지 알 수 있음.
+- [코딩표준] 왜 스트링 함수를 그대로 쓰면 안 되나? [시청](https://youtu.be/1S8bMBG8-88)
+  - string compare시 모드가 많음.
+  - 별도의 함수를 만들어서 햇갈리지 않게.
 - [코딩표준] 왜 C#의 새 문법을 금지했을까? 물음표 연산자 금지 이유 공개
   - 삼항연산자는 씀
   - 다른 언어에 흔하지 않은 널 관련 (??/?.)는 안씀.
