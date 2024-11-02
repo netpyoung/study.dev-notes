@@ -196,8 +196,60 @@
 </li>
 </ul>
 <h2 id="minio"><a class="header" href="#minio">MinIO</a></h2>
+<p>Min IO (Minimal Object Storage)</p>
 <ul>
-<li>https://min.io/</li>
+<li>
+<p><a href="https://min.io/">https://min.io/</a></p>
+</li>
+<li>
+<p><a href="https://github.com/minio/minio/blob/master/docs/config/README.md">https://github.com/minio/minio/blob/master/docs/config/README.md</a></p>
+</li>
+<li>
+<p><a href="https://min.io/docs/minio/windows/index.html">https://min.io/docs/minio/windows/index.html</a></p>
+<ul>
+<li><a href="https://min.io/download?license=enterprise&amp;platform=windows">https://min.io/download?license=enterprise&amp;platform=windows</a></li>
+<li><a href="https://dl.min.io/server/minio/release/windows-amd64/minio.exe">https://dl.min.io/server/minio/release/windows-amd64/minio.exe</a></li>
+<li><code>aria2c --max-connection-per-server=16 --split=16 --min-split-size=1M https://dl.min.io/server/minio/release/windows-amd64/minio.exe</code></li>
+</ul>
+</li>
+<li>
+<p>http://127.0.0.1:9001/access-keys &gt; Create Access Key</p>
+</li>
+</ul>
+<pre><code class="language-txt">MINIO_ROOT_USER
+MINIO_ROOT_PASSWORD
+MINIO_SITE_NAME     (string)    name for the site e.g. "cal-rack0"
+MINIO_SITE_REGION   (string)    name of the location of the server e.g. "us-west-1"
+MINIO_SITE_COMMENT  (sentence)  optionally add a comment to this setting
+</code></pre>
+<pre><code class="language-cs">Environment.SetEnvironmentVariable("MINIO_ROOT_USER", "minioadmin");     // default: minioadmin | at least 3
+Environment.SetEnvironmentVariable("MINIO_ROOT_PASSWORD", "minioadmin"); // default: minioadmin | at least 8
+ProcessStartInfo psi = new ProcessStartInfo
+{
+    FileName = "minio",
+    Arguments = $"server {storageDir} --address :9000 --console-address :9001",
+    UseShellExecute = false,
+};
+</code></pre>
+<h2 id="기타"><a class="header" href="#기타">기타</a></h2>
+<ul>
+<li>azurite
+<ul>
+<li><a href="https://github.com/azure/azurite">https://github.com/azure/azurite</a></li>
+<li><a href="https://learn.microsoft.com/ko-kr/azure/storage/common/storage-use-emulator">https://learn.microsoft.com/ko-kr/azure/storage/common/storage-use-emulator</a></li>
+<li>Azure 클라우드에 업/다운로드 5TB 초과시 CDN고려. 10TB부터 요금차이가 꽤 발생하기 시작함.</li>
+</ul>
+</li>
+<li><a href="https://github.com/localstack/localstack">https://github.com/localstack/localstack</a>
+<ul>
+<li>💻 A fully functional local AWS cloud stack. Develop and test your cloud &amp; Serverless apps offline</li>
+</ul>
+</li>
+<li><a href="https://github.com/projectdiscovery/simplehttpserver">https://github.com/projectdiscovery/simplehttpserver</a>
+<ul>
+<li>Go alternative of python SimpleHTTPServer</li>
+</ul>
+</li>
 </ul>
 
                     </main>
