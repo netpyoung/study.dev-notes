@@ -44,6 +44,14 @@ ProcessStartInfo psi = new ProcessStartInfo
 };
 ```
 
+``` txt
+bucket 설정
+
+- http://127.0.0.1:9001/buckets > Create Bucket > bucket-a
+- bucket-a > Anonymous > Add Access Rule > Prefix: * / Access: readonly
+```
+
+
 ## 기타
 
 - azurite
