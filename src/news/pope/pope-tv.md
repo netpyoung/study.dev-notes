@@ -603,6 +603,8 @@
 - E0210. 성적이 나쁘긴 어렵다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0210.txt)**] [**[시청](https://youtu.be/SZ3AmRvNOe8)**]
 - E0209. 유니티 게임오브젝트 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0209.txt)**] [**[시청](https://youtu.be/cxyG_REKD4Y)**]
   - `#유니티`
+  - 컴포넌트기반
+  - 이벤트 브로드케스팅은 느리다
 - E0208. 정리해고 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0208.txt)**] [**[시청](https://youtu.be/UIOBvofN7as)**]
 - E0207. scope 지정 코딩스타일 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0207.txt)**] [**[시청](https://youtu.be/gfOpMA7eIGM)**]
   - `#코딩스탠다드`
@@ -756,6 +758,8 @@
 - E0079. 전자책 편집법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0079.txt)**] [**[시청](https://youtu.be/doG7nF4Kwd0)**]
 - E0078. 프로그래머 강연은 제발... [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0078.txt)**] [**[시청](https://youtu.be/mf4yRCBav14)**]
 - E0077. 유니티5 vs 언리얼4 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0077.txt)**] [**[시청](https://youtu.be/Cc4prt3HQRM)**]
+  - `#유니티`
+  - 언리얼 소스 코드가 모두 공개가 돼 있다는 것 자체가 어떤 의미에서 보면은 배우는 사람들한 테 정말 좋지 않나
 - E0076. 리더와 시니어 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0076.txt)**] [**[시청](https://youtu.be/fqX-35K5hhY)**]
 - E0075. 책욕심 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0075.txt)**] [**[시청](https://youtu.be/XvRewqjJ3dU)**]
 - E0074. Power 낮잠 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0074.txt)**] [**[시청](https://youtu.be/a9zPoKNx3rQ)**]
@@ -773,6 +777,9 @@
 - E0067. 쓸데없는 매일 아침회의 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0067.txt)**] [**[시청](https://youtu.be/weYPailEWZc)**]
 - E0066. 효율적인 프로그래머 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0066.txt)**] [**[시청](https://youtu.be/aZM-ldh1rxU)**]
 - E0065. 유니티 무료버전에 필요한 기능 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0065.txt)**] [**[시청](https://youtu.be/U5FVY93JzF8)**]
+  - `#유니티`
+  - Asset Serialization 모드 중 텍스트(Force Text) 모드가 무료 버전에서 사용 가능해진 최초 버전은 Unity 4.2입니다
+  - Unity 4.2 버전은 2013년 7월 22일에 출시되었습니다
 - E0064. 일사천리 일처리 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0064.txt)**] [**[시청](https://youtu.be/Jwog7jdgBms)**]
 - E0063. NuGet으로 라이브러리 관리를 간편히 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0063.txt)**] [**[시청](https://youtu.be/11McTYs0nqc)**]
 - E0062. 커뮤니케이션 블랙홀 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0062.txt)**] [**[시청](https://youtu.be/m1bjbf2Y2co)**]
