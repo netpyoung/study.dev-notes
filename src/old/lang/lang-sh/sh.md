@@ -6,6 +6,8 @@
 - $$ : shell's PID
 - $0 : shell script name
 - $1 ... $n : number of command
+- $* : All the positional parameters (as a single word) * // A B C => "A B C"
+- $@ : All the positional parameters (as separate strings) // A B C => "A" "B" "C"
 
 ## 따옴표.
 
