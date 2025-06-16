@@ -3,7 +3,6 @@ title = "넷평의 개발 노트"
 description = "study.dev-notes"
 authors = ["netpyoung"]
 language = "ko"
-multilingual = false
 src = "src"
 
 [output.html]
