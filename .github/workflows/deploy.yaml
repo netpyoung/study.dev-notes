@@ -3,9 +3,14 @@ name: Build and deploy GH Pages
 ## ref: https://github.com/peaceiris/actions-mdbook
 
 on: 
- push:
-  branches:
-   - main
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/**'
+      - 'src/**'
+      - 'book.toml'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,13 +20,13 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v1
+        uses: peaceiris/actions-mdbook@v2
       - name: Build mdBook
         run: |
           mdbook build
           touch ./book/.nojekyll
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

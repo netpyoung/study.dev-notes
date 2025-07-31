@@ -4,6 +4,29 @@
 
 자꾸 봤던걸 또 보게 된다. 그냥 정리해놔서 봤던걸 또 보는 일이 없게 하자.
 
+
+- 퇴근 전에 이거 하지 마세요! 민폐 끼치는 개발자의 특징 [시청](https://youtu.be/sSfCpIajhXM)
+  - 퇴근하기 전에 몇시간 전에는 코드를 넣지 않겠다라는 원칙이 있는 사람.
+    - 그때 코드를 넣으면 내가 몇시간동안 추가로 있겠다라는 원칙.
+- DB PK로 사용해도 되는 GUID, UUID7은 축복인가 vs 폭탄인가?
+- 라이브 DB를 드랍한 주니어 개발자의 최후
+- 노트 정리 & 회사 문서화 & 프로젝트 관리, 이거면 충분!
+- 가독성 좋은 GUID, 왜 RDBMS에서 이렇게 유용해졌을까?
+- 개발자의 AI 사용, 보안은 환상일까? 회사에서 진짜 막을 수 있을까?
+- 어설트(ASSERT) 꿀팁! 팀별·개인별로 관리하는 법"
+- 과체중과 프로그래밍의 관계?
+- 대기업의 재택근무: 눈치보기 게임의 실체
+- 첫 직장이 별로라면? 이렇게 하세요
+- 버그는 0개로 유지해야 합니다. 이런 서비스라면 말이죠
+- 애자일 에스티메이션의 함정과 대안: 프로젝트 관리의 핵심! [시청](https://youtu.be/_iDgRoeWCRg)
+  - 프로젝트 관리는 이 프로젝트(기능)이 언제 끝나는지 아는것.
+  - 애자일 가정이 틀렸다
+    - 팀원들의 스킬셋이 대소동일하다, 팀원들이 지속적으로 유지된다
+    - 팀원이 스토리포인트를 산정한다
+    - 사람이 편차가 크다
+  - 팀장이 잘하면 된다.
+    - 팀장이 했을때를 가정해서 걸리는 시간을 기준점을 삼아서 트래킹
+- 겨울에 집이 건조한 진짜 이유! (캐나다에서 깨달은 과학)
 - 48시간 자동 테스트 돌리던 게임 회사의 품질 관리 비결! [시청](https://youtu.be/pzH7u0ZSAg4)
   - 메모리사용량
   - 메모리 풋프린트 어느 메모리에 뭐가 있는지 이 모양이였는데 나왔다 들어오니 바뀌면 어썰트
@@ -637,6 +660,10 @@
 
 
 - E0200. 생긴대로 사는법 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0200.txt)**] [**[시청](https://youtu.be/t4jocIEKEEM)**]
+  - 내 장점이 무엇인지 내세우는게 중요. 단점은 소소하게 인정
+  - 남 기준의 비교 받는거 싫어한다면
+    - 자기만의 기준을 세우고. 자기만의 기준에 성공을 하고. 그걸 이제 남들도 인정하게 만드는게 중요.
+    - 그거 아니면 그냥 변명이 되는 것.
 - E0199. Code Contracts [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0199.txt)**] [**[시청](https://youtu.be/hqUkfgU4wjk)**]
 - E0198. 코드몽키를 위한 코딩 스탠다드 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0198.txt)**] [**[시청](https://youtu.be/dIMySJ-HQ5k)**]
 - E0197. 난 언제나 바쁘다 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0197.txt)**] [**[시청](https://youtu.be/kbli7XZymMw)**]
@@ -742,6 +769,14 @@
 - E0107. 근황, 잡담, 조지아테크 MOOC [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0107.txt)**] [**[시청](https://youtu.be/KvZJCTCwR8Y)**]
 - E0106. 올바른 API 설계 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0106.txt)**] [**[시청](https://youtu.be/iDog_Vm_HAk)**]
 - E0105. 혼자 생각하기 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0105.txt)**] [**[시청](https://youtu.be/MFDz8uBIjhU)**]
+  - 뉴스rss같은걸(남의 의견) 읽는게 프로그래밍에 도움이 됐냐
+    - 전혀 도움이 안되는건 아닌데, 오히려 혼자 생각하고 다른걸 하는게 도움이 되지 않았나...
+    - 가져다 쓰면 되니까 빠르긴한데 정작 나만의 생각이 없기에, 마지막에 안다고 하는 경지에 오르기에는 시간이 더 들었음.
+  - 공부한다.
+    - 표현자체가 남이 해논걸 습득한다는 개념이 강한것 같다.
+    - 생각해본다/연구해본다라는 표현이 좋은것 같다.
+  - 주니어 - 잘 모르는데 라면서 낮추는것에 대해
+    - 어느 분야에 대해 생각을 정리하고 믿고 주장하는게 더 좋지 않나
 - E0104. 로봇의 습격 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0104.txt)**] [**[시청](https://youtu.be/iVMoHsYvoG4)**]
 - E0103. 리얼타임? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0103.txt)**] [**[시청](https://youtu.be/gxwE2cmUiUc)**]
 - E0102. 게임 프로그래머를 관두는 이유 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0102.txt)**] [**[시청](https://youtu.be/0fzg1kL0Y2U)**]
@@ -779,6 +814,11 @@
   - 언리얼 소스 코드가 모두 공개가 돼 있다는 것 자체가 어떤 의미에서 보면은 배우는 사람들한 테 정말 좋지 않나
 - E0076. 리더와 시니어 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0076.txt)**] [**[시청](https://youtu.be/fqX-35K5hhY)**]
 - E0075. 책욕심 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0075.txt)**] [**[시청](https://youtu.be/XvRewqjJ3dU)**]
+  - 뭔가를 읽고 보는 양은 변하지 않았는데 책을 많이 사진 않는다.
+  - 스스로의 불안감을 떨치기 위해 책을 사진 않았나
+  - 책이 유용한 경우
+    - 입문자들이 차근차근 배워나갈때 가장 좋지 않나
+  - 시간을 개인 프로젝트에 투자해라
 - E0074. Power 낮잠 [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0074.txt)**] [**[시청](https://youtu.be/a9zPoKNx3rQ)**]
 - E0073. 논리력은 어떻게 판단하나? [**[자막](https://github.com/popekim/popetv-transcript/blob/main/Data/0073.txt)**] [**[시청](https://youtu.be/QIUFGe1q0wU)**]
   - 필연적 인과관계. A가 있어났으면 B는 반드시 일어나야 되는 상황.
